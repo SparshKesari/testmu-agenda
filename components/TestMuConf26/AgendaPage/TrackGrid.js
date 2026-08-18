@@ -282,17 +282,23 @@ const TrackGrid = ({
   const dayLabel = `Day ${(dayId || "").replace("day", "")}`;
 
   return (
-    /* The grid overflows horizontally; making the scroll region focusable
-       lets keyboard users pan it with arrow keys. */
+    /* The grid scrolls both ways inside its own viewport-capped box so
+       the sticky column headers pin to the top while the rows scroll
+       beneath them; making the scroll region focusable lets keyboard
+       users pan it with arrow keys. */
     <div
-      className={`overflow-x-auto pb-2 ${FOCUS_RING}`}
+      className={`overflow-auto pb-2 max-h-[calc(100vh-16px)] ${FOCUS_RING}`}
       role="region"
       aria-label={`${dayLabel} schedule by stage — scrollable`}
       tabIndex={0}
     >
       <div style={{ minWidth: `${gridMinWidth}px` }}>
-        {/* Column headers */}
-        <div className="grid gap-2 mb-2" style={{ gridTemplateColumns: colTemplate }}>
+        {/* Column headers — sticky, with an opaque background so rows
+            scrolling underneath don't show through the column gaps. */}
+        <div
+          className="grid gap-2 pb-2 sticky top-0 z-10 bg-[#1e1a14]"
+          style={{ gridTemplateColumns: colTemplate }}
+        >
           <div className="px-2 py-3 text-[10px] tracking-[0.2em] uppercase text-[#fffef2]/70 self-end">
             Time
           </div>
@@ -344,8 +350,9 @@ const TrackGrid = ({
                 )}
               </div>
 
+              {/* Vertical guide between the time column and the grid. */}
               <div
-                className="flex flex-col gap-2"
+                className="flex flex-col gap-2 relative before:absolute before:inset-y-0 before:-left-[5px] before:w-px before:bg-[#fffef2]/10"
                 style={{ gridColumn: `2 / span ${dayTracks.length || 1}` }}
               >
                 {slotRows.length === 0 && (
@@ -395,7 +402,12 @@ const TrackGrid = ({
                     {dayTracks.map((t) => {
                       const cellRows = tracked.filter((r) => r.track === t.id);
                       return (
-                        <div key={t.id} className="flex flex-col gap-2">
+                        /* Vertical guide lines centered in the column
+                           gaps; the last column has no trailing line. */
+                        <div
+                          key={t.id}
+                          className="flex flex-col gap-2 relative after:absolute after:inset-y-0 after:-right-[5px] after:w-px after:bg-[#fffef2]/10 last:after:hidden"
+                        >
                           {cellRows.map((row) => (
                             <SessionCell
                               key={row.id}
