@@ -21,14 +21,15 @@ const parseStartMinutes = (timeStr) => {
 };
 
 /* Keynotes and welcome notes carry track "trust" (they run on the Trust
-   stage), so anything with a track renders in its column; only untracked
-   plenary items (closing notes) span the full width. */
-const isPlenary = (row) =>
-  !row.track &&
-  (row.type === "KEYNOTE" ||
-    row.type === "WELCOME NOTE" ||
-    !row.type ||
-    /^(welcome|closing)/i.test(row.title || ""));
+   stage), so they normally render in that column; closing notes have no
+   track and span the full width. When a track filter hides a plenary
+   item's column, the item spans the full width instead — otherwise its
+   home column would appear even though no filtered session lives there. */
+const isPlenaryType = (row) =>
+  row.type === "KEYNOTE" ||
+  row.type === "WELCOME NOTE" ||
+  !row.type ||
+  /^(welcome|closing)/i.test(row.title || "");
 
 const sessionHref = (row, sessions) =>
   row.session && sessions[row.session] && !sessions[row.session].hidden
@@ -224,8 +225,14 @@ const TrackGrid = ({ rows, sessions, getSpeakers, dayId, formatTime, isLive }) =
       return next;
     });
 
-  /* Only show track columns that have sessions on this day. */
-  const dayTracks = TRACKS.filter((t) => rows.some((r) => r.track === t.id));
+  /* Only show track columns that have non-plenary sessions on this day
+     (after filtering) — plenary items alone shouldn't summon a column. */
+  const dayTracks = TRACKS.filter((t) =>
+    rows.some((r) => r.track === t.id && !isPlenaryType(r)),
+  );
+  const shownTrackIds = new Set(dayTracks.map((t) => t.id));
+  const isPlenary = (row) =>
+    isPlenaryType(row) && (!row.track || !shownTrackIds.has(row.track));
 
   /* Group rows into time slots, ordered by start time. */
   const slotOrder = [];
