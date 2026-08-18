@@ -79,6 +79,9 @@ const AgendaLanding = ({ agenda, sessions, speakers }) => {
   const [selectedTracks, setSelectedTracks] = useState([]);
   const [trackOpen, setTrackOpen] = useState(false);
   const trackRef = useRef(null);
+  const [selectedHost, setSelectedHost] = useState("All");
+  const [hostOpen, setHostOpen] = useState(false);
+  const hostRef = useRef(null);
 
   const toggleTrack = (id) =>
     setSelectedTracks((prev) =>
@@ -133,6 +136,33 @@ const AgendaLanding = ({ agenda, sessions, speakers }) => {
       : TZ_OPTIONS;
 
   useEffect(() => {
+    if (!hostOpen) return;
+    const handleClick = (e) => {
+      if (hostRef.current && !hostRef.current.contains(e.target)) {
+        setHostOpen(false);
+      }
+    };
+    const handleKey = (e) => {
+      if (e.key === "Escape") setHostOpen(false);
+    };
+    document.addEventListener("mousedown", handleClick);
+    document.addEventListener("keydown", handleKey);
+    return () => {
+      document.removeEventListener("mousedown", handleClick);
+      document.removeEventListener("keydown", handleKey);
+    };
+  }, [hostOpen]);
+
+  /* Every distinct host across the three days, for the host filter. */
+  const allHosts = useMemo(() => {
+    const set = new Set();
+    Object.values(agenda).forEach((dayRows) =>
+      dayRows.forEach((r) => (r.hosts || []).forEach((h) => set.add(h))),
+    );
+    return [...set].sort((a, b) => a.localeCompare(b));
+  }, [agenda]);
+
+  useEffect(() => {
     if (!trackOpen) return;
     const handleClick = (e) => {
       if (trackRef.current && !trackRef.current.contains(e.target)) {
@@ -173,6 +203,9 @@ const AgendaLanding = ({ agenda, sessions, speakers }) => {
     const typeMatch = selectedType.toUpperCase();
     const matches = (row) => {
       if (!rowMatchesType(row, typeMatch)) return false;
+      if (selectedHost !== "All" && !(row.hosts || []).includes(selectedHost)) {
+        return false;
+      }
       /* Track filter: plenary items (keynotes, welcome/closing notes)
          belong to every track, so they always stay visible. */
       const plenary =
@@ -186,6 +219,9 @@ const AgendaLanding = ({ agenda, sessions, speakers }) => {
       }
       if (!q) return true;
       if (row.title && row.title.toLowerCase().includes(q)) return true;
+      if ((row.hosts || []).some((h) => h.toLowerCase().includes(q))) {
+        return true;
+      }
       const session = row.session ? sessions[row.session] : null;
       const slugs = rowSpeakerSlugs(row, session);
       return slugs.some((slug) => {
@@ -200,7 +236,7 @@ const AgendaLanding = ({ agenda, sessions, speakers }) => {
       byDay[id] = (agenda[id] || []).filter(matches);
     });
     return byDay;
-  }, [agenda, query, selectedType, selectedTracks, sessions, speakers]);
+  }, [agenda, query, selectedType, selectedTracks, selectedHost, sessions, speakers]);
 
   const filteredRows = filteredByDay[activeDay] || [];
 
@@ -277,10 +313,10 @@ const AgendaLanding = ({ agenda, sessions, speakers }) => {
                   <input
                     type="search"
                     className={styles.searchInput}
-                    placeholder="Search sessions or speakers"
+                    placeholder="Search sessions, speakers or hosts"
                     value={query}
                     onChange={(e) => setQuery(e.target.value)}
-                    aria-label="Search sessions or speakers"
+                    aria-label="Search sessions, speakers or hosts"
                   />
                 </div>
 
@@ -431,6 +467,71 @@ const AgendaLanding = ({ agenda, sessions, speakers }) => {
                               )}
                             </span>
                             <span>{t.name}</span>
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
+                </div>
+
+                <div className={styles.filterWrap} ref={hostRef}>
+                  <button
+                    type="button"
+                    className={`${styles.filterBtn} ${hostOpen ? styles.filterBtnOpen : ""}`}
+                    onClick={() => setHostOpen((v) => !v)}
+                    aria-expanded={hostOpen}
+                    aria-haspopup="true"
+                  >
+                    <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                      <circle
+                        cx="8"
+                        cy="5.5"
+                        r="2.8"
+                        stroke="currentColor"
+                        strokeWidth="1.3"
+                      />
+                      <path
+                        d="M2.8 13.5C3.6 10.9 5.6 9.7 8 9.7C10.4 9.7 12.4 10.9 13.2 13.5"
+                        stroke="currentColor"
+                        strokeWidth="1.3"
+                        strokeLinecap="round"
+                      />
+                    </svg>
+                    <span>
+                      {selectedHost === "All" ? "All Hosts" : selectedHost}
+                    </span>
+                  </button>
+
+                  {hostOpen && (
+                    <div
+                      className={styles.filterPopover}
+                      role="menu"
+                      aria-label="Host"
+                      style={{ maxHeight: 320, overflowY: "auto" }}
+                    >
+                      {["All", ...allHosts].map((host) => {
+                        const active = selectedHost === host;
+                        return (
+                          <button
+                            key={host}
+                            type="button"
+                            role="menuitemradio"
+                            aria-checked={active}
+                            className={`${styles.filterOption} ${active ? styles.filterOptionActive : ""}`}
+                            onClick={() => {
+                              setSelectedHost(host);
+                              setHostOpen(false);
+                            }}
+                          >
+                            <span
+                              className={styles.filterOptionBox}
+                              aria-hidden="true"
+                            >
+                              {active && (
+                                <span className={styles.filterOptionDot} />
+                              )}
+                            </span>
+                            <span>{host === "All" ? "All Hosts" : host}</span>
                           </button>
                         );
                       })}
@@ -600,6 +701,37 @@ const AgendaLanding = ({ agenda, sessions, speakers }) => {
                   </button>
                 </div>
               </div>
+
+              {selectedHost !== "All" && (
+                <div
+                  className="flex flex-wrap items-center gap-2 mt-4"
+                  aria-label="Active host filter"
+                >
+                  <span className="inline-flex items-center gap-2 border border-[#ffe3a6]/60 bg-[#ffe3a6]/10 text-[#ffe3a6] px-3 py-1.5 text-[11px] tracking-[0.08em] uppercase">
+                    Host · {selectedHost}
+                    <button
+                      type="button"
+                      aria-label={`Remove host filter ${selectedHost}`}
+                      onClick={() => setSelectedHost("All")}
+                      className="hover:opacity-70 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#ffe3a6]"
+                    >
+                      <svg
+                        viewBox="0 0 10 10"
+                        fill="none"
+                        className="w-2.5 h-2.5"
+                        aria-hidden="true"
+                      >
+                        <path
+                          d="M1 1L9 9M9 1L1 9"
+                          stroke="currentColor"
+                          strokeWidth="1.6"
+                          strokeLinecap="round"
+                        />
+                      </svg>
+                    </button>
+                  </span>
+                </div>
+              )}
 
               {selectedTracks.length > 0 && (
                 <div
