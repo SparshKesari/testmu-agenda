@@ -1,0 +1,148 @@
+.pill {
+  background: rgba(59, 55, 49, 0.5);
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+  transition: background 200ms ease;
+  border: 0.5px solid transparent;
+}
+
+.pill:hover {
+  background: rgba(59, 55, 49, 0.75);
+}
+
+.pillCard {
+  background: #1e1a14;
+  border: 0.5px solid #6c6c58;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  text-decoration: none;
+  color: inherit;
+  flex: 1 1 0;
+  min-width: 0;
+  transition: background 200ms ease, border-color 200ms ease;
+}
+
+.pillCard:hover {
+  background: #28231b;
+  border-color: #9c9c84;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-width: 622px;
+}
+
+/* Right-aligned CTA inside the pill, same design language as the index
+   page's .viewAllLink (Geist Mono uppercase + arrow). */
+.cta {
+  margin-left: auto;
+  flex-shrink: 0;
+  font-family: "Geist Mono", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.8px;
+  color: #ffffe3;
+  text-transform: uppercase;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 200ms ease;
+
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.28px;
+  }
+}
+
+.pill:hover .cta {
+  color: #ff7b5e;
+}
+
+.typeBadge {
+  border: 0.5px solid #6c6c58;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 2px 12px;
+  /* Figma calls for "Geist Pixel:Square"; this project ships Departure Mono,
+     which has the same pixel-grid feel. */
+  font-family: "Departure Mono", "Geist Mono", monospace;
+  font-size: 10px;
+  letter-spacing: -0.2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 20px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.typeIcon {
+  width: 12.59px;
+  height: 12px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.title {
+  font-family: "Fraunces", serif;
+  font-weight: 300;
+  font-variation-settings: "SOFT" 0, "WONK" 1;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+  color: #ffffe3;
+  margin: 0;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Geist Mono", monospace;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.7px;
+  text-transform: uppercase;
+}
+
+.metaTime {
+  color: #ffffe3;
+}
+
+.metaDuration {
+  color: rgba(255, 255, 227, 0.6);
+}
+
+.metaDot {
+  background: #a5a390;
+  width: 4px;
+  height: 4px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+  .pill {
+    padding: 24px;
+  }
+  .pillCard {
+    padding: 20px;
+  }
+  .title {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}

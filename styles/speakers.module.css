@@ -1,0 +1,130 @@
+.page {
+  color: #ffffe3;
+  min-height: 100vh;
+  background: #1e1a14;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1234px;
+  padding: 80px 20px;
+}
+
+.title {
+  font-family: "Fraunces", serif;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+  padding: 0 0 64px;
+  color: #ffffe0;
+  font-size: 104px;
+  line-height: 92px;
+  letter-spacing: -1.04px;
+}
+
+.sectionHeader {
+  font-size: 40px;
+  font-weight: 400;
+  color: #ffffe0;
+  line-height: 48px;
+  font-style: italic;
+  letter-spacing: -0.4px;
+  font-family: "Fraunces", serif;
+}
+
+.keynoteBlock {
+  padding: 0 0 80px;
+}
+
+.keynoteGrid {
+  gap: 0;
+  display: grid;
+  margin-top: 32px;
+  grid-template-columns: 1fr 1fr;
+  /* Keep every card the same height across rows even when one card's
+     role text wraps to more lines. */
+  grid-auto-rows: 1fr;
+}
+
+.keynoteGrid > * {
+  margin: -0.25px;
+}
+
+.allBlock {
+  padding-bottom: 80px;
+}
+
+.allList {
+  margin-top: 48px;
+}
+
+@media (max-width: 1179px) {
+  .container {
+    padding: 64px 20px 64px 20px;
+  }
+  .title {
+    font-size: 48px;
+    line-height: 56px;
+    padding-bottom: 48px;
+    letter-spacing: -0.48px;
+  }
+  .sectionHeader {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .keynoteGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    padding: 48px 20px;
+  }
+  .title {
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.4px;
+    padding-bottom: 32px;
+  }
+
+  .keynoteBlock,
+  .allBlock {
+    padding-bottom: 48px;
+  }
+  .allBlock {
+    padding-top: 48px;
+  }
+  .sectionHeader {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .allList {
+    margin-top: 24px;
+  }
+
+  .keynoteGrid {
+    display: flex;
+    grid-template-columns: none;
+    overflow-x: auto;
+    overflow-y: visible;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    margin: 24px -20px 0;
+    padding: 0 20px;
+    scroll-padding: 0 20px;
+    gap: 0;
+  }
+  .keynoteGrid::-webkit-scrollbar {
+    display: none;
+  }
+  .keynoteGrid > * {
+    scroll-snap-align: start;
+    margin: 0;
+  }
+}

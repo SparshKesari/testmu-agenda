@@ -1,0 +1,420 @@
+/* ---------------------------------- */
+/*  Inter                              */
+/* ---------------------------------- */
+@font-face {
+  font-family: "Inter";
+  src: url("../../styles/fonts/Inter/Inter_28pt-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---------------------------------- */
+/*  Geist                              */
+/* ---------------------------------- */
+@font-face {
+  font-family: "Geist";
+  src: url("../../styles/fonts/Geist/Geist-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* ---------------------------------- */
+/*  Section wrapper                    */
+/* ---------------------------------- */
+.section {
+  background: #faf9f6;
+  padding: 56px 0 96px;
+
+  @media (max-width: 767px) {
+    padding: 32px 0 48px;
+  }
+}
+
+.heading {
+  margin: 0 0 56px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 49.6px;
+  line-height: 54px;
+  letter-spacing: -1.6px;
+  color: #111;
+
+  @media (max-width: 992px) {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -1.6px;
+    margin-bottom: 32px;
+  }
+  @media (max-width: 767px) {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.8px;
+    margin-bottom: 24px;
+  }
+}
+
+/* ---------------------------------- */
+/*  Tabs row                           */
+/* ---------------------------------- */
+.tabsRow {
+  width: 100%;
+  display: flex;
+  border-bottom: none;
+  align-items: stretch;
+
+  @media (max-width: 767px) {
+    width: 820px;
+  }
+}
+
+.tab {
+  flex: 1 0 0;
+  min-width: 0;
+  padding: 16px;
+  background: #faf9f6;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 0.6px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: left;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.15s ease;
+
+  @media (max-width: 767px) {
+    padding: 12px;
+  }
+}
+
+.tab + .tab {
+  margin-left: -1px;
+}
+
+.tab:hover {
+  background: #f5f2ec;
+}
+
+.tabActive {
+  background: #f1eee9;
+}
+
+/* ---------------------------------- */
+/*  Panel                              */
+/* ---------------------------------- */
+.panel {
+  position: relative;
+  height: 480px;
+  background: #f1eee9;
+  padding: 32px 32px 32px 64px;
+  border: 1px solid #dbd8d3;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+
+  @media (max-width: 1179px) {
+    height: 420px;
+    padding: 24px 24px 24px 48px;
+  }
+
+  @media (max-width: 767px) {
+    gap: 20px;
+    height: auto;
+    padding: 16px;
+    flex-direction: column-reverse;
+  }
+}
+
+/* Coral corner dots on the outer panel */
+.cornerDot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: #ff7b5e;
+  z-index: 2;
+
+  @media (max-width: 767px) {
+   display: none;
+  }
+}
+
+.cornerDotTL {
+  top: 12px;
+  left: 12px;
+}
+.cornerDotTR {
+  top: 12px;
+  right: 12px;
+}
+.cornerDotBL {
+  bottom: 12px;
+  left: 12px;
+}
+.cornerDotBR {
+  bottom: 12px;
+  right: 12px;
+}
+
+/* Left content area */
+.panelText {
+  position: relative;
+  z-index: 1;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  @media (max-width: 767px) {
+    gap: 20px;
+    width: 100%;
+  }
+}
+
+.panelTextBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  @media (max-width: 1179px) {
+    gap: 8px;
+  }
+}
+
+.panelTitle {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.96px;
+  color: #111;
+
+  @media (max-width: 1179px) {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.8px;
+  }
+}
+
+.panelDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  opacity: 0.6;
+}
+
+.panelDescription p {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  color: #111;
+
+  @media (max-width: 1179px) {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.14px;
+  }
+}
+
+.panelHowTo {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  @media (max-width: 1179px) {
+    gap: 8px;
+  }
+}
+
+.panelHowToTitle {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.96px;
+  color: #111;
+
+  @media (max-width: 1179px) {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.64px;
+  }
+}
+
+.bulletList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  @media (max-width: 1179px) {
+    gap: 6px;
+  }
+}
+
+.bullet {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  color: #111;
+  opacity: 0.6;
+
+  @media (max-width: 1179px) {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.14px;
+  }
+}
+
+.bulletSquare {
+  width: 4px;
+  height: 4px;
+  background: #111;
+  flex-shrink: 0;
+  margin-top: 10px;
+}
+
+/* Right image */
+.panelImageWrap {
+  width: 50%;
+  overflow: hidden;
+  z-index: 1;
+  
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}
+
+.panelImage {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ---------------------------------- */
+/*  Conf Register block                */
+/* ---------------------------------- */
+.registerNowBlock {
+  margin-top: 80px;
+
+  @media (max-width: 1179px) {
+    margin-top: 48px;
+  }
+}
+
+.registerNowTop {
+  display: grid;
+  border: 1px solid #6c6c58;
+  grid-template-columns: 75% 25%;
+
+  @media (max-width: 767px) {
+    border: none;
+    justify-items: center;
+    grid-template-columns: 1fr;
+  }
+}
+
+.registerNowText {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 1179px) {
+    padding: 24px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+}
+
+.registerNowText p {
+  margin: 0;
+  font-family: "Geist", sans-serif;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.8px;
+  color: #ffffff;
+
+  @media (max-width: 1179px) {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.48px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+  }
+}
+
+.registerNowAccent {
+  color: #ffffff;
+}
+
+.registerNowSideBox {
+  border-left: 1px solid #6c6c58;
+}
+
+.registerNowBtnWrap {
+  display: block;
+  margin-top: -1px;
+  border: 1px solid #6c6c58;
+  padding: 40px;
+  cursor: pointer;
+
+  @media (max-width: 1179px) {
+    padding: 24px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 0;
+    border: none;
+    margin-top: 32px;
+  }
+}
+
+/* Hover-swap stack: two SVGs occupy the same grid cell; fade between
+   them via opacity on parent hover. Used for the bottom Register Now CTA. */
+.registerSwap {
+  width: 100%;
+}
+
+.registerSwap img {
+  grid-area: 1 / 1;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Only the hover image animates. Default stays at full opacity underneath
+   so there's no crossfade-through-transparent flicker on hover. */
+.registerSwap .registerSwapHover {
+  opacity: 0;
+  transition: opacity 250ms ease;
+}
+
+.registerNowBtnWrap:hover .registerSwap .registerSwapHover {
+  opacity: 1;
+}

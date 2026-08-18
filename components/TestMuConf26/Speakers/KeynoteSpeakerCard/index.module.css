@@ -1,0 +1,192 @@
+.card {
+  gap: 24px;
+  display: flex;
+  padding: 32px;
+  align-items: flex-end;
+  background: transparent;
+  border: 0.5px solid #6c6c56;
+  color: inherit;
+  text-decoration: none;
+  text-align: left;
+  font: inherit;
+  width: 100%;
+  appearance: none;
+  cursor: pointer;
+  transition: background 200ms ease;
+}
+
+button.card:hover,
+a.card:hover {
+  background: rgba(255, 255, 227, 0.04);
+}
+
+.imageBox {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  border: 5px solid #ffffe3;
+  overflow: hidden;
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+.imageBg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageTint {
+  position: absolute;
+  inset: 0;
+  opacity: 0.55;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: flex-start;
+  /* Match the photo height so the logo sits on the photo's bottom line even
+     when a sibling card stretches the grid row taller. */
+  min-height: 200px;
+  gap: 24px;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.nameWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.name {
+  font-family: "Geist Mono", monospace;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  letter-spacing: -1.6px;
+  color: #ffffe3;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.nameLine {
+  display: block;
+  white-space: nowrap;
+}
+
+.nameLast {
+  padding-left: 4ch;
+}
+
+.role {
+  font-family: "Geist Mono", monospace;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.9px;
+  color: #ffffe3;
+  text-transform: uppercase;
+  margin: 0;
+  max-width: 330px;
+}
+
+.company {
+  display: flex;
+  align-items: center;
+}
+
+.companyLogo {
+  object-fit: contain;
+  display: block;
+}
+
+.companyName {
+  font-family: "Geist Mono", monospace;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.7px;
+  color: rgba(255, 255, 227, 0.7);
+  text-transform: uppercase;
+}
+
+@media (max-width: 1179px) {
+  .card {
+    padding: 24px;
+    gap: 20px;
+    min-height: 220px;
+  }
+  .imageBox {
+    width: 160px;
+    height: 160px;
+    border-width: 4px;
+  }
+  .textBlock {
+    min-height: 160px;
+  }
+  .name {
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: -1.3px;
+  }
+  .role {
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.8px;
+  }
+}
+
+@media (max-width: 992px){
+  .companyLogo {
+    max-width: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    gap: 16px;
+    padding: 16px;
+    min-height: 0;
+    width: 232px;
+    flex: 0 0 auto;
+  }
+  .imageBox {
+    width: 200px;
+    height: 200px;
+    border-width: 5px;
+  }
+  .textBlock {
+    align-self: auto;
+    width: 200px;
+    gap: 16px;
+    min-height: 0;
+  }
+  .nameWrap {
+    gap: 8px;
+  }
+  .name {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.9px;
+  }
+  .nameLast {
+    padding-left: 4ch;
+  }
+  .role {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.7px;
+    max-width: 193px;
+  }
+}

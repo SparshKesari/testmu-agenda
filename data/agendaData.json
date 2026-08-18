@@ -1,0 +1,1009 @@
+{
+  "day1": [
+    {
+      "id": "d1s1",
+      "title": "Welcome to TestMu Conference 2026 Day 1",
+      "time": "05:00 - 05:15 AM (PT)",
+      "duration": "15 MINS",
+      "type": "WELCOME NOTE",
+      "speaker": "joe-colantonio",
+      "track": "trust"
+    },
+    {
+      "id": "d1s2",
+      "title": "Testing in the Era of AI: From QA to Trust Engineering",
+      "time": "05:15 - 05:45 AM (PT)",
+      "duration": "30 MINS",
+      "type": "KEYNOTE",
+      "speaker": "kishor-wikhe",
+      "session": "testing-in-the-era-of-ai-from-qa-to-trust-engineering",
+      "track": "trust"
+    },
+    {
+      "id": "d1s3",
+      "title": "Building Deterministic Infrastructure for Non-Deterministic AI Agents",
+      "time": "05:45 - 06:15 AM (PT)",
+      "duration": "30 MINS",
+      "type": "SESSION",
+      "speaker": "nishant-gupta",
+      "session": "deterministic-infrastructure-non-deterministic-ai-agents",
+      "track": "agentic"
+    },
+    {
+      "id": "d1s17",
+      "title": "Confidence ≠ Correctness: The Agentic Validation Loop",
+      "time": "05:45 - 06:15 AM (PT)",
+      "duration": "30 MINS",
+      "type": "SESSION",
+      "speaker": "prince-verma",
+      "session": "confidence-is-not-correctness-the-agentic-validation-loop",
+      "track": "trust"
+    },
+    {
+      "id": "d1s18",
+      "title": "Ask Me Anything: AI Agents, Skills, Career & Growth",
+      "time": "05:45 - 06:15 AM (PT)",
+      "duration": "30 MINS",
+      "type": "AMA",
+      "speaker": "rahul-shetty",
+      "session": "ask-me-anything-ai-agents-skills-career-and-growth",
+      "track": "scale"
+    },
+    {
+      "id": "d1s4",
+      "title": "Context That Dreams",
+      "time": "06:15 - 07:00 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "jaydeep-chakrabarty",
+      "session": "context-that-dreams",
+      "track": "ship"
+    },
+    {
+      "id": "d1s5",
+      "title": "From AI Assistants to AI Coworkers: How Engineering Teams Ship Faster with Trusted Enterprise Context",
+      "time": "06:15 - 07:00 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "nilesh-dalvi",
+      "session": "from-ai-assistants-to-ai-coworkers",
+      "track": "agentic"
+    },
+    {
+      "id": "d1s19",
+      "title": "Testing the Agents That Look You in the Eye",
+      "time": "06:15 - 07:00 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speakers": [
+        "sai-krishna",
+        "srinivasan-sekar"
+      ],
+      "session": "testing-autonomous-ai-agents-beyond-traditional-qa",
+      "track": "quality"
+    },
+    {
+      "id": "d1s6",
+      "title": "Architects of Trust: Redefining Quality Leadership in an Agentic World",
+      "time": "07:00 - 07:45 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "sobhitha-neelanath",
+      "session": "architects-of-trust-quality-leadership-agentic-world",
+      "track": "trust"
+    },
+    {
+      "id": "d1s20",
+      "title": "When Software Becomes Everyone's Job",
+      "time": "07:00 - 07:45 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speakers": [
+        "keerthivasan-devaraj",
+        "gurleen-kaur"
+      ],
+      "session": "when-software-becomes-everyones-job",
+      "track": "build"
+    },
+    {
+      "id": "d1s26",
+      "title": "AI Trust and Governance in QE: Who Actually Signs Off?",
+      "time": "07:00 - 07:45 AM (PT)",
+      "duration": "45 MINS",
+      "type": "FIRESIDE CHAT",
+      "speaker": "harleen-bedi",
+      "session": "ai-trust-and-governance-in-qe",
+      "track": "scale"
+    },
+    {
+      "id": "d1s7",
+      "title": "Testing the Future: Time-Travel Simulation for Financial Systems",
+      "time": "07:45 - 08:30 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "rakesh-sukla",
+      "session": "time-travel-simulation-financial-systems",
+      "track": "ship"
+    },
+    {
+      "id": "d1s8",
+      "title": "Can You Trust Your ChatBot: Techniques for Testing LLM Responses",
+      "time": "07:45 - 08:30 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "gil-zilberfeld",
+      "session": "can-you-trust-your-chatbot-testing-llm-responses",
+      "track": "agentic"
+    },
+    {
+      "id": "d1s21",
+      "title": "Flaky, Fragile, and Forgotten: The Fall of a Test Automation Project",
+      "time": "07:45 - 08:30 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "mesut-durukal",
+      "session": "flaky-fragile-forgotten-test-automation",
+      "track": "quality"
+    },
+    {
+      "id": "d1s9",
+      "title": "The Right Model for the Right Job: Cutting LLM Costs Without Cutting Quality",
+      "time": "08:30 - 09:00 AM (PT)",
+      "duration": "30 MINS",
+      "type": "SESSION",
+      "speaker": "viktoria-semaan",
+      "session": "right-model-right-job-cutting-llm-costs",
+      "track": "trust"
+    },
+    {
+      "id": "d1s10",
+      "title": "System Prompt Design for Voice Agents",
+      "time": "08:30 - 09:00 AM (PT)",
+      "duration": "30 MINS",
+      "type": "SESSION",
+      "speaker": "amanda-martin",
+      "session": "system-prompt-design-for-voice-agents",
+      "track": "scale"
+    },
+    {
+      "id": "d1s22",
+      "title": "Testing at the Speed of Agents: Salesforce's Evolving Approach to Agentic Testing",
+      "time": "08:30 - 09:00 AM (PT)",
+      "duration": "30 MINS",
+      "type": "SESSION",
+      "speaker": "john-liang",
+      "session": "testing-at-the-speed-of-agents",
+      "track": "build"
+    },
+    {
+      "id": "d1s27",
+      "title": "The Agentic Software Factory That Enterprises Actually Need",
+      "time": "09:00 - 09:45 AM (PT)",
+      "duration": "45 MINS",
+      "type": "PANEL",
+      "speakers": [
+        "heena-purohit",
+        "chase-norton",
+        "itamar-friedman",
+        "patrick-vuong"
+      ],
+      "session": "the-agentic-software-factory-that-enterprises-actually-need",
+      "track": "ship"
+    },
+    {
+      "id": "d1s28",
+      "title": "The Bionic Workforce - Where Humans & AI Co-exist",
+      "time": "09:00 - 09:45 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "lisha-rakesh",
+      "session": "bionic-workforce-where-humans-ai-coexist",
+      "track": "agentic"
+    },
+    {
+      "id": "d1s11",
+      "title": "Beyond Benchmarks: Evaluating Agents Against What They are Actually Supposed to Do",
+      "time": "09:45 - 10:15 AM (PT)",
+      "duration": "30 MINS",
+      "type": "KEYNOTE",
+      "speaker": "francesca-lazzeri",
+      "session": "beyond-benchmarks-evaluating-agents",
+      "track": "trust"
+    },
+    {
+      "id": "d1s12",
+      "title": "Build Trustworthy AI Agents powered by Evals",
+      "time": "10:15 - 11:00 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "rushabh-mehta",
+      "session": "build-trustworthy-ai-agents-powered-by-evals",
+      "track": "quality"
+    },
+    {
+      "id": "d1s13",
+      "title": "Real-world Lessons from Scaling Test Automation at Microsoft",
+      "time": "10:15 - 11:00 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "deepak-kamboj",
+      "session": "real-world-lessons-scaling-test-automation-microsoft",
+      "track": "agentic"
+    },
+    {
+      "id": "d1s14",
+      "title": "Canal-mania and the Philosopher's Stone",
+      "time": "10:15 - 11:00 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "magnus-hillestad",
+      "session": "canal-mania-and-the-philosophers-stone",
+      "track": "scale"
+    },
+    {
+      "id": "d1s29",
+      "title": "Why RL Environments are all you need for building agents",
+      "time": "11:00 - 11:45 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "mahesh-sathiamoorthy",
+      "session": "why-rl-environments-are-all-you-need-for-building-agents",
+      "track": "build"
+    },
+    {
+      "id": "d1s30",
+      "title": "QE at Enterprise Scale - What Will a QE Org Look Like in 2027?",
+      "time": "11:00 - 11:45 AM (PT)",
+      "duration": "45 MINS",
+      "type": "PANEL",
+      "speakers": [
+        "impu-chunchegowda",
+        "senthil-kannan",
+        "todd-lemmonds"
+      ],
+      "session": "qe-at-enterprise-scale-what-will-a-qe-org-look-like-in-2027",
+      "track": "workshop"
+    },
+    {
+      "id": "d1s31",
+      "title": "Working With Developers: A Tester's Survival Guide",
+      "time": "11:00 - 11:45 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "wessel-braakman",
+      "session": "working-with-developers-testers-survival-guide",
+      "track": "trust"
+    },
+    {
+      "id": "d1s23",
+      "title": "Testing What Matters: Evaluating LLM Relevancy with DeepEval",
+      "time": "11:00 - 11:45 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "monika-sharma",
+      "session": "testing-what-matters-evaluating-llm-relevancy-with-deepeval",
+      "track": "ship"
+    },
+    {
+      "id": "d1s25",
+      "title": "Beyond Scoring: Rethinking Ranking in the LLM Era",
+      "time": "11:45 AM - 12:30 PM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "rhea-goel",
+      "session": "beyond-scoring-rethinking-ranking-llm-era",
+      "track": "agentic"
+    },
+    {
+      "id": "d1s15",
+      "title": "Backwards Scoring: Ranking Test Suites by Which Real Incidents They Would Have Caught",
+      "time": "11:45 AM - 12:30 PM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "partha-sarathi-samal",
+      "session": "backwards-scoring-ranking-test-suites",
+      "track": "quality"
+    },
+    {
+      "id": "d1s24",
+      "title": "The BFSI Playbook: Scaling AI with Trust and Quality",
+      "time": "11:45 AM - 12:30 PM (PT)",
+      "duration": "45 MINS",
+      "type": "PANEL",
+      "speakers": [
+        "brianna-elsass",
+        "brian-corkery",
+        "anand-moorthy",
+        "eshwar-pastapur"
+      ],
+      "session": "the-bfsi-playbook-scaling-ai-with-trust-and-quality",
+      "track": "scale"
+    },
+    {
+      "id": "d1s16",
+      "title": "Closing Note",
+      "time": "12:30 - 12:45 PM (PT)",
+      "duration": "15 MINS"
+    }
+  ],
+  "day2": [
+    {
+      "id": "d2s1",
+      "title": "Welcome to TestMu Conference 2026 Day 2",
+      "time": "05:00 - 05:15 AM (PT)",
+      "duration": "15 MINS",
+      "type": "WELCOME NOTE",
+      "track": "trust"
+    },
+    {
+      "id": "d2s2",
+      "title": "Is the developer lifecycle dead?",
+      "time": "05:15 - 05:45 AM (PT)",
+      "duration": "30 MINS",
+      "type": "KEYNOTE",
+      "speaker": "thomas-dohmke",
+      "session": "is-the-developer-lifecycle-dead",
+      "track": "trust"
+    },
+    {
+      "id": "d2s15",
+      "title": "Going past the vibes: How to build Real Apps",
+      "time": "05:45 - 06:30 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "lazar-jovanovic",
+      "session": "going-past-the-vibes-how-to-build-real-apps",
+      "track": "build"
+    },
+    {
+      "id": "d2s24",
+      "title": "“Every Agent Drives a Browser. Nobody Drives Your App.” Bringing mobile app validation into the agentic loop",
+      "time": "05:45 - 06:30 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "shantanu-wali",
+      "session": "mobile-app-validation-agentic-loop",
+      "track": "trust"
+    },
+    {
+      "id": "d2s27",
+      "title": "Advanced Web Testing with Playwright and AI",
+      "time": "05:45 - 07:15 AM (PT)",
+      "duration": "90 MINS",
+      "type": "WORKSHOP",
+      "speaker": "andrew-knight",
+      "session": "advanced-web-testing-playwright-ai",
+      "track": "workshop"
+    },
+    {
+      "id": "d2s3",
+      "title": "AI in Mobile QA: What Actually Works Today?",
+      "time": "06:30 - 07:15 AM (PT)",
+      "duration": "45 MINS",
+      "type": "PANEL",
+      "speakers": [
+        "jan-schnyder",
+        "nicolas-muntwyler",
+        "justin-yuan"
+      ],
+      "session": "ai-in-mobile-qa-what-actually-works-today",
+      "track": "quality"
+    },
+    {
+      "id": "d2s16",
+      "title": "Local Agentic Theory for Accessible Mobile Games",
+      "time": "06:30 - 07:15 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "shafik-quoraishee",
+      "session": "local-agentic-theory-accessible-mobile-games",
+      "track": "agentic"
+    },
+    {
+      "id": "d2s22",
+      "title": "Securing Agentic AI",
+      "time": "06:30 - 07:15 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speakers": [
+        "deepshikha",
+        "anamika-mukhopadhyay"
+      ],
+      "session": "securing-agentic-ai",
+      "track": "ship"
+    },
+    {
+      "id": "d2s17",
+      "title": "Agentic Engineering: From Writing Code to Reviewing It",
+      "time": "07:15 - 08:00 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "sumit-shatwara",
+      "session": "agentic-engineering-from-writing-code-to-reviewing-it",
+      "track": "build"
+    },
+    {
+      "id": "d2s4",
+      "title": "Revisit Old Problems with New Eyes!",
+      "time": "07:15 - 08:00 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "pramod-yadav",
+      "session": "revisit-old-problems-with-new-eyes",
+      "track": "trust"
+    },
+    {
+      "id": "d2s33",
+      "title": "Scaling Enterprise Practice in Agentic Era",
+      "time": "07:15 - 08:00 AM (PT)",
+      "duration": "45 MINS",
+      "type": "PANEL",
+      "speakers": [
+        "mhahesh-muraleedhara",
+        "dror-avrilingi",
+        "vikul-gupta",
+        "richa-agrawal",
+        "nagendra-bs"
+      ],
+      "session": "scaling-enterprise-practice-in-agentic-era",
+      "track": "scale"
+    },
+    {
+      "id": "d2s36",
+      "title": "The Full Agentic QA Loop for Web Applications — Author, Evidence, Assure, Maintain",
+      "time": "07:15 - 08:00 AM (PT)",
+      "duration": "45 MINS",
+      "type": "WORKSHOP",
+      "speaker": "siddhant-sinha",
+      "session": "the-full-agentic-qa-loop-for-web-applications",
+      "track": "workshop"
+    },
+    {
+      "id": "d2s5",
+      "title": "The Trust Problem: Designing Quality Frameworks for AI-Generated Code",
+      "time": "08:00 - 08:30 AM (PT)",
+      "duration": "30 MINS",
+      "type": "SESSION",
+      "speaker": "neelmani-verma",
+      "session": "trust-problem-quality-frameworks-ai-generated-code",
+      "track": "ship"
+    },
+    {
+      "id": "d2s6",
+      "title": "Why Does AI Suddenly Need Forward-Deployed Engineers?",
+      "time": "08:00 - 08:30 AM (PT)",
+      "duration": "30 MINS",
+      "type": "SESSION",
+      "speaker": "harinee-muralinath",
+      "session": "why-does-ai-need-forward-deployed-engineers",
+      "track": "agentic"
+    },
+    {
+      "id": "d2s28",
+      "title": "Stop Guessing A11y: Auto-Generate Playwright Tests from Your GraphQL Schema",
+      "time": "08:00 - 08:30 AM (PT)",
+      "duration": "30 MINS",
+      "type": "SESSION",
+      "speaker": "vanessa-johnson",
+      "session": "auto-generate-a11y-playwright-tests-graphql",
+      "track": "quality"
+    },
+    {
+      "id": "d2s30",
+      "title": "Debug with Appium MCP",
+      "time": "08:15 - 09:45 AM (PT)",
+      "duration": "90 MINS",
+      "type": "WORKSHOP",
+      "speakers": [
+        "srinivasan-sekar",
+        "sai-krishna"
+      ],
+      "session": "debug-with-appium-mcp",
+      "track": "workshop"
+    },
+    {
+      "id": "d2s7",
+      "title": "Your AI Agent Passed Every Test. Your Humans Still Rejected It. Now What? Building the Human Quality Layer for Agentic AI Adoption",
+      "time": "08:30 - 09:30 AM (PT)",
+      "duration": "60 MINS",
+      "type": "SESSION",
+      "speaker": "jill-hosmer-jolley",
+      "session": "human-quality-layer-agentic-ai-adoption",
+      "track": "trust"
+    },
+    {
+      "id": "d2s25",
+      "title": "You Can’t assertEquals an Agent: A Tester’s Guide to Agentic Quality",
+      "time": "08:30 - 09:30 AM (PT)",
+      "duration": "60 MINS",
+      "type": "SESSION",
+      "speaker": "gaurav-khurana",
+      "session": "testers-guide-to-agentic-quality",
+      "track": "quality"
+    },
+    {
+      "id": "d2s31",
+      "title": "Money Moves at Machine Speed: Trust, Risk, and Quality in Agentic Finance",
+      "time": "08:30 - 09:30 AM (PT)",
+      "duration": "60 MINS",
+      "type": "PANEL",
+      "speakers": [
+        "trincy-thomas",
+        "preetham-sunilkumar",
+        "veena-setlur",
+        "krystyna-sylyvonchyk"
+      ],
+      "session": "money-moves-at-machine-speed-trust-risk-and-quality-in-agentic-finance",
+      "track": "scale"
+    },
+    {
+      "id": "d2s18",
+      "title": "From Load Testing to Reliability Engineering: Making Performance Testing Predict Production Behavior",
+      "time": "09:30 - 10:15 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "stephan-mousset",
+      "session": "from-load-testing-to-reliability-engineering",
+      "track": "ship"
+    },
+    {
+      "id": "d2s19",
+      "title": "Scaling Trust, Not Automation - Rethinking Quality for the AI Era",
+      "time": "09:30 - 10:15 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "walter-zimerman",
+      "session": "scaling-trust-not-automation",
+      "track": "build"
+    },
+    {
+      "id": "d2s8",
+      "title": "Eval-First QA Agents: Testing Streaming Platforms at Fox Networks",
+      "time": "09:30 - 10:15 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "gregory-goldshteyn",
+      "session": "eval-first-qa-agents-streaming-fox",
+      "track": "agentic"
+    },
+    {
+      "id": "d2s29",
+      "title": "Engineering RemoteXPC: Building Wireless iOS Automation with Appium",
+      "time": "09:45 - 11:15 AM (PT)",
+      "duration": "90 MINS",
+      "type": "WORKSHOP",
+      "speakers": [
+        "swastik-baranwal",
+        "navin-chandra"
+      ],
+      "session": "engineering-remotexpc-wireless-ios-automation-appium",
+      "track": "workshop"
+    },
+    {
+      "id": "d2s9",
+      "title": "Agentic AI Changed What We Test, And How We Test It",
+      "time": "10:15 - 10:45 AM (PT)",
+      "duration": "30 MINS",
+      "type": "SESSION",
+      "speaker": "pooja-oza",
+      "session": "agentic-ai-changed-what-we-test",
+      "track": "quality"
+    },
+    {
+      "id": "d2s10",
+      "title": "Cloud Assumes You Know What a Request Will Cost",
+      "time": "10:15 - 10:45 AM (PT)",
+      "duration": "30 MINS",
+      "type": "SESSION",
+      "speaker": "ojus-save",
+      "session": "cloud-assumes-you-know-what-a-request-will-cost",
+      "track": "ship"
+    },
+    {
+      "id": "d2s26",
+      "title": "Building Once, Running Everywhere: The Future of Portable AI Applications",
+      "time": "10:15 - 10:45 AM (PT)",
+      "duration": "30 MINS",
+      "type": "SESSION",
+      "speaker": "prashant-sharma",
+      "session": "building-once-running-everywhere-portable-ai",
+      "track": "agentic"
+    },
+    {
+      "id": "d2s23",
+      "title": "The New Skill Stack for SDETs in the Agentic Era",
+      "time": "10:45 - 11:30 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "adeel-mansoor",
+      "session": "new-skill-stack-sdets-agentic-era",
+      "track": "trust"
+    },
+    {
+      "id": "d2s11",
+      "title": "Developing AI Agents for Disability and Self-Determination: Lessons from Project RAISE",
+      "time": "10:45 - 11:30 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "lisa-dieker",
+      "session": "ai-agents-disability-self-determination-project-raise",
+      "track": "build"
+    },
+    {
+      "id": "d2s32",
+      "title": "Who Tests the Machines? QE Leaders on Software Quality in the Age of AI-Written Code",
+      "time": "10:45 - 11:30 AM (PT)",
+      "duration": "45 MINS",
+      "type": "PANEL",
+      "speakers": [
+        "ankur-agarwal",
+        "nandini-srinivasan",
+        "somu-suryanarayanan",
+        "rahul-nethi"
+      ],
+      "session": "who-tests-the-machines-software-quality-in-the-age-of-ai-written-code",
+      "track": "scale"
+    },
+    {
+      "id": "d2s20",
+      "title": "The Economics of AI Agents: How Startups are Rethinking Value and Monetization",
+      "time": "11:30 AM - 12:15 PM (PT)",
+      "duration": "45 MINS",
+      "type": "FIRESIDE CHAT",
+      "speaker": "vibhor-rastogi",
+      "session": "the-economics-of-ai-agents",
+      "track": "agentic"
+    },
+    {
+      "id": "d2s21",
+      "title": "Agentic AI & the Next Decade of Quality Engineering",
+      "time": "11:30 AM - 12:15 PM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "mallika-fernandes",
+      "session": "agentic-ai-and-the-next-decade-of-quality-engineering",
+      "track": "quality"
+    },
+    {
+      "id": "d2s12",
+      "title": "When You Run Out of Requirements: What Happens When You Go All-In on Agents",
+      "time": "11:30 AM - 12:15 PM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "rashi-agrawal",
+      "session": "when-you-run-out-of-requirements-all-in-on-agents",
+      "track": "ship"
+    },
+    {
+      "id": "d2s37",
+      "title": "The next era of AI: Moving from \"Can we build it?\" to \"Can we trust it?\"",
+      "time": "12:15 - 01:00 PM (PT)",
+      "duration": "45 MINS",
+      "type": "KEYNOTE",
+      "speaker": "andrew-duncan",
+      "session": "the-next-era-of-ai-from-can-we-build-it-to-can-we-trust-it",
+      "track": "trust"
+    },
+    {
+      "id": "d2s34",
+      "title": "Mission-Critical Priorities in Quality Engineering: The Leader's Playbook",
+      "time": "01:00 - 01:45 PM (PT)",
+      "duration": "45 MINS",
+      "type": "PANEL",
+      "speakers": [
+        "ali-karnib",
+        "hina-saini",
+        "akshit-lomash",
+        "cem-sever",
+        "kumar-gaurav-jain",
+        "tenny-agustin"
+      ],
+      "session": "mission-critical-priorities-in-quality-engineering",
+      "track": "agentic"
+    },
+    {
+      "id": "d2s35",
+      "title": "Agentic Engineering & Quality in Healthcare",
+      "time": "01:00 - 01:45 PM (PT)",
+      "duration": "45 MINS",
+      "type": "PANEL",
+      "speakers": [
+        "chad-ullman",
+        "nagarjun-adikesavan",
+        "rohit-jaiswal",
+        "mark-kroh"
+      ],
+      "session": "agentic-engineering-and-quality-in-healthcare",
+      "track": "quality"
+    },
+    {
+      "id": "d2s38",
+      "title": "Scaling Quality in a Decision Intelligence Platform: The Agentic QA Playbook",
+      "time": "01:00 - 01:45 PM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "hammad-ahmed",
+      "session": "scaling-quality-in-a-decision-intelligence-platform"
+    },
+    {
+      "id": "d2s39",
+      "title": "Driving the Agentic Shift in Banking: Adoption, Governance, and Scale",
+      "time": "01:00 - 01:45 PM (PT)",
+      "duration": "45 MINS",
+      "type": "PANEL",
+      "speakers": [
+        "javier-solano",
+        "mauricio-sanchez",
+        "humberto-henriquez"
+      ],
+      "session": "driving-the-agentic-shift-in-banking"
+    },
+    {
+      "id": "d2s14",
+      "title": "Closing Note",
+      "time": "01:45 - 02:00 PM (PT)",
+      "duration": "15 MINS"
+    }
+  ],
+  "day3": [
+    {
+      "id": "d3s1",
+      "title": "Welcome to TestMu Conference 2026 Day 3",
+      "time": "05:00 - 05:15 AM (PT)",
+      "duration": "15 MINS",
+      "type": "WELCOME NOTE",
+      "speaker": "jim-trentadue",
+      "track": "trust"
+    },
+    {
+      "id": "d3s3",
+      "title": "Self Driving Company",
+      "time": "05:15 - 05:30 AM (PT)",
+      "duration": "15 MINS",
+      "type": "KEYNOTE",
+      "speaker": "luis-hector-chavez",
+      "track": "trust"
+    },
+    {
+      "id": "d3s4",
+      "title": "AI Applications Security Puzzle",
+      "time": "05:30 - 06:30 AM (PT)",
+      "duration": "60 MINS",
+      "type": "SESSION",
+      "speaker": "maryia-tuleika",
+      "session": "ai-applications-security-puzzle",
+      "track": "agentic"
+    },
+    {
+      "id": "d3s8",
+      "title": "The Last Manual Handoff: Redesigning End-to-End Testing in the Age of AI",
+      "time": "05:30 - 06:30 AM (PT)",
+      "duration": "60 MINS",
+      "type": "SESSION",
+      "speaker": "sachin-sharma",
+      "session": "the-last-manual-handoff",
+      "track": "quality"
+    },
+    {
+      "id": "d3s23",
+      "title": "Reinventing the QE Practice at Global Scale in Agentic Era",
+      "time": "05:30 - 06:30 AM (PT)",
+      "duration": "60 MINS",
+      "type": "PANEL",
+      "speakers": [
+        "raghavendra-prasad-mg",
+        "khimanand-upreti",
+        "jeba-abraham",
+        "sunie-paul",
+        "ninad-p-shirodkar"
+      ],
+      "session": "reinventing-the-qe-practice-at-global-scale-in-agentic-era",
+      "track": "scale"
+    },
+    {
+      "id": "d3s25",
+      "title": "The Full Agentic QA Loop for Mobile Applications — Author, Evidence, Assure, Maintain",
+      "time": "05:30 - 06:30 AM (PT)",
+      "duration": "60 MINS",
+      "type": "WORKSHOP",
+      "speaker": "siddhant-sinha",
+      "session": "the-full-agentic-qa-loop-for-mobile-applications",
+      "track": "workshop"
+    },
+    {
+      "id": "d3s15",
+      "title": "The Copilot Wrote It, but Who Saves It? Surviving the AI Code Tsunami",
+      "time": "06:30 - 07:00 AM (PT)",
+      "duration": "30 MINS",
+      "type": "SESSION",
+      "speaker": "mathias-strziga",
+      "session": "copilot-wrote-it-surviving-ai-code-tsunami",
+      "track": "build"
+    },
+    {
+      "id": "d3s10",
+      "title": "Evidence-Based QA: Proving Quality with Agentic Test Runs — and Open-Sourcing How We Do It",
+      "time": "06:30 - 07:00 AM (PT)",
+      "duration": "30 MINS",
+      "type": "SESSION",
+      "speaker": "anubhav-singhmaar",
+      "session": "evidence-based-qa-proving-quality-with-agentic-test-runs",
+      "track": "trust"
+    },
+    {
+      "id": "d3s16",
+      "title": "Beyond the Hype: ML-Driven Test Intelligence at Scale - What Works, What Fails, and Why It Matters",
+      "time": "06:30 - 07:00 AM (PT)",
+      "duration": "30 MINS",
+      "type": "SESSION",
+      "speaker": "tanvi-mittal",
+      "session": "ml-driven-test-intelligence-at-scale",
+      "track": "ship"
+    },
+    {
+      "id": "d3s20",
+      "title": "Legacy vs. Autonomous QA Arena - Surviving the AI-Driven Quality Evolution",
+      "time": "06:30 - 08:00 AM (PT)",
+      "duration": "90 MINS",
+      "type": "WORKSHOP",
+      "speaker": "athresh-guruprakash",
+      "session": "legacy-vs-autonomous-qa-arena",
+      "track": "workshop"
+    },
+    {
+      "id": "d3s11",
+      "title": "Building a Billion-Dollar Healthcare Product at Zebra Technologies: The AI-Powered QA Playbook",
+      "time": "07:00 - 07:30 AM (PT)",
+      "duration": "30 MINS",
+      "type": "SESSION",
+      "speaker": "spyros-katopodis",
+      "session": "billion-dollar-healthcare-ai-qa-playbook",
+      "track": "quality"
+    },
+    {
+      "id": "d3s2",
+      "title": "Productize Yourself - AI Proof Yourself",
+      "time": "07:00 - 07:30 AM (PT)",
+      "duration": "30 MINS",
+      "type": "SESSION",
+      "speaker": "rahul-parwal",
+      "session": "productize-yourself-ai-proof-yourself",
+      "track": "scale"
+    },
+    {
+      "id": "d3s22",
+      "title": "AI Architecture Thinking: From Idea to Impact",
+      "time": "07:00 - 07:30 AM (PT)",
+      "duration": "30 MINS",
+      "type": "SESSION",
+      "speaker": "safeena-banu",
+      "session": "ai-architecture-thinking-from-idea-to-impact",
+      "track": "agentic"
+    },
+    {
+      "id": "d3s5",
+      "title": "Will The Real Autonomous Agent Please Stand Up",
+      "time": "07:30 - 08:00 AM (PT)",
+      "duration": "30 MINS",
+      "type": "KEYNOTE",
+      "speaker": "dona-sarkar",
+      "session": "will-the-real-autonomous-agent-please-stand-up",
+      "track": "trust"
+    },
+    {
+      "id": "d3s12",
+      "title": "Redefining Test Data Strategy in the Era of Generative AI",
+      "time": "08:00 - 08:45 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "manideep-singireddy",
+      "session": "redefining-test-data-strategy-in-the-era-of-generative-ai",
+      "track": "quality"
+    },
+    {
+      "id": "d3s21",
+      "title": "Build Your Own Benchmark: Why Agents Need Custom Evals (and How to Create Them)",
+      "time": "08:00 - 08:45 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "haritha-sreedharan-nair",
+      "session": "build-your-own-benchmark-why-agents-need-custom-evals",
+      "track": "agentic"
+    },
+    {
+      "id": "d3s26",
+      "title": "From Pilots to Practice: Transforming Sales with AI",
+      "time": "08:00 - 08:45 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "meenakshi-singh",
+      "session": "from-pilots-to-practice-transforming-sales-with-ai",
+      "track": "ship"
+    },
+    {
+      "id": "d3s6",
+      "title": "Fast, Smart… and Fragile? Rethinking Testing Leadership in the Age of AI",
+      "time": "08:45 - 09:30 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "laveena-ramchandani",
+      "session": "rethinking-testing-leadership-age-of-ai",
+      "track": "scale"
+    },
+    {
+      "id": "d3s7",
+      "title": "Autonomous Quality Engineering: Building AI Systems That Generate, Execute, Heal, Learn, and Govern Software Quality",
+      "time": "08:45 - 09:30 AM (PT)",
+      "duration": "45 MINS",
+      "type": "SESSION",
+      "speaker": "jyotheeswara-gottam",
+      "session": "autonomous-quality-engineering-ai-systems",
+      "track": "build"
+    },
+    {
+      "id": "d3s24",
+      "title": "Always Open: Engineering Trust & Quality in AI-Driven Commerce",
+      "time": "08:45 - 09:45 AM (PT)",
+      "duration": "60 MINS",
+      "type": "PANEL",
+      "speakers": [
+        "sunita-mccoy",
+        "nipam-desai",
+        "jason-bryant",
+        "rama-gunjaipalli",
+        "krishna-c-gangu"
+      ],
+      "session": "always-open-engineering-trust-and-quality-in-ai-driven-commerce",
+      "track": "trust"
+    },
+    {
+      "id": "d3s17",
+      "title": "Discovery Found Everything. Your Agent Still Doesn't Know What Matters",
+      "time": "09:30 - 10:00 AM (PT)",
+      "duration": "30 MINS",
+      "type": "SESSION",
+      "speaker": "angela-cutulenco",
+      "session": "discovery-found-everything-agent-context-integrity",
+      "track": "agentic"
+    },
+    {
+      "id": "d3s18",
+      "title": "Testing the Untestable: Turning OWASP AI/LLM Risks into Practical QA Checks",
+      "time": "09:30 - 10:00 AM (PT)",
+      "duration": "30 MINS",
+      "type": "SESSION",
+      "speaker": "thejes-sree-satheesh-kumar",
+      "session": "testing-the-untestable-owasp-ai-llm-risks",
+      "track": "quality"
+    },
+    {
+      "id": "d3s14",
+      "title": "When Software Starts Thinking: The Now of Quality Engineering",
+      "time": "10:00 - 11:00 AM (PT)",
+      "duration": "60 MINS",
+      "type": "SESSION",
+      "speaker": "chinmaya-kothari",
+      "session": "when-software-starts-thinking-the-now-of-quality-engineering",
+      "track": "trust"
+    },
+    {
+      "id": "d3s19",
+      "title": "AI-Powered Impact-Based Testing for Faster, Safer Releases",
+      "time": "10:00 - 11:00 AM (PT)",
+      "duration": "60 MINS",
+      "type": "SESSION",
+      "speakers": [
+        "srikanta-sahoo",
+        "navneet-goyal"
+      ],
+      "session": "ai-powered-impact-based-testing",
+      "track": "ship"
+    },
+    {
+      "id": "d3s9",
+      "title": "Closing Note",
+      "time": "11:00 - 11:30 AM (PT)",
+      "duration": "30 MINS"
+    }
+  ]
+}

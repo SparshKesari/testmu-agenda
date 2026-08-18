@@ -1,0 +1,2177 @@
+{
+  "is-the-developer-lifecycle-dead": {
+    "title": "Is the developer lifecycle dead?",
+    "type": "KEYNOTE",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "thomas-dohmke"
+    ],
+    "abstract": [
+      "The tools and processes we use to ship software — tickets, repos, pull requests, deployments — were designed for humans writing every line of code. In a world where agents are running the loops, is the software development lifecycle as we know it dead? Join Entire CEO Thomas Dohmke for a conversation on what comes after."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "Is the developer lifecycle dead? — keynote by Thomas Dohmke at TestMu Conf 2026.",
+      "ogImage": "meta/ThomasDohmkeMeta.png"
+    }
+  },
+  "beyond-benchmarks-evaluating-agents": {
+    "title": "Beyond Benchmarks: Evaluating Agents Against What They are Actually Supposed to Do",
+    "type": "KEYNOTE",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "francesca-lazzeri"
+    ],
+    "abstract": [
+      "Agent evaluation has moved fast over the past year, bringing trace-level scoring, multi-turn and tool-use testing, LLM-as-judge calibration, and evals wired into CI rather than run once before launch. But one gap keeps showing up: the evaluations teams need for their own system usually don't exist yet. Generic metrics like helpfulness, groundedness, and toxicity are useful signals, yet a system can score well on all of them while still violating the rules that actually matter, such as issuing a refund above threshold, ignoring an approval boundary, or following an instruction hidden in a tool result.",
+      "This talk covers where agent evaluation stands today and what has genuinely changed, then focuses on the shift I think matters most: treating your written behavior specification as a first-class input to evaluation rather than background context. I'll walk through ASSERT (Adaptive Spec-driven Scoring for Evaluation and Regression Testing), an open-source framework from Microsoft's Responsible AI team that turns natural-language behavior requirements into executable evals, generating a reviewable behavior taxonomy, stratified test cases, full agent traces, and per-case verdicts with rationale and policy citations. Using a multi-agent travel-planning agent as the worked example, we'll look at where it passes, where it fails, and why an aggregate score would have hidden both."
+    ],
+    "keyTakeaways": [
+      "What is actually new in agent evaluation: trace-level scoring, multi-turn and tool-use coverage, judge calibration, and evals as a release gate.",
+      "Why generic benchmarks miss application-specific failures, and how to tell when you have outgrown them.",
+      "How to turn a requirements doc, policy, or system prompt into a running eval suite, and why specification quality determines coverage more than generation does.",
+      "Why decomposed results beat a single number.",
+      "Where spec-driven evals fall short. Vague specs produce vague scenarios, synthetic cases miss production failure modes, and judge models vary in strictness. Evals complement human review and telemetry, they don't replace them."
+    ],
+    "meta": {
+      "description": "Beyond Benchmarks: Evaluating Agents Against What They are Actually Supposed to Do — keynote by Francesca Lazzeri at TestMu Conf 2026.",
+      "ogImagePlanned": "meta/FrancescaLazzeriMeta.png",
+      "titleShort": "Beyond Benchmarks: Evaluating Agents"
+    }
+  },
+  "why-rl-environments-are-all-you-need-for-building-agents": {
+    "title": "Why RL Environments are all you need for building agents",
+    "type": "SESSION",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "mahesh-sathiamoorthy"
+    ],
+    "abstract": [
+      "RL Environments are used by frontier labs to train their latest models and agents. In this talk, I will explain why RL environments are fundamental to all stages of building agents: from evaluations and prompt optimization to post-training agents. I will show concrete industry examples of how practitioners use RL environments to evaluate their agents, and to understand how their agents fail. Lastly, I will also talk about how one can set up data flywheels which helps you figure out how to improve your agents on your specific data and use-cases."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "Why RL Environments are all you need for building agents — session by Mahesh Sathiamoorthy at TestMu Conf 2026.",
+      "ogImage": "meta/MaheshSathiamoorthyMeta.png",
+      "titleShort": "Why RL Environments Are All You Need"
+    }
+  },
+  "ai-architecture-thinking-from-idea-to-impact": {
+    "title": "AI Architecture Thinking: From Idea to Impact",
+    "type": "SESSION",
+    "day": "day3",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "safeena-banu"
+    ],
+    "abstract": [
+      "AI initiatives often begin with an exciting idea—but turning that idea into a scalable, reliable, and production-ready solution requires a different way of thinking.",
+      "This session introduces the AI Architect mindset: a structured approach to translating business problems into effective AI solutions. We'll explore how architects think beyond models and prompts to consider data, context, integration, security, scalability, cost, governance, and user experience.",
+      "Through practical examples, attendees will learn how to evaluate AI use cases, make key architectural decisions, avoid common pitfalls, and design solutions that can move confidently from experimentation to production.",
+      "The goal is simple: to help you think beyond building AI features and start architecting AI systems that create meaningful impact."
+    ],
+    "keyTakeaways": [
+      "AI System Architecture: understand the AI Architect mindset.",
+      "Translating business problems into an AI solution architecture.",
+      "Building blocks of an AI system—models, data, context, integrations, security, governance, and user experience."
+    ],
+    "meta": {
+      "description": "AI Architecture Thinking: From Idea to Impact — session by Safeena Banu at TestMu Conf 2026.",
+      "ogImagePlanned": "meta/SafeenaBanuMeta.png"
+    }
+  },
+  "qe-at-enterprise-scale-what-will-a-qe-org-look-like-in-2027": {
+    "title": "QE at Enterprise Scale - What Will a QE Org Look Like in 2027?",
+    "type": "PANEL",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "impu-chunchegowda",
+      "senthil-kannan",
+      "todd-lemmonds"
+    ],
+    "abstract": [
+      "Every quality organization is being redesigned around AI, but few leaders will say out loud what that means for teams, titles, and careers. This panel puts senior QE leaders on the record about the org chart of 2027: the roles they are hiring for that did not exist two years ago, the honest future for manual and exploratory testers, the places where agents created headcount instead of cutting it, and what breaks first when a quality organization scales. Expect candid answers about budgets, skills, and structure rather than safe predictions about tools."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "QE at Enterprise Scale - What Will a QE Org Look Like in 2027? — panel with Impu Chunchegowda (CITY Furniture), Senthil Kannan (Route36 | Vail Resorts), and Todd Lemmonds (TestMu AI) at TestMu Conf 2026.",
+      "ogImagePlanned": "meta/QeAtEnterpriseScalePanelMeta.png",
+      "titleShort": "QE at Enterprise Scale in 2027"
+    }
+  },
+  "scaling-enterprise-practice-in-agentic-era": {
+    "title": "Scaling Enterprise Practice in Agentic Era",
+    "type": "PANEL",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "mhahesh-muraleedhara",
+      "dror-avrilingi",
+      "vikul-gupta",
+      "richa-agrawal",
+      "nagendra-bs"
+    ],
+    "abstract": [
+      "Almost every enterprise now has an agentic engineering win, a team that shipped faster, a workflow that got automated, a pilot that impressed the board. Far fewer have turned those wins into how the organization actually builds and tests software. Scaling is where the hard problems live: governance across hundreds of teams, wildly uneven engineering maturity, legacy estates that resist automation, and a workforce being asked to change how it works faster than most change programs move. We'll unpack what genuinely scales versus what only demos well, how you measure adoption beyond seat counts, where verification becomes the constraint on how fast agents can be trusted, and what you'd do differently if you were rolling it out again today."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "Scaling Enterprise Practice in Agentic Era — panel with Mhahesh Muraleedhara (Zensar Technologies), Dror Avrilingi (Amdocs), Vikul Gupta (QualityAI), Richa Agrawal (GlobalLogic), and Nagendra BS (Hexaware) at TestMu Conf 2026.",
+      "ogImagePlanned": "meta/ScalingEnterprisePracticePanelMeta.png",
+      "titleShort": "Scaling Enterprise Practice in Agentic Era"
+    }
+  },
+  "mission-critical-priorities-in-quality-engineering": {
+    "title": "Mission-Critical Priorities in Quality Engineering: The Leader's Playbook",
+    "type": "PANEL",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "ali-karnib",
+      "hina-saini",
+      "akshit-lomash",
+      "cem-sever",
+      "kumar-gaurav-jain",
+      "tenny-agustin"
+    ],
+    "abstract": [
+      "Quality engineering leaders are being asked to do more than ever, ship faster with AI, test systems that are increasingly agentic and non-deterministic, prove ROI to the board, and keep mission-critical platforms running without fail. But not everything can be a priority. This panel brings together senior QE and engineering leaders to share what actually sits at the top of their playbooks: where they're investing in AI and automation, what they've deliberately deprioritized, and how they're preparing their teams and toolchains for the agentic era."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "Mission-Critical Priorities in Quality Engineering: The Leader's Playbook — panel with Ali Karnib (Gallup), Hina Saini (TUI), Akshit Lomash (Alkami Technology), Cem Sever (Vodafone Turkey), Kumar Gaurav Jain (Virgin Media O2), and Tenny Agustin (Best Egg) at TestMu Conf 2026.",
+      "ogImagePlanned": "meta/MissionCriticalPrioritiesPanelMeta.png",
+      "titleShort": "Mission-Critical Priorities in QE"
+    }
+  },
+  "agentic-engineering-and-quality-in-healthcare": {
+    "title": "Agentic Engineering & Quality in Healthcare",
+    "type": "PANEL",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "chad-ullman",
+      "nagarjun-adikesavan",
+      "rohit-jaiswal",
+      "mark-kroh"
+    ],
+    "abstract": [
+      "Healthcare software carries the highest stakes in engineering, patient safety, regulatory compliance, and zero tolerance for failure. As AI agents move from writing code to testing and validating it, how do healthcare organizations adopt agentic engineering without compromising trust? This panel brings together leaders across healthcare technology and quality engineering to discuss where autonomous agents fit in regulated environments, how to build validation and audit trails for AI-driven quality, and what \"safe to ship\" means when agents are part of the SDLC."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "Agentic Engineering & Quality in Healthcare — panel with Chad Ullman (Delta Dental), Nagarjun Adikesavan (The Cigna Group), Rohit Jaiswal (UST), and Mark Kroh (RVO Health) at TestMu Conf 2026.",
+      "ogImagePlanned": "meta/AgenticHealthcarePanelMeta.png",
+      "titleShort": "Agentic Engineering & Quality in Healthcare"
+    }
+  },
+  "reinventing-the-qe-practice-at-global-scale-in-agentic-era": {
+    "title": "Reinventing the QE Practice at Global Scale in Agentic Era",
+    "type": "PANEL",
+    "day": "day3",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "raghavendra-prasad-mg",
+      "khimanand-upreti",
+      "jeba-abraham",
+      "sunie-paul",
+      "ninad-p-shirodkar"
+    ],
+    "abstract": [
+      "For two decades, quality engineering at global scale ran on a simple equation: more scope meant more testers. Agentic AI has broken that equation. Delivery leaders are now rebuilding practices around platforms and IP rather than pyramids, shifting from human-led execution to machine-led orchestration with people focused on judgment and oversight - while clients increasingly ask for outcomes rather than effort. This panel brings together QE and digital engineering leaders from the world's leading service organizations to discuss what an agent-first delivery model actually looks like in production: how test factories become agent factories, what the honest career path looks like for a tester inside a practice of thousands, how you govern autonomy across hundreds of very different client environments, and how you prove quality when the work is done by machines and paid for by outcome."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "Reinventing the QE Practice at Global Scale in Agentic Era — panel with Raghavendra Prasad MG (Wipro), Khimanand Upreti (Nagarro), Jeba Abraham (Capgemini), Sunie Paul (LTIMindtree), and Ninad P Shirodkar (Persistent Systems) at TestMu Conf 2026.",
+      "ogImagePlanned": "meta/ReinventingQePracticePanelMeta.png",
+      "titleShort": "Reinventing QE Practice at Global Scale"
+    }
+  },
+  "always-open-engineering-trust-and-quality-in-ai-driven-commerce": {
+    "title": "Always Open: Engineering Trust & Quality in AI-Driven Commerce",
+    "type": "PANEL",
+    "day": "day3",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "sunita-mccoy",
+      "nipam-desai",
+      "jason-bryant",
+      "rama-gunjaipalli",
+      "krishna-c-gangu"
+    ],
+    "abstract": [
+      "Commerce never closes, and neither can quality. Retail platforms now run 24/7 across web, mobile, stores, and marketplaces, where a broken checkout or a mispriced SKU is instantly public and instantly costly. At the same time, AI is transforming both sides of the transaction: agents are writing and testing the code behind commerce platforms, while AI shopping assistants are beginning to browse, compare, and buy on behalf of customers. This panel brings together leaders across retail and commerce technology to discuss how they engineer trust into always-on experiences, what it takes to test personalized and non-deterministic journeys at peak scale, and how quality engineering evolves when your next customer, and your next engineer, might be an AI agent."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "Always Open: Engineering Trust & Quality in AI-Driven Commerce — panel with Sunita McCoy (Pizza Hut), Nipam Desai (New Look), Jason Bryant (Tractor Supply), Rama Gunjaipalli (Michael Kors), and Krishna C Gangu (Catalyst Brands) at TestMu Conf 2026.",
+      "ogImagePlanned": "meta/AlwaysOpenCommercePanelMeta.png",
+      "titleShort": "Always Open: Quality in AI-Driven Commerce"
+    }
+  },
+  "driving-the-agentic-shift-in-banking": {
+    "title": "Driving the Agentic Shift in Banking: Adoption, Governance, and Scale",
+    "type": "PANEL",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "javier-solano",
+      "mauricio-sanchez",
+      "humberto-henriquez"
+    ],
+    "abstract": [
+      "As financial institutions evolve from static automation to autonomous systems, engineering leaders must navigate the end-to-end journey of adopting Agentic AI within strict banking environments. This panel brings together leadership to share a practical playbook on orchestrating the transition to AI agents—from establishing governance and guardrails to managing non-deterministic testing and seamlessly integrating with legacy banking cores."
+    ],
+    "keyTakeaways": [
+      "The Agentic Adoption Roadmap: Structuring the technical and organizational shift toward autonomous AI agents in banking.",
+      "Process & Guardrails: Practical frameworks to ensure regulatory compliance, security, and human-in-the-loop control.",
+      "Quality & Reliability: Modern testing and observability strategies for validating non-deterministic agent behavior in complex financial workflows."
+    ],
+    "meta": {
+      "description": "Driving the Agentic Shift in Banking: Adoption, Governance, and Scale — panel with Javier Solano (Linko), Mauricio Sánchez (Linko), and Humberto Henríquez (Actinver) at TestMu Conf 2026.",
+      "ogImagePlanned": "meta/AgenticShiftBankingPanelMeta.png",
+      "titleShort": "Driving the Agentic Shift in Banking"
+    }
+  },
+  "from-pilots-to-practice-transforming-sales-with-ai": {
+    "title": "From Pilots to Practice: Transforming Sales with AI",
+    "type": "SESSION",
+    "day": "day3",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "meenakshi-singh"
+    ],
+    "abstract": [
+      "This session explores the explosive global adoption of AI and its impact on sales operations. The session bridges macro technology trends to daily sales workflows, unpacking the AI product lifecycle from initial testing to enterprise adoption."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "From Pilots to Practice: Transforming Sales with AI — session by Meenakshi Singh at TestMu Conf 2026.",
+      "ogImagePlanned": "meta/MeenakshiSinghMeta.png",
+      "titleShort": "From Pilots to Practice"
+    }
+  },
+  "the-full-agentic-qa-loop-for-web-applications": {
+    "title": "The Full Agentic QA Loop for Web Applications — Author, Evidence, Assure, Maintain",
+    "type": "WORKSHOP",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "siddhant-sinha"
+    ],
+    "abstract": [
+      "Most \"AI testing\" demos stop at generating a test. Real QA is a loop: you author coverage, capture what actually happened, assure it against intent, and keep it all from rotting as the product changes. In this hands-on session we run that full loop end-to-end with kane-cli, an agentic test tool that drives a real browser and authors runnable tests from plain-language requirements.",
+      "You'll leave with a working pipeline on your own machine. We cover:",
+      "Author — Turn a one-line requirement into concrete scenarios and cases with kane-cli generate, then let the agent execute them against a live browser instead of hand-writing selectors and waits.",
+      "Evidence — Capture every run as a portable, framework-agnostic .evidence pack: the DOM, actions, network, and assertions that prove what the run did — not just a green check.",
+      "Assure — Move from brittle exact-match assertions to intent-level verification, so a test fails when behavior breaks, not when a class name changes.",
+      "Maintain — Close the loop: keep tests and their knowledge base accurate as the app evolves, using agentic review to catch drift before it ships.",
+      "By the end you'll understand where AI genuinely replaces manual QA toil, where a human still owns the gate, and how to wire the author-evidence-assure-maintain loop into your own stack. Bring a laptop with Node installed; we build and run everything live."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "The Full Agentic QA Loop for Web Applications — Author, Evidence, Assure, Maintain — workshop by Siddhant Sinha at TestMu Conf 2026.",
+      "ogImagePlanned": "meta/AgenticQaLoopWebMeta.png",
+      "titleShort": "Agentic QA Loop for Web Applications"
+    }
+  },
+  "the-full-agentic-qa-loop-for-mobile-applications": {
+    "title": "The Full Agentic QA Loop for Mobile Applications — Author, Evidence, Assure, Maintain",
+    "type": "WORKSHOP",
+    "day": "day3",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "siddhant-sinha"
+    ],
+    "abstract": [
+      "Most \"AI testing\" demos stop at generating a test. Real QA is a loop: you author coverage, capture what actually happened, assure it against intent, and keep it all from rotting as the product changes. In this hands-on session we run that full loop end-to-end with kane-cli, an agentic test tool that drives a real browser and authors runnable tests from plain-language requirements.",
+      "You'll leave with a working pipeline on your own machine. We cover:",
+      "Author — Turn a one-line requirement into concrete scenarios and cases with kane-cli generate, then let the agent execute them against a live browser instead of hand-writing selectors and waits.",
+      "Evidence — Capture every run as a portable, framework-agnostic .evidence pack: the DOM, actions, network, and assertions that prove what the run did — not just a green check.",
+      "Assure — Move from brittle exact-match assertions to intent-level verification, so a test fails when behavior breaks, not when a class name changes.",
+      "Maintain — Close the loop: keep tests and their knowledge base accurate as the app evolves, using agentic review to catch drift before it ships.",
+      "By the end you'll understand where AI genuinely replaces manual QA toil, where a human still owns the gate, and how to wire the author-evidence-assure-maintain loop into your own stack. Bring a laptop with Node installed; we build and run everything live."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "The Full Agentic QA Loop for Mobile Applications — Author, Evidence, Assure, Maintain — workshop by Siddhant Sinha at TestMu Conf 2026.",
+      "ogImagePlanned": "meta/AgenticQaLoopMobileMeta.png",
+      "titleShort": "Agentic QA Loop for Mobile Applications"
+    }
+  },
+  "the-next-era-of-ai-from-can-we-build-it-to-can-we-trust-it": {
+    "title": "The next era of AI: Moving from \"Can we build it?\" to \"Can we trust it?\"",
+    "type": "KEYNOTE",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "andrew-duncan"
+    ],
+    "abstract": [
+      "Every business wants to show that it's 'doing AI', so they're rushing towards the technology before they've settled on the outcome. Leaders are being swept along by a flood of vibe coding, pilots and proof-of-concepts, without a clear destination. The question is no longer \"can we build it?\" but \"can we trust it?\"",
+      "To build this trust, Andrew Duncan, CEO of QualityAI, will explain why quality engineering and assurance now belong at the very start of the transformation process, rather than as boxes to tick at the end.",
+      "Because when AI has the capacity to interpret, adapt, and drive business decisions, quality engineering must evolve – not only to test that technology works, but that it supports business outcomes, and continues to do so without drifting.",
+      "As leaders reach for what's next, the ability to engineer quality is what builds confidence. And that confidence is what lets them move fast."
+    ],
+    "keyTakeaways": [
+      "Know what level of risk you're willing to accept.",
+      "Have a clear business outcome you want to achieve using AI.",
+      "Don't mistake a successful pilot for readiness to go into production.",
+      "Bring in quality engineering from the start, so you know upfront what evidence will earn trust.",
+      "Understand how you'll measure quality long after a solution is live."
+    ],
+    "meta": {
+      "description": "The next era of AI: Moving from \"Can we build it?\" to \"Can we trust it?\" — keynote by Andrew Duncan (CEO, QualityAI) at TestMu Conf 2026.",
+      "titleShort": "The Next Era of AI: Can We Trust It?",
+      "ogImage": "meta/AndrewDuncanMeta.png"
+    }
+  },
+  "scaling-quality-in-a-decision-intelligence-platform": {
+    "title": "Scaling Quality in a Decision Intelligence Platform: The Agentic QA Playbook",
+    "type": "SESSION",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "hammad-ahmed"
+    ],
+    "abstract": [
+      "What does it take to build a quality-first culture inside a fast-moving AI company serving Fortune 500 enterprises — where the product itself is made of AI agents?",
+      "At Aily Labs, we build a Decision Intelligence platform that helps global enterprises across Pharma, CPG, and Retail make better decisions, faster. Our platform doesn't just surface data — it reasons, advises, and acts. And that changes everything about how you test it.",
+      "Traditional QA was built for deterministic systems: you define inputs, you assert outputs, you ship. But when your product is a network of AI agents that reason, collaborate, and adapt — the old playbook breaks. There are no fixed outputs to assert. There are no scripts that can anticipate emergent behavior. And when something goes wrong for a Fortune 500 client, \"we didn't have a test for that\" is not an answer.",
+      "So we rebuilt QA from the ground up — not as a safety net at the end of delivery, but as an intelligent, always-on system woven into every layer of how we build and operate. We gave quality a pulse. We taught agents to test agents. And we made AI the default way our QA team works.",
+      "This talk walks through that transformation — and the three things every QA engineer should take back to their team."
+    ],
+    "keyTakeaways": [
+      "Quality Needs a Pulse, Not Just a Report: How we built a real-time quality accountability system — tracking AI accuracy, defect leakage, and tenant health in one place — so quality degradation is visible to everyone, instantly, not discovered in a post-mortem.",
+      "Agents Orchestrating Agents — The New QA Architecture: How we built a network of collaborating AI agents (triage, root cause, data validation, exploratory) that hand off context, escalate findings, and coordinate autonomously — replacing manual test coordination with an always-on quality engine.",
+      "AI as the Workflow, Not the Shortcut: How AI is embedded into every layer of day-to-day QA work — from defect triage and ticket writing to on-demand exploratory runs triggered from chat — and what the shift from \"engineer who uses AI\" to \"engineer whose entire workflow is AI-augmented\" actually looks like in practice."
+    ],
+    "meta": {
+      "description": "Scaling Quality in a Decision Intelligence Platform: The Agentic QA Playbook — session by Hammad Ahmed (Aily Labs) at TestMu Conf 2026.",
+      "ogImagePlanned": "meta/HammadAhmedMeta.png",
+      "titleShort": "The Agentic QA Playbook"
+    }
+  },
+  "will-the-real-autonomous-agent-please-stand-up": {
+    "title": "Will The Real Autonomous Agent Please Stand Up",
+    "type": "SESSION",
+    "day": "day3",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "dona-sarkar"
+    ],
+    "abstract": [
+      "\"AI will take your job.\" We keep hearing this, but is this actually true? The short answer: sometimes. The better answer: that might be exactly what we want.",
+      "Building AI models — and building real products on top of them — turns out to be mostly about testing. Not just checking if software works, but validating behavior, bias, reliability, edge cases, and trust at scale. In other words, quality has moved from the end of the pipeline to the center of everything — ALL the way from the time you decide to do an AI project!",
+      "In this session, we'll cut through the hype to look at what's actually happening in AI today — not science fiction, not nonsense promises, but the real systems being shipped into production. We'll explore how AI is fundamentally changing what \"software quality\" means, and why testers and quality engineers are uniquely positioned to lead this shift.",
+      "You'll see practical ways testers can start building AI skills right now and apply them directly to current projects — even if you've never trained a model before. We'll also talk honestly about which testing tasks AI should take over, and which new responsibilities are emerging in their place.",
+      "Most importantly, this talk challenges testers to stop reacting to the future and start designing it — becoming the role models who define what quality, trust, and accountability look like in an AI-driven world.",
+      "AI may take your testing job. But you'll have a MUCH better one instead."
+    ],
+    "keyTakeaways": [
+      "You'll learn what's really going on with testing and AI today.",
+      "You'll learn what is coming TOMORROW.",
+      "You'll learn what skills you need to build today to prepare for tomorrow."
+    ],
+    "meta": {
+      "description": "Will The Real Autonomous Agent Please Stand Up — session by Dona Sarkar at TestMu Conf 2026.",
+      "ogImage": "meta/DonaSarkarMeta.png",
+      "titleShort": "Will The Real Autonomous Agent Stand Up"
+    }
+  },
+  "productize-yourself-ai-proof-yourself": {
+    "title": "Productize Yourself - AI Proof Yourself",
+    "type": "SESSION",
+    "day": "day3",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "rahul-parwal"
+    ],
+    "abstract": [
+      "The tech market has already evolved. AI is competing with you. Layoffs are normal. Junior hiring is slowing down. Resumes are dead as a signal.",
+      "Most testers are still playing the old game. Test cases, bug reports, waiting for the next sprint. That worked ten years ago. It won't work now.",
+      "You are your own life's CXO. Your career, your learning, your visibility, your growth. All of it sits on your shoulders. No company, no manager, no certification body is coming to save you.",
+      "The answer? Productize yourself.",
+      "This session breaks it down into four pillars. Productize your offerings by moving from execution to systems thinking. The market pays for insight, not output. Productize your learning by converting knowledge into value, not just consuming content for dopamine. Productize your portfolio by making your work visible. Without a website, a blog, real projects out there, you are invisible. Productize your branding by showing up consistently. Authenticity compounds over time.",
+      "Standing out is tough. Unless you productize yourself. This talk gives you real examples, practical frameworks, and an honest look at what it takes to become distinguishable in a market that is actively replacing average with AI."
+    ],
+    "keyTakeaways": [
+      "Understand the four pillars of productizing yourself: Offerings, Learning, Portfolio, and Branding.",
+      "Apply the offerings framework to categorize your current skills into Execution, Systems Thinking, and Insights, and identify where you are spending most of your time today.",
+      "Compare your current professional visibility (website, content, community presence) against the portfolio and branding pillars to find the gaps that make you invisible to the market.",
+      "Build a personal productization plan that covers all four pillars, starting with one concrete action per pillar within the next 30 days."
+    ],
+    "meta": {
+      "description": "Productize Yourself - AI Proof Yourself — session by Rahul Parwal at TestMu Conf 2026.",
+      "ogImage": "meta/RahulParwalMeta.png"
+    }
+  },
+  "billion-dollar-healthcare-ai-qa-playbook": {
+    "title": "Building a Billion-Dollar Healthcare Product at Zebra Technologies: The AI-Powered QA Playbook",
+    "type": "SESSION",
+    "day": "day3",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "spyros-katopodis"
+    ],
+    "abstract": [
+      "What does it take to transform a company's innovation experiment into a billion-dollar idea? In this session, I'll take you behind the scenes of a groundbreaking initiative within my organization where we aimed to uncover the next billion-dollar business opportunity. The mission? To identify innovative products that would help propel our company towards becoming a $10 billion enterprise by the end of this decade.",
+      "But here's the twist: it wasn't just about the idea itself—it was about rethinking how QA and testing played a pivotal role in shaping and scaling that innovation. I'll walk you through the journey of how AI-powered QA redefined our testing processes, enabling us to accelerate innovation, ensure quality at scale, and deliver transformative results.",
+      "This talk explores how QA and AI-powered testing were pivotal in transforming an innovation experiment into a billion-dollar opportunity. It highlights key learnings, AI-driven process improvements, and real-world results, offering actionable insights for QA professionals to revolutionize testing, foster innovation, and drive business growth in their organizations."
+    ],
+    "keyTakeaways": [
+      "Key Learnings from the Experiment: What worked, what didn't, and the surprising insights that emerged.",
+      "AI's Role in QA: How we leveraged cutting-edge AI technologies to revolutionize our testing processes, driving efficiency and precision like never before.",
+      "Real-World Results: A showcase of the tangible improvements we achieved in QA and how they directly impacted our innovation outcomes."
+    ],
+    "meta": {
+      "description": "Building a Billion-Dollar Healthcare Product at Zebra Technologies: The AI-Powered QA Playbook — session by Spyros Katopodis at TestMu Conf 2026.",
+      "ogImage": "meta/SpyrosKatopodisMeta.png",
+      "titleShort": "Billion-Dollar Healthcare AI-QA Playbook"
+    }
+  },
+  "eval-first-qa-agents-streaming-fox": {
+    "title": "Eval-First QA Agents: Testing Streaming Platforms at Fox Networks",
+    "type": "SESSION",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "gregory-goldshteyn"
+    ],
+    "abstract": [
+      "Everyone's building AI agents for QA. Most ship demos. A few break production. Almost none have evals.",
+      "I'm building one at Fox right now. It runs against our streaming platforms, Apple TV, Roku, Fire TV, and I'm refusing to ship it until it can pass an eval suite as rigorous as the one I use to gate the test code it generates.",
+      "This talk is the field report. The architecture: a 38-tool MCP server, a 43-API helper library with a 3-tier resolution pipeline, and a Promptfoo eval suite currently holding the line at 88 assertions and 100% pass rate. The hard parts: hallucinated test steps, false-pass syndrome on visual checkpoints, brittle grounding on TV UIs that don't behave like web pages, and the recurring problem of an agent that's confident when it should be silent.",
+      "I'll walk through what actually works, what broke embarrassingly in production, and the design pattern that's emerging from the wreckage: eval-first agent development. Don't build the agent and bolt tests on afterward. Build the eval suite first. Use it to constrain what capabilities the agent is allowed to exercise. Promote new tools into the agent's hands only after the evals catch up to cover them.",
+      "If you're tired of \"AI agent for QA\" talks that are 80% architecture diagrams and 20% wishful thinking, this is the opposite of that, concrete tools, real failure modes, and a workflow you can adopt Monday morning."
+    ],
+    "keyTakeaways": [
+      "The eval-first development loop for QA agents and why it changes the order you build things.",
+      "A practical agent architecture: MCP server design, helper libraries, and resolution pipelines for streaming-platform QA.",
+      "The five failure modes that keep biting me (including the ones I'm still hitting).",
+      "How to use Promptfoo to gate agent capabilities, not just score outputs.",
+      "A realistic path from \"experimental agent\" to \"agent your team trusts to triage UHD VPF spikes at 2am\"."
+    ],
+    "meta": {
+      "description": "Eval-First QA Agents: Testing Streaming Platforms at Fox Networks — session by Gregory Goldshteyn at TestMu Conf 2026.",
+      "ogImage": "meta/GregoryGoldshteynMeta.png",
+      "titleShort": "Eval-First QA Agents at Fox Networks"
+    }
+  },
+  "flaky-fragile-forgotten-test-automation": {
+    "title": "Flaky, Fragile, and Forgotten: The Fall of a Test Automation Project",
+    "type": "SESSION",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "mesut-durukal"
+    ],
+    "abstract": [
+      "Do you have flaky, fragile, and forgotten tests in your repository? I did. In this session, I will explain why tests end up in such a poor state—and, of course, how to avoid falling into the same trap.",
+      "When I joined one of my recent projects, people kept saying they had not been able to deliver properly for a long time. There were constant complaints about instability, slow pipelines, and too many testing-related problems slowing development down.",
+      "After spending some time with the team, I realized the issue was much deeper than just \"flaky tests.\" At one point, the entire team had to reserve most of its capacity just to fix broken tests and stabilize automation.",
+      "The result was a vicious cycle where tests failed, pipelines became blocked, stories could not be completed, pressure on the team increased, and the quality of the test code degraded even further. Instead of accelerating development, the automation suite had become one of the main bottlenecks preventing delivery.",
+      "Test code is as important as product code and directly affects delivery, since failing tests can block the pipeline. Avoiding anti-patterns and following good practices is necessary, but not sufficient on its own. Effective automation requires a holistic approach across the team and system. Without strong lower-level tests and proper tooling, even well-designed system tests will fail to deliver value. Ultimately, success depends on collaboration between QA, developers, product owners, and managers to build a sustainable quality strategy."
+    ],
+    "keyTakeaways": [
+      "Treat automation as a shared responsibility: align QA, developers, and product teams on tooling, ownership, and quality standards.",
+      "Reduce duplication and improve clarity: avoid repeated workflows and remove unnecessary abstraction that hides test intent.",
+      "Test functionality at the right level and avoid overloading UI tests.",
+      "Design tests to eliminate suite dependency and maximize efficiency, ensuring each test is independent, fast, and reliable."
+    ],
+    "meta": {
+      "description": "Flaky, Fragile, and Forgotten: The Fall of a Test Automation Project, a session by Mesut Durukal at TestMu Conf 2026.",
+      "ogImage": "meta/MesutDurukalMeta.png",
+      "titleShort": "Flaky, Fragile, Forgotten Test Automation"
+    }
+  },
+  "can-you-trust-your-chatbot-testing-llm-responses": {
+    "title": "Can You Trust Your ChatBot: Techniques for Testing LLM Responses",
+    "type": "SESSION",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "gil-zilberfeld"
+    ],
+    "abstract": [
+      "Like everyone and their mother, you now have a chatbot on your site. But can you trust it to give the right answers? Not insult the users? Not give them ingredients for a homemade exploding salad?",
+      "Testing something that gives you a whole lot of text, and never the same way twice. That's tough. But not impossible.",
+      "The never - What you never, ever want to see",
+      "The must - The beginning of a good answer",
+      "Golden Datasets - What good answers look like",
+      "Tone and bias detection - What proper answers look like",
+      "Scorecards - What the new \"pass/fail\" looks like",
+      "The AI Judge - Ask a smarter bot to settle the argument between you and your bot. What modern delegation looks like. Unfortunately.",
+      "All with live examples. If you're testing chatbots, AI agents, or just want to know if somebody's prompt will crash your system - this one's for you.",
+      "Yes, you can run a couple of examples and see if your chatbot behaves. But trust? That we need to build. So, let's make sure that bot doesn't get us on the news."
+    ],
+    "keyTakeaways": [
+      "Because of indeterministic results, we need better testing.",
+      "New techniques for automation and CI.",
+      "We need to cover risks we're not used to dealing with (e.g. safety, security)."
+    ],
+    "meta": {
+      "description": "Can You Trust Your ChatBot: Techniques for Testing LLM Responses, a session by Gil Zilberfeld at TestMu Conf 2026.",
+      "ogImage": "meta/GilZilberfeldMeta.png",
+      "titleShort": "Can You Trust Your Chatbot: Testing LLMs"
+    }
+  },
+  "advanced-web-testing-playwright-ai": {
+    "title": "Advanced Web Testing with Playwright and AI",
+    "type": "WORKSHOP",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "andrew-knight"
+    ],
+    "abstract": [
+      "Writing your first Playwright test is easy, but keeping hundreds of them fast, reliable, and maintainable is where the real challenge begins. If you're a developer or SDET who already knows the basics of Playwright and is ready to scale your automation efforts, this session will help you level up. This talk explores advanced Playwright practices through the lens of real-world problem solving. Rather than focusing on syntax, we'll dive into strategies that help experienced practitioners build resilient, production-grade test suites that evolve alongside modern applications and teams.",
+      "By the end of this session, experienced Playwright users will walk away with actionable strategies to build more robust, maintainable, and team-friendly test automation at scale."
+    ],
+    "keyTakeaways": [
+      "How to use Playwright's AI agents and skills to plan, generate, and self-heal tests.",
+      "How to leverage spec-driven development to guide AI for consistent, high-quality test development.",
+      "How to combine page objects with fixtures to create clean, reusable, and scalable test code.",
+      "Techniques developers can use to avoid unintentionally breaking automated tests during app changes.",
+      "Practical approaches to improving collaboration between developers and testers.",
+      "How to orchestrate Playwright tests effectively within CI/CD pipelines."
+    ],
+    "meta": {
+      "description": "Advanced Web Testing with Playwright and AI — workshop by Andrew Knight at TestMu Conf 2026.",
+      "ogImage": "meta/AndrewKnightMeta.png"
+    }
+  },
+  "when-you-run-out-of-requirements-all-in-on-agents": {
+    "title": "When You Run Out of Requirements: What Happens When You Go All-In on Agents",
+    "type": "SESSION",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "rashi-agrawal"
+    ],
+    "abstract": [
+      "Six months ago, our engineering team went all-in on agents. Claude Code for autonomous builds. Cursor for daily development. Custom skills tuned for HIPAA and clinical edge cases. Agent-first architecture from day one. We invested heavily in harness engineering — the scaffolding around the agents that makes them actually trustworthy in production.",
+      "The result: feature cycle time dropped 99%, from days to minutes. PR throughput went 4–5x. Sustained, in production, over a full quarter. That part went exactly as we'd hoped.",
+      "What we didn't expect: the bottleneck moved. Past testing. Past development. Past design. All the way upstream to product and UX. Our agents could build features faster than our product team could define them. The constraint that used to live in QA now lives in what should we build, and how should it feel.",
+      "This talk is about everything that comes after that realization. The agentic stack we actually run in production healthcare. The framework we use to build LLM-powered features and ship them safely. What QA looks like when humans don't execute tests anymore — and why that's the most strategic version of the role we've ever had. What it means to pair with AI at every step of the SDLC, not just inside the IDE. And the messy reality of what it takes to get a team — and a company — to operate this way.",
+      "No theater. Production numbers. The mistakes we made and the playbook we ended up with. Walk away knowing exactly what to try Monday."
+    ],
+    "keyTakeaways": [
+      "The agentic stack, end to end — what we actually run: Claude Code, Cursor, custom skills, harness engineering, agent-first architecture. Why each piece is there and what it would cost you to skip it.",
+      "The bottleneck shift is real — when agents handle the build, product and UX become the constraint. Why a 99% cycle-time drop only buys 4–5x throughput, and what teams need to do upstream so engineering doesn't sit idle.",
+      "Building LLM products without theater — the framework for shipping AI-powered features in a regulated environment: context architecture, risk-tiered verification, evaluation as a first-class discipline.",
+      "QA's most strategic moment — from test execution to quality system architecture. The four pillars humans own when agents do the writing.",
+      "Pair with AI at every step — a tactical playbook for getting a team to days-to-minutes cycle time without losing quality, judgment, or your engineers' brains."
+    ],
+    "meta": {
+      "description": "When You Run Out of Requirements: What Happens When You Go All-In on Agents, a session by Rashi Agrawal at TestMu Conf 2026.",
+      "ogImage": "meta/RashiAgrawalMeta.png",
+      "titleShort": "When You Run Out of Requirements"
+    }
+  },
+  "when-software-becomes-everyones-job": {
+    "title": "When Software Becomes Everyone's Job",
+    "type": "SESSION",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "gurleen-kaur",
+      "keerthivasan-devaraj"
+    ],
+    "abstract": [
+      "Last year, in our session Ship Code Without Writing It, we spoke about how AI was changing the way developers move from an idea or ticket to working code.",
+      "This year, the story has moved beyond individual developers. Across our organization, we have seen AI-assisted development evolve from a productivity boost for engineering teams into a larger shift in how software gets imagined, built, validated, and taken to production.",
+      "In this session, we will share our experience of how development teams, business teams, and quality teams started using AI in different parts of the software creation journey. We will talk about what changed when business users became more active participants in building internal tools, how engineering teams adapted to this shift, and why quality became even more important when software started moving faster.",
+      "We will also share practical lessons from scaling this approach to 100+ production applications, including what worked, what surprised us, and where human judgment still matters.",
+      "The session is not about AI replacing engineers. It is about how their roles are evolving as AI changes the speed, ownership, and structure of software delivery."
+    ],
+    "keyTakeaways": [
+      "AI-assisted development is moving beyond developer productivity and changing how software is imagined, built, validated, and delivered.",
+      "Business teams are becoming active participants in software creation, not just requirement providers.",
+      "Engineers are not being replaced, their roles are evolving toward platforms, guardrails, validation, and governance.",
+      "When software starts moving at AI speed, quality needs to shift earlier into requirements, prompts, workflows, test cases, and review loops."
+    ],
+    "meta": {
+      "description": "When Software Becomes Everyone's Job, a session by Gurleen Kaur and Keerthivasan Devaraj at TestMu Conf 2026.",
+      "ogImage": "meta/GurleenKeerthiMeta.png"
+    }
+  },
+  "backwards-scoring-ranking-test-suites": {
+    "title": "Backwards Scoring: Ranking Test Suites by Which Real Incidents They Would Have Caught",
+    "type": "SESSION",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "partha-sarathi-samal"
+    ],
+    "abstract": [
+      "Test coverage is the metric everyone has and nobody trusts. A 90%-covered codebase still ships incidents. The question worth answering is harder: of the tests we run, which ones have ever caught anything that mattered?",
+      "This paper proposes a backwards effectiveness score. For each historical incident in our streaming QE database, we replay candidate test suites against the pre-incident state of the system and record which tests would have failed. Tests that fail on real historical incidents score high. Tests that have never failed on anything real score low, regardless of code coverage or assertion count.",
+      "We applied the method to roughly 4,200 automated test cases over an 18-month incident window. About 12% had no historical catch evidence. Another 8% caught incidents already caught earlier in the pipeline, contributing duplicate coverage. We did not auto-delete those tests. We flagged them for owner review, and the conversation that followed surfaced cases where the test was preventive rather than reactive (caught problems before they entered the incident database) and others where the test was simply dead weight.",
+      "The contribution is the scoring method, the limits of the method (it punishes preventive tests, it depends on incident data quality), and a sober view of what \"test effectiveness\" can and cannot tell."
+    ],
+    "keyTakeaways": [
+      "The Flaw in Traditional Metrics: Understand why high code coverage doesn't equate to incident prevention and why we need a \"backwards\" approach to validation.",
+      "The Backwards Scoring Framework: Learn a repeatable methodology for replaying historical incidents against existing test suites to identify which tests actually provide value.",
+      "Identifying \"Dead Weight\" Tests: How to use incident data to pinpoint tests that provide duplicate coverage or no historical evidence of catching real-world issues.",
+      "Balancing Reactive vs. Preventive Testing: Insights into the limits of effectiveness scoring, specifically how to distinguish between \"useless\" tests and those that are vital for prevention but don't show up in incident logs.",
+      "Data-Driven Test Maintenance: A practical workflow for flagging low-scoring tests for owner review rather than relying on blunt auto-deletion."
+    ],
+    "meta": {
+      "description": "Backwards Scoring: Ranking Test Suites by Which Real Incidents They Would Have Caught, a session by Partha Sarathi Samal at TestMu Conf 2026.",
+      "ogImage": "meta/ParthaSamalMeta.png",
+      "titleShort": "Backwards Scoring: Ranking Test Suites"
+    }
+  },
+  "context-that-dreams": {
+    "title": "Context That Dreams",
+    "type": "SESSION",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "jaydeep-chakrabarty"
+    ],
+    "abstract": [
+      "Every organization is racing to build \"the context layer\": pipe Teams, Zoom, Outlook, Jira, and Confluence into one indexed knowledge store, so that every AI agent can retrieve the right snippet at runtime. That's the RAG playbook, and it works — until an agent asks a question whose answer was never written down anywhere. Retrieval can only return what was captured. If the context doesn't exist as data, the agent runs blind — and quietly, that ceiling caps every AI workflow you ship on top of it.",
+      "This talk proposes a different contract for the context layer: one that behaves less like a filing cabinet and more like a brain — simulated, not literal. Instead of sitting idle between queries, the layer keeps working. Every captured fragment becomes a node in a knowledge graph — topics, people, decisions, risks — and a continuous consolidation loop keeps revisiting those nodes, testing how they correlate across meetings, tools, and time. When disconnected fragments keep pulling toward each other, the layer mints something genuinely new: an emergent concept — an idea that exists in no document, born purely from the connections. And because every emergent idea carries full lineage back to its source conversations, synthesized knowledge stays auditable rather than hallucinated.",
+      "The result is an inversion: instead of agents pulling raw search hits at runtime, the layer pushes pre-formed insight into them — and occasionally taps you on the shoulder with an idea nobody asked for. We'll contrast both architectures end to end, then demo a working second-brain application that runs this loop live: you'll watch a knowledge graph think — and ideas being born — on stage."
+    ],
+    "keyTakeaways": [
+      "The retrieval ceiling — why \"if it wasn't captured, it can't be fetched\" is the silent failure mode of traditional context engineering, and how to recognize it in your own stack.",
+      "A reference architecture for living context — knowledge graph + ambient synthesis ticks + deep consolidation passes that create new concept nodes, not just links between old ones.",
+      "Emergence with receipts — provenance and lineage patterns that make machine-born ideas traceable and testable, and how you would actually QA a context layer that invents things.",
+      "What changes for agents — push vs. pull context, pre-synthesized insight in the context window, and simple signals for judging whether your context layer is merely storing or actually thinking."
+    ],
+    "meta": {
+      "description": "Context That Dreams — session by Jaydeep Chakrabarty at TestMu Conf 2026.",
+      "ogImage": "meta/JaydeepChakrabartyMeta.png"
+    }
+  },
+  "rethinking-testing-leadership-age-of-ai": {
+    "title": "Fast, Smart… and Fragile? Rethinking Testing Leadership in the Age of AI",
+    "type": "SESSION",
+    "day": "day3",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "laveena-ramchandani"
+    ],
+    "abstract": [
+      "AI is accelerating testing at a pace we've never seen before. Teams are generating tests faster, analysing results quicker, and shipping at unprecedented speed.",
+      "But beneath this progress lies a growing leadership challenge.",
+      "As AI takes on more of the work, decision-making becomes less visible, ownership becomes blurred, and risk begins to scale in ways most organisations aren't prepared for.",
+      "This talk explores what it really means to lead Quality Engineering in the age of AI, where speed is easy, but sound judgment is harder than ever.",
+      "Through real-world examples and practical leadership frameworks, we'll uncover how to balance automation with accountability, protect critical thinking in teams, and build testing organisations that are not just faster, but stronger, more resilient, and trusted."
+    ],
+    "keyTakeaways": [
+      "AI speeds up testing, but also increases hidden risk.",
+      "Not everything should be automated, some decisions must stay human.",
+      "Over-reliance on AI can weaken team thinking and capability.",
+      "Clear ownership and oversight are critical in AI-driven environments.",
+      "Strong leadership matters more than ever to balance speed, risk, and trust."
+    ],
+    "meta": {
+      "description": "Fast, Smart… and Fragile? Rethinking Testing Leadership in the Age of AI, a session by Laveena Ramchandani at TestMu Conf 2026.",
+      "ogImage": "meta/LaveenaRamchandaniMeta.png",
+      "titleShort": "Rethinking Testing Leadership with AI"
+    }
+  },
+  "auto-generate-a11y-playwright-tests-graphql": {
+    "title": "Stop Guessing A11y: Auto-Generate Playwright Tests from Your GraphQL Schema",
+    "type": "SESSION",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "vanessa-johnson"
+    ],
+    "abstract": [
+      "Accessibility checks usually arrive late and can be flaky. This session makes them contract-driven. We add lightweight @a11y hints (labels, roles) to a GraphQL schema and generate Playwright + axe-core tests. The schema becomes the source of truth for accessible names/roles, and your CI fails when the UI drifts. Live, I'll: (1) annotate a small schema, (2) run a single file Node generator that emits Playwright specs, and (3) execute them with clear pass/fail signals and reports.",
+      "You'll leave with a runnable starter plan, a minimal directive set you can copy, and a rollout path teams can adopt in days, starting with 5–10 critical screens. Stop guessing: make the schema the contract.",
+      "The demo will be from the GraphQL-a11y repo: https://github.com/vanessamj99/GraphQL-a11y."
+    ],
+    "keyTakeaways": [
+      "Minimal @a11y directive set that won't break existing clients.",
+      "Generator pattern: GraphQL → Playwright + axe-core.",
+      "CI gate that fails on semantic drift and accessibility violations."
+    ],
+    "meta": {
+      "description": "Stop Guessing A11y: Auto-Generate Playwright Tests from Your GraphQL Schema, a session by Vanessa Johnson at TestMu Conf 2026.",
+      "ogImage": "meta/VanessaJohnsonMeta.png",
+      "titleShort": "Auto-Generate A11y Playwright Tests"
+    }
+  },
+  "right-model-right-job-cutting-llm-costs": {
+    "title": "The Right Model for the Right Job: Cutting LLM Costs Without Cutting Quality",
+    "type": "SESSION",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "viktoria-semaan"
+    ],
+    "abstract": [
+      "Most AI agents never make it past the demo stage, and the gap between a prototype and a production system comes down to evaluation. I cover how to choose between open source, proprietary, and fine-tuned models, define custom metrics for your use case, calibrate LLM judges for cost-effective assessment, and track results over time to measure real progress. Attendees leave with practical tools to move from proof-of-concept to production."
+    ],
+    "keyTakeaways": [
+      "How to choose between open source, proprietary, and fine-tuned models for your use case.",
+      "Defining custom evaluation metrics that reflect what quality means for your application.",
+      "Calibrating LLM judges for cost-effective, reliable assessment.",
+      "Tracking evaluation results over time to measure real progress from proof-of-concept to production."
+    ],
+    "meta": {
+      "description": "The Right Model for the Right Job: Cutting LLM Costs Without Cutting Quality, a session by Viktoria Semaan at TestMu Conf 2026.",
+      "ogImage": "meta/ViktoriaSemaanMeta.png",
+      "titleShort": "Cutting LLM Costs, Not Quality"
+    }
+  },
+  "build-trustworthy-ai-agents-powered-by-evals": {
+    "title": "Build Trustworthy AI Agents powered by Evals",
+    "type": "SESSION",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "rushabh-mehta"
+    ],
+    "abstract": [
+      "Agentic AI has captured the industry's attention. As more people experiment with LLMs, they develop intuition aka vibes around whether models perform well. While math and classification are easy to verify, generative tasks aren't. Adding agents makes evaluation far more complex. This talk highlights key challenges in productionizing agentic applications: non-deterministic outputs, elusive ground truth, and models that mysteriously regress. Yet 'LGTM' isn't a deployment strategy.",
+      "Unlike chatbots that resemble sophisticated search engines, we expect agents to actually perform tasks; making security, bias, and privacy non-negotiable before unlocking real use cases in healthcare, finance, and legal. We'll explore why agent evaluation is fundamentally harder than traditional ML testing: multi-step reasoning chains, tool-use side effects, and more. Topics include building evaluation datasets reflecting production scenarios, automated LLM-as-judge pipelines, knowing when human-in-the-loop is unavoidable, and detecting regressions before users do."
+    ],
+    "keyTakeaways": [
+      "Agent evaluation is fundamentally harder than traditional ML testing.",
+      "\"LGTM\" isn't a deployment strategy.",
+      "Build evaluation datasets that reflect production, not benchmarks.",
+      "Implement automated evaluation pipelines with LLM-as-judge patterns.",
+      "Detect regressions before users do."
+    ],
+    "meta": {
+      "description": "Build Trustworthy AI Agents powered by Evals — session by Rushabh Mehta at TestMu Conf 2026.",
+      "ogImage": "meta/RushabhMehtaMeta.png"
+    }
+  },
+  "new-skill-stack-sdets-agentic-era": {
+    "title": "The New Skill Stack for SDETs in the Agentic Era",
+    "type": "SESSION",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "adeel-mansoor"
+    ],
+    "abstract": [
+      "The SDET role was built for this moment. A Software Development Engineer in Test is, first and foremost, a software engineer who lives in the quality space — owning automation frameworks, shaping test strategy, and making sure teams get fast, trustworthy feedback when they ship.",
+      "In the first half of this session, we'll unpack those \"foundational SDET muscles\": coding in the test stack, designing high-signal tests, debugging messy systems, and wiring everything into CI/CD. We'll look at how those skills already translate into the AI world and walk through simple upgrades you can make to your existing setup so it's ready for agents and AI-powered tooling.",
+      "The second half introduces the agentic skill stack — prompt engineering for testing, data curation, model literacy, and observability for autonomous agents — and breaks each one down into a short, practical learning path. You'll leave with a clear picture of how the SDET you are today evolves into a \"quality architect\" for AI-driven systems, without throwing away the experience you've already spent years building."
+    ],
+    "keyTakeaways": [
+      "See which core SDET strengths — automation, test design, debugging, CI/CD — directly power AI-era quality work.",
+      "Understand the new agentic skill stack: prompt engineering, data curation, model literacy, and observability for AI systems.",
+      "Get compact learning paths for each new skill, grounded in real SDET workflows instead of abstract AI theory.",
+      "Walk away with a clear path to become a \"quality architect\" who designs and governs AI-driven testing, not just writes tests."
+    ],
+    "meta": {
+      "description": "The New Skill Stack for SDETs in the Agentic Era — session by Adeel Mansoor at TestMu Conf 2026.",
+      "ogImage": "meta/AdeelMansoorMeta.png",
+      "titleShort": "New Skill Stack for SDETs in the Agentic Era"
+    }
+  },
+  "human-quality-layer-agentic-ai-adoption": {
+    "title": "Your AI Agent Passed Every Test. Your Humans Still Rejected It. Now What? Building the Human Quality Layer for Agentic AI Adoption",
+    "type": "SESSION",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "jill-hosmer-jolley"
+    ],
+    "abstract": [
+      "The next frontier of agentic AI will not only be determined by who builds the smartest agents — it will be determined by which organizations successfully integrate AI into the way humans work, decide, create, and lead.",
+      "As AI moves from experimental tools to autonomous agents embedded in daily workflows, quality engineering must expand beyond traditional measures of performance, accuracy, and reliability. The question is no longer only \"Does the AI work?\" The next question is: \"Can humans successfully work with the AI?\"",
+      "Many technically successful AI initiatives struggle during adoption because organizations underestimate the human side of deployment: trust, resistance, changing roles, decision ownership, communication, and workforce readiness. Building AI at scale requires understanding both the technology system and the human system it enters.",
+      "This session explores the \"human quality layer\" of agentic AI — the organizational and behavioral factors that determine whether AI moves from impressive demonstration to meaningful adoption. Drawing from research in organizational behavior, workforce transformation, human-centered AI, and neurodiversity, we will examine how leaders and builders can design AI implementation strategies that create effective partnerships between humans and intelligent systems.",
+      "Participants will explore why employees trust or reject AI recommendations, how workflows change when humans collaborate with agents, and why the future of quality must include measuring adoption, usability, psychological safety, and human impact.",
+      "The future of AI success will not belong only to organizations that build the best agents. It will belong to organizations that build the best human + AI teams."
+    ],
+    "keyTakeaways": [
+      "Learn why trust, transparency, and workflow design are critical quality measures for agentic AI.",
+      "Explore the emerging relationship between humans and AI agents as workplace collaborators.",
+      "Identify leadership and culture factors that accelerate or block AI transformation."
+    ],
+    "meta": {
+      "description": "Your AI Agent Passed Every Test. Your Humans Still Rejected It. Now What? — session by Jill Hosmer-Jolley at TestMu Conf 2026.",
+      "ogImage": "meta/JillHosmerJolleyMeta.png",
+      "titleShort": "Building the Human Quality Layer for Agentic AI"
+    }
+  },
+  "from-ai-assistants-to-ai-coworkers": {
+    "title": "From AI Assistants to AI Coworkers: How Engineering Teams Ship Faster with Trusted Enterprise Context",
+    "type": "SESSION",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "nilesh-dalvi"
+    ],
+    "abstract": [
+      "Generic AI assistants can answer questions, but they don't understand your codebase, your incidents, or how your team actually works. That gap is what separates a helpful chatbot from a genuine engineering coworker. This session explores the shift from general-purpose assistants to AI systems that reason over the full context of software engineering: code, tickets, documentation, incidents, and the organizational knowledge that lives between them.",
+      "At the heart of this evolution is enterprise context, the foundation for AI that can meaningfully support modern engineering teams. This talk unpacks why that context matters so much, and shares practical lessons on building AI that developers actually trust, including how to balance automation with human oversight and keep engineers in control as systems take on more of the work.",
+      "Attendees will learn how context-aware AI reduces the constant context switching that slows teams down, accelerates incident investigations, and helps engineers ship with greater speed and confidence. Whether you're evaluating AI tooling or thinking about how your team works alongside it, this talk offers a grounded view of what it takes to move from AI that assists to AI that genuinely collaborates."
+    ],
+    "keyTakeaways": [
+      "Why enterprise context transforms AI from an assistant into a trusted engineering coworker.",
+      "Practical strategies for building AI that developers trust while keeping humans in control.",
+      "How AI can reduce context switching, accelerate investigations, and help engineering teams ship faster."
+    ],
+    "meta": {
+      "description": "From AI Assistants to AI Coworkers: How Engineering Teams Ship Faster with Trusted Enterprise Context — session by Nilesh Dalvi at TestMu Conf 2026.",
+      "ogImage": "meta/NileshDalviMeta.png",
+      "titleShort": "From AI Assistants to AI Coworkers"
+    }
+  },
+  "ai-agents-disability-self-determination-project-raise": {
+    "title": "Developing AI Agents for Disability and Self-Determination: Lessons from Project RAISE",
+    "type": "SESSION",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "lisa-dieker"
+    ],
+    "abstract": [
+      "Artificial intelligence has the potential to transform how individuals with disabilities access information, make decisions, and advocate for themselves. However, the most effective AI tools are not designed solely for people with disabilities but with them. This presentation shares lessons learned through Project RAISE and related initiatives focused on advancing self-determination, self-advocacy, and inclusive technology development.",
+      "Central to this work is the belief that people with disabilities should be active partners in the creation of AI agents. Rather than serving only as end users, individuals with disabilities can contribute their lived experiences, expertise, and perspectives throughout the design process. Their involvement helps ensure that AI agents address real-world needs, use accessible language, and support meaningful outcomes across education, employment, and community settings.",
+      "The presentation will highlight emerging approaches for engaging self-advocates in the development, testing, and refinement of AI agents that promote self-determination. Examples will demonstrate how AI agents can support goal setting, self-advocacy, transition planning, employment preparation, and access to community resources. Participants will also learn how disability-centered design can improve the relevance, accessibility, and effectiveness of AI tools.",
+      "Drawing on the principles of Project RAISE, the session emphasizes capacity building and authentic partnerships between researchers, educators, technology developers, and individuals with disabilities. Attendees will explore practical strategies for creating AI agents that empower users to make informed choices, express their preferences, and take greater control over their lives.",
+      "The presentation concludes with recommendations for future research and practice, highlighting the importance of ensuring that people with disabilities are not only beneficiaries of AI innovation but also co-creators shaping its future. By engaging individuals with disabilities as partners in AI development, we can create technologies that advance inclusion, strengthen self-determination, and expand opportunities for meaningful participation in society."
+    ],
+    "keyTakeaways": [
+      "Understanding how to ensure agents are accessible and co-designed with people with disabilities."
+    ],
+    "meta": {
+      "description": "Developing AI Agents for Disability and Self-Determination: Lessons from Project RAISE — session by Lisa Dieker at TestMu Conf 2026.",
+      "ogImage": "meta/LisaDiekerMeta.png",
+      "titleShort": "AI Agents for Disability & Self-Determination"
+    }
+  },
+  "copilot-wrote-it-surviving-ai-code-tsunami": {
+    "title": "The Copilot Wrote It, but Who Saves It? Surviving the AI Code Tsunami",
+    "type": "SESSION",
+    "day": "day3",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "mathias-strziga"
+    ],
+    "abstract": [
+      "Let's be honest: your AI copilots are writing code faster than your QA team can drink their morning coffee. We've given developers turbocharged engines, but we're still trying to run quality assurance on a two-week Scrum treadmill. The result? A massive bottleneck where \"AI efficiency\" goes to die.",
+      "If we want to scale without breaking things, the traditional Software Development Lifecycle (SDLC) needs an upgrade. Welcome to the AI Development Lifecycle (AIDLC)—a framework where human-only sprints make way for specialized AI agent swarms. But when autonomous agents are writing the code, who is making sure it actually works? (And no, \"it compiled on the LLM\" doesn't count).",
+      "This session breaks down the massive QA transformation required to survive this shift. We will look at the \"Camel Curve\"—a data-backed model showing how human effort is moving away from manual coding and splitting into two humps: upfront strategic design and heavy-duty back-end validation.",
+      "We will explore how QA professionals are leveling up into Validation Pilots. Instead of hunting for bugs manually, you'll learn how to orchestrate automated testing networks, enforce economic governance (because AI \"looping fever\" gets expensive quickly), and maintain regulatory compliance. To prove it's not just tech-bro hype, we'll look at real-world data from a FinTech deployment where the AIDLC slashed delivery timelines by 10x without compromising security or architecture.",
+      "If you're a QA leader or test architect wondering where you fit in an AI-dominated world, here is your answer. Spoiler alert: you aren't being replaced; you're being promoted to the pilot's seat."
+    ],
+    "keyTakeaways": [
+      "AIDLC does not imply that existing jobs disappear.",
+      "Depending on the project setup, Product Owners, Project Managers, UX leads, Tech Leads, Senior Engineers, Architects, QA experts, Platform Engineers, or Operations specialists may contribute to these responsibilities.",
+      "The important shift is from manual execution toward automation with guiding direction, validation, and accountability."
+    ],
+    "meta": {
+      "description": "The Copilot Wrote It, but Who Saves It? Surviving the AI Code Tsunami — session by Mathias Strziga at TestMu Conf 2026.",
+      "ogImage": "meta/MathiasStrzigaMeta.png",
+      "titleShort": "Surviving the AI Code Tsunami"
+    }
+  },
+  "revisit-old-problems-with-new-eyes": {
+    "title": "Revisit Old Problems with New Eyes!",
+    "type": "SESSION",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "pramod-yadav"
+    ],
+    "abstract": [
+      "Agents made it possible for engineers what was reserved for a select few with either fat pockets or niche skills. Agents came as a great equalizer. It allows people with deep domain and technical knowledge to create products at a pace that was never before possible. Even if one of your products finds the right audience, you may find your way to financial freedom.",
+      "For reference, here are a few problems that I tried to solve using agents and AI from the beginning of year 2026:",
+      "I made an app named Taxly for VAT filing and was able to deploy it in less than 2 weeks. My goal is to launch it by early next year.",
+      "I made an app (MCP server) to fetch comments on pull requests in developers' local machines on their VSCode chat terminal. When agents write code, and when agents review code, it is also important that we can also bring in agents to make sense of those review comments and help us ease the review process.",
+      "I made SemVer more robust, reliable and readable by creating a GitHub action that integrates Anthropic SDK into a pull request process that bumps up versions or libraries based on the nature of change that is going in the pull request.",
+      "I made a test app to grasp and understand the concepts of trunk based development and feature toggles. Goal was to both educate teams on continuous delivery and also increase chances of adoption among developers who were new to the concept.",
+      "There are more such solutions, but in this talk, we will walk through a few of these. I hope by doing so, I can inspire you to bring your own unique ideas to reality. Who knows, you may be sitting on a billion dollar idea and this talk helps you to achieve it :)"
+    ],
+    "keyTakeaways": [
+      "Importance of looking at old problems with new eyes.",
+      "Harnessing the untapped potential of agents.",
+      "Realising that we live in an era that is similar to the internet boom but maybe even larger.",
+      "Bring your ideas to life. You never know if it may change your life."
+    ],
+    "meta": {
+      "description": "Revisit Old Problems with New Eyes! — session by Pramod Yadav at TestMu Conf 2026.",
+      "ogImage": "meta/PramodYadavMeta.png"
+    }
+  },
+  "bionic-workforce-where-humans-ai-coexist": {
+    "title": "The Bionic Workforce - Where Humans & AI Co-exist",
+    "type": "SESSION",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "lisha-rakesh"
+    ],
+    "abstract": [
+      "Quality Engineering is undergoing the most profound shift in its history. With the rise of GenAI and autonomous agents, testing is no longer a sequence of manual checks or scripted automations - it is becoming an ecosystem where humans and AI jointly assure quality across Assisted, Augmented, and Autonomous modes. This keynote explores how the Bionic Workforce is redefining the testing function and the new leadership mindset required to unlock its full potential.",
+      "In the Assisted mode, AI supports testers with intelligent insights - identifying gaps, analyzing logs, summarizing defects, and providing real time recommendations. Testers gain cognitive acceleration, moving from reactive defect detection to proactive risk discovery.",
+      "In the Augmented mode, humans and AI work together to perform complex quality activities. AI agents help model user behavior, generate synthetic data, evaluate edge cases, and perform continuous exploratory testing, while human testers guide context, ethics, prioritization, and interpretation. This blend dramatically improves coverage, reduces blind spots, and shortens feedback loops.",
+      "In the Autonomous mode, AI driven agents autonomously execute large portions of the testing lifecycle - environment setup, regression execution, triaging failures, self healing scripts, and even triggering remediation pipelines. Here, the tester evolves into a quality orchestrator, focused on governance, oversight, exception handling, and sustained reliability of AI driven systems.",
+      "As organizations shift toward this bionic model, leaders must rethink roles, skills, and operating structures. The future testing organization will not be defined by headcount, but by capability density - the combined power of human expertise and AI intelligence working together. It demands leaders who understand AI behaviors, build trust centric guardrails, design agent powered workflows, and shape a culture where humans are freed from repetitive tasks to focus on insight, creativity, and engineering excellence.",
+      "Ultimately, the Bionic Workforce transforms testing from a bottleneck into a competitive advantage - delivering higher quality, faster cycles, and a more empowered testing community ready for the next decade of digital velocity."
+    ],
+    "keyTakeaways": [
+      "Exploring shifts in the operating model for Testing to plan your teams.",
+      "Understanding that AI is not a silver bullet but a way for us to amplify & accelerate efforts.",
+      "Changes in the way humans & AI collaboration works."
+    ],
+    "meta": {
+      "description": "The Bionic Workforce - Where Humans & AI Co-exist — session by Lisha Rakesh at TestMu Conf 2026.",
+      "ogImage": "meta/LishaRakeshMeta.png",
+      "titleShort": "The Bionic Workforce: Humans & AI Co-exist"
+    }
+  },
+  "real-world-lessons-scaling-test-automation-microsoft": {
+    "title": "Real-world Lessons from Scaling Test Automation at Microsoft",
+    "type": "SESSION",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "deepak-kamboj"
+    ],
+    "abstract": [
+      "As software systems grow in scale and complexity, traditional approaches to test automation are no longer enough. At Microsoft, we are evolving test automation by combining scalable automation platforms with AI agents that help engineers generate, maintain, and improve tests more efficiently.",
+      "In this session, I will share real-world lessons from scaling test automation across large engineering teams. We will explore how standardized automation frameworks, reliable CI/CD integration, and self-service tooling enable quality at scale. I will also demonstrate how AI agents are transforming the developer experience by generating Playwright tests from requirements, creating meaningful test cases, suggesting improvements to existing tests, and reducing the maintenance effort required to keep automation reliable.",
+      "The session will cover practical challenges such as reducing flaky tests, increasing framework adoption across multiple teams, balancing AI-generated tests with human validation, and establishing governance for enterprise-scale automation. You will see how AI can accelerate testing while maintaining the reliability and confidence that engineering teams expect.",
+      "Whether you are beginning your AI testing journey or looking to modernize an existing automation ecosystem, you will leave with practical insights and proven strategies that can be applied immediately."
+    ],
+    "keyTakeaways": [
+      "Learn how Microsoft scales test automation across large engineering organizations.",
+      "Discover how AI agents generate high-quality automated tests from requirements and application changes.",
+      "Understand how AI reduces test maintenance, improves productivity, and accelerates test development.",
+      "Learn practical techniques for reducing flaky tests and improving automation reliability.",
+      "See how Playwright, AI agents, and CI/CD pipelines work together to provide faster feedback.",
+      "Understand governance and validation practices for adopting AI-generated tests in enterprise environments.",
+      "Gain actionable ideas for building a scalable, AI-powered test automation platform."
+    ],
+    "meta": {
+      "description": "Real-world Lessons from Scaling Test Automation at Microsoft — session by Deepak Kamboj at TestMu Conf 2026.",
+      "ogImage": "meta/DeepakKambojMeta.png",
+      "titleShort": "Scaling Test Automation at Microsoft"
+    }
+  },
+  "deterministic-infrastructure-non-deterministic-ai-agents": {
+    "title": "Building Deterministic Infrastructure for Non-Deterministic AI Agents",
+    "type": "SESSION",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "nishant-gupta"
+    ],
+    "abstract": [
+      "LLMs are probabilistic, but production infrastructure cannot be.",
+      "This talk explores the engineering patterns required to operate AI agents reliably in production from workflow orchestration and retries to state management, failure recovery, tool execution, and human approval gates.",
+      "We'll examine how production systems transform unpredictable model behavior into deterministic business workflows and discuss architectural patterns used to build resilient agent platforms."
+    ],
+    "keyTakeaways": [
+      "Understand why LLMs are inherently non-deterministic and why production infrastructure must provide deterministic guarantees.",
+      "Learn architectural patterns for building reliable AI agent systems, including orchestration, workflow state management, retries, checkpoints, and failure recovery.",
+      "Discover how to safely integrate tools and external systems using validation, permission boundaries, human-in-the-loop approvals, and guardrails.",
+      "Explore techniques for making agent workflows observable through tracing, evaluation pipelines, telemetry, and debugging of reasoning chains."
+    ],
+    "meta": {
+      "description": "Building Deterministic Infrastructure for Non-Deterministic AI Agents — session by Nishant Gupta at TestMu Conf 2026.",
+      "ogImage": "meta/NishantGuptaMeta.png",
+      "titleShort": "Deterministic Infra for AI Agents"
+    }
+  },
+  "time-travel-simulation-financial-systems": {
+    "title": "Testing the Future: Time-Travel Simulation for Financial Systems",
+    "type": "DISTINGUISHED SESSION",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "rakesh-sukla"
+    ],
+    "abstract": [
+      "Financial platforms must validate lifecycle events such as interest accrual, scheduled and partial payments, delinquency, charge-offs, refunds, and settlements before those events naturally occur. Waiting weeks or months is not practical when products and partner integrations must launch quickly and confidently.",
+      "This session explores how a lifecycle-aware Test Data Management Portal can create production-like financial states and programmatically advance accounts and loans through future servicing events. Attendees will learn how deterministic time-travel simulation enables repeatable end-to-end validation across servicing, payments, applications, APIs, databases, and customer communications. The session will also cover the architectural principles, governance considerations, and lessons learned from implementing this capability at enterprise scale."
+    ],
+    "keyTakeaways": [
+      "Understand why financial lifecycle events like interest accrual, delinquency, and charge-offs must be validated before they naturally occur.",
+      "Learn how a lifecycle-aware Test Data Management Portal creates production-like financial states and programmatically advances accounts through future servicing events.",
+      "Discover how deterministic time-travel simulation enables repeatable end-to-end validation across servicing, payments, APIs, databases, and customer communications.",
+      "Take away the architectural principles, governance considerations, and lessons learned from implementing this capability at enterprise scale."
+    ]
+  },
+  "from-load-testing-to-reliability-engineering": {
+    "title": "From Load Testing to Reliability Engineering: Making Performance Testing Predict Production Behavior",
+    "type": "SESSION",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "stephan-mousset"
+    ],
+    "abstract": [
+      "Performance testing often creates more noise than value. Teams run load tests, collect huge amounts of data, and generate detailed reports, yet still struggle to answer the question that really matters: Will this change be safe in production?",
+      "The challenge is rarely the testing tool itself. Instead, it lies in the gap between performance testing and the broader engineering practices required to make results meaningful: clear service level objectives, realistic workload models, effective observability, production feedback loops, and risk-based decision making.",
+      "In this session, we'll explore how performance engineering can evolve from isolated testing activities into a continuous reliability practice embedded throughout the software delivery lifecycle. You'll learn how to use SLOs to focus on what truly matters, select performance tests based on risk rather than habit, and connect test results with observability data to gain confidence in production outcomes.",
+      "Rather than treating performance testing as a gate at the end of delivery, we'll examine how modern teams use performance signals throughout development, CI/CD, and operations to support faster and safer releases.",
+      "Whether you're a tester, quality engineer, developer, SRE, or platform engineer, this talk provides practical techniques for turning performance testing into a meaningful predictor of production reliability."
+    ],
+    "keyTakeaways": [
+      "How to determine which performance tests are worth running and when.",
+      "How SLOs influence test design, acceptance criteria, and release decisions.",
+      "How observability improves the value and trustworthiness of performance test results.",
+      "How production feedback can continuously improve testing effectiveness.",
+      "How automation and platform thinking help scale performance engineering while reducing cognitive load for development teams."
+    ],
+    "meta": {
+      "description": "From Load Testing to Reliability Engineering: Making Performance Testing Predict Production Behavior — session by Stephan Mousset at TestMu Conf 2026.",
+      "ogImage": "meta/StephanMoussetMeta.png",
+      "titleShort": "From Load Testing to Reliability Engineering"
+    }
+  },
+  "testing-autonomous-ai-agents-beyond-traditional-qa": {
+    "title": "Testing the Agents That Look You in the Eye",
+    "type": "SESSION",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "sai-krishna",
+      "srinivasan-sekar"
+    ],
+    "abstract": [
+      "AI agents have faces now. They interview candidates, onboard customers, and triage patients: live, on camera. And almost nobody tests them, because testing one means a human joining the call, playing a role, and sitting through the whole conversation. Ten personas is a lost day. So it doesn't happen before every release.",
+      "We'll show it running live and talk honestly about what's hard: hearing the agent at all, knowing when to stop talking, and answering fast enough to sound human."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "Testing the Agents That Look You in the Eye — session by Sai Krishna and Srinivasan Sekar at TestMu Conf 2026.",
+      "ogImage": "meta/SaiSrinivasanMeta.png",
+      "titleShort": "Testing the Agents That Look You in the Eye"
+    }
+  },
+  "local-agentic-theory-accessible-mobile-games": {
+    "title": "Local Agentic Theory for Accessible Mobile Games",
+    "type": "SESSION",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "shafik-quoraishee"
+    ],
+    "abstract": [
+      "Traditional game difficulty adjustment mechanisms rely on rigid, centralized, or predefined human-engineered heuristics that inadequately map to the heterogeneous landscape of human cognitive and motor accessibility. This paper introduces Local Agentic Theory, an architectural paradigm that deploys small, autonomous reinforcement learning and reasoning agents natively on edge devices to achieve dynamic, individualized game balancing. Moving beyond traditional cloud-bound models that introduce severe network latency (approximately 200 ms) and prohibitive server costs, our proposed framework operates strictly on-device via localized execution pipelines (approximately 3 ms latency) using optimized runtime environments like LiteRT.",
+      "By utilizing advances in sample-efficient reinforcement learning (e.g., EfficientZero architectures), these on-device agents decouple from continuous weight-optimization grinds, functioning instead through real-time \"perceive-predict-decide-act\" inference loops executed 60 times per second. We evaluate the efficacy of these local agents in balancing a real-time arcade shooter under rigid, multi-objective constraints, explicitly optimization across three localized scarcity budgets: memory capacity (RAM footprint), temporal windows (16 ms per frame), and thermal/battery endurance.",
+      "To govern this constraint satisfaction problem, we implement anytime Monte Carlo Tree Search (MCTS), Lagrangian penalty systems, and min-conflicts local search optimizations that enable the system to gracefully degrade auxiliary computational fidelity without breaching hard device limits. Furthermore, we demonstrate how integrating local sensory telemetry—such as on-device, uncalibrated eye-gaze region estimation—creates a continuous, privacy-preserving feedback loop that transforms intent recognition into passive accessibility assistance. Ultimately, this work offers a scalable, robust blueprint for shifting game accessibility from binary, cloud-dependent toggles to fluid, edge-computed experiential curation."
+    ],
+    "keyTakeaways": [
+      "You will learn about the interaction of agents in game play and accessibility and in a whole host of other applications relating mobile constraints."
+    ],
+    "meta": {
+      "description": "Local Agentic Theory for Accessible Mobile Games — session by Shafik Quoraishee at TestMu Conf 2026.",
+      "ogImage": "meta/ShafikQuoraisheeMeta.png",
+      "titleShort": "Local Agentic Theory for Accessible Games"
+    }
+  },
+  "trust-problem-quality-frameworks-ai-generated-code": {
+    "title": "The Trust Problem: Designing Quality Frameworks for AI-Generated Code",
+    "type": "SESSION",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "neelmani-verma"
+    ],
+    "abstract": [
+      "As developers lean on Copilot, ChatGPT, and similar tools, QE teams are inheriting a new class of defects, which is confident, syntactically perfect, and semantically wrong. This talk explores what it takes to test software you didn't write and can't fully predict.",
+      "Traditional QE frameworks were built on an assumption that has quietly stopped being true: that the person or system generating code understands the intent behind it. AI-generated code breaks this. It passes linters, compiles cleanly, and often looks more \"correct\" than human-written equivalents, while silently drifting from business logic, security posture, or regulatory intent. Drawing from work building governance and control frameworks for AI-driven systems in regulated environments like banking, this talk lays out a practical model for catching what traditional testing misses: how to design verification layers that check for semantic correctness and not just syntactic validity, where human review still has to sit in the loop, and how QE teams can build the muscle to test systems whose failure modes they haven't seen yet. If your team is shipping AI-assisted code today, this talk gives you a framework to start closing that trust gap."
+    ],
+    "keyTakeaways": [
+      "Syntactic correctness is no longer a proxy for semantic correctness. AI-generated code needs a distinct QE lens, one that tests for intent alignment, not just functional output, because the failure modes are different from human-introduced bugs.",
+      "Traditional test coverage metrics fall short with AI-generated code. Teams need layered verification, including automated checks plus targeted human review, focused on business logic and edge cases, not just pass/fail on unit tests.",
+      "Trust in AI-generated code must be engineered, not assumed. This means building explicit governance checkpoints, review gates, and escalation paths into the SDLC, treating AI as a contributor whose output requires the same scrutiny as an unfamiliar third-party vendor's code, not less."
+    ],
+    "meta": {
+      "description": "The Trust Problem: Designing Quality Frameworks for AI-Generated Code — session by Neelmani Verma at TestMu Conf 2026.",
+      "ogImage": "meta/NeelmaniVermaMeta.png",
+      "titleShort": "The Trust Problem: QE for AI-Generated Code"
+    }
+  },
+  "canal-mania-and-the-philosophers-stone": {
+    "title": "Canal-mania and the Philosopher's Stone",
+    "type": "SESSION",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "magnus-hillestad"
+    ],
+    "abstract": [
+      "We think the AI revolution is nearly built. It's barely begun. Drawing on the industrial revolution — its manias, its missing parts, and the tinkerers who actually built it — Magnus makes the case that we're still digging canals, and shows what's left to build and who gets to build it.",
+      "We are very early, and there is still a lot to build: we are in the stage where many of the parts and practices still need to be invented. This talk focuses in particular on the need for tools to collaborate with AI on new abstractions, and to create more autonomous systems that still keep humans in the loop for guidance and verification — with real experiences from building this at Sanity."
+    ],
+    "keyTakeaways": [
+      "AGI is the alchemy of our time. We're chasing a philosopher's stone. The real prize isn't the stone — it's the chemistry we invent trying to reach it.",
+      "We're at the canal-mania stage of AI. Most of what's funded today is transitional. The durable value is the skills and infrastructure being built underneath it.",
+      "\"AI doesn't work\" is half true. It works — just not autonomously. The missing layer is coordination and verification, not more raw capability.",
+      "The next leg needs new parts and a new way of working. We have to abstract formerly-human craft — coding, content operations — into the leadership of autonomous systems.",
+      "The builders are the clockmakers and blacksmiths, not the gold-chasers. Systems thinkers — developers, but increasingly anyone who understands systems — turn the alchemy into chemistry."
+    ],
+    "meta": {
+      "description": "Canal-mania and the Philosopher's Stone — session by Magnus K. Hillestad at TestMu Conf 2026.",
+      "ogImage": "meta/MagnusHillestadMeta.png"
+    }
+  },
+  "architects-of-trust-quality-leadership-agentic-world": {
+    "title": "Architects of Trust: Redefining Quality Leadership in an Agentic World",
+    "type": "SESSION",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "sobhitha-neelanath"
+    ],
+    "abstract": [
+      "When software evolves from predictable, deterministic scripts to autonomous, non-deterministic agents, classical quality metrics crumble. A pristine report showing 94% test coverage can easily mask a silent, recursive prompt loop that costs $400,000 in production before a single alert fires. In this high-stakes agentic era, the ultimate currency of engineering is no longer test coverage—it is trust.",
+      "True quality leadership requires balancing the inherent chaos of autonomous AI systems with the rigid demands of compliance, safety, and business risk. Drawing from the front lines of shipping AI at scale, this session will deliver a pragmatic, battle-tested playbook for technology leaders, unpacking an Empirical Trust Framework that treats trust as a hard metric, mapping statistical risk boundaries directly to corporate SLAs.",
+      "Moving from architecture to culture, we will explore the critical Leadership Pivot: bridging the reality gap in executive expectations, introducing a culture of psychological safety through \"Chaos Audits\" and shifting organizational resources away from manual scripting.",
+      "The session will chart out the Evolution of the Quality Engineer, detailing a multi-stage career pathway that has successfully upskilled legacy quality teams into high-value AI alignment champions."
+    ],
+    "keyTakeaways": [
+      "The Empirical Trust Model: A solid framework to quantify AI agent trust using semantic alignment, predictability variance, and strict blast-radius isolation.",
+      "The 360-Degree Leadership Pivot: Proven strategies to manage executive risk expectations, transition legacy QA resource allocations, and foster engineering resilience.",
+      "The Modern QE Career Pathway: A clear roadmap to upskill, transition, and empower traditional manual testers into strategic AI Evaluators, Architects, and Guardians."
+    ],
+    "meta": {
+      "description": "Architects of Trust: Redefining Quality Leadership in an Agentic World — session by Sobhitha Neelanath at TestMu Conf 2026.",
+      "ogImage": "meta/SobhithaNeelanathMeta.png",
+      "titleShort": "Architects of Trust: Quality Leadership"
+    }
+  },
+  "going-past-the-vibes-how-to-build-real-apps": {
+    "title": "Going past the vibes: How to build Real Apps",
+    "type": "SESSION",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "lazar-jovanovic"
+    ],
+    "abstract": [
+      "Lazar will explain the process of building repeatable, scalable, secure systems using Lovable — building your own MCP in Lovable and using it in Claude, using Lovable via the Lovable MCP from Claude, creating skills in Lovable, and using project knowledge and spec-driven development to build production-grade apps."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "Going past the vibes: How to build Real Apps — session by Lazar Jovanovic at TestMu Conf 2026.",
+      "ogImage": "meta/LazarJovanovicMeta.png"
+    }
+  },
+  "system-prompt-design-for-voice-agents": {
+    "title": "System Prompt Design for Voice Agents",
+    "type": "SESSION",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "amanda-martin"
+    ],
+    "abstract": [
+      "In this session, we'll explore how system prompt design shapes real-time voice AI behavior, from pacing and hesitation handling to confirmations, interruptions, tool calling, and recovery. Using a live Vapi demo, we'll compare approaches to system prompt design across the same use case to understand the implications of small changes. We will also discuss how model selection affects how your voice agent interprets and uses your system prompt. Attendees will leave with a practical framework for designing voice agents that can listen naturally, use tools reliably, and feel more patient, capable, and human in conversation."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "System Prompt Design for Voice Agents — session by Amanda Martin at TestMu Conf 2026.",
+      "ogImage": "meta/AmandaMartinMeta.png"
+    }
+  },
+  "autonomous-quality-engineering-ai-systems": {
+    "title": "Autonomous Quality Engineering: Building AI Systems That Generate, Execute, Heal, Learn, and Govern Software Quality",
+    "type": "SESSION",
+    "day": "day3",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "jyotheeswara-gottam"
+    ],
+    "abstract": [
+      "The proposed framework uses Generative AI, LLMs, AI agents, machine learning models, and observability feedback to support self-healing test automation, LLM-based test generation, prompt regression testing, output quality scoring, predictive defect analytics, and intelligent release decisions — transforming quality engineering from reactive validation into an adaptive, intelligence-driven capability.",
+      "Problem statements this talk addresses:",
+      "Conventional testing is often reactive, manually maintained, and dependent on stable test data that rarely exists.",
+      "Automation suites struggle with dynamic catalog and pricing changes, personalized experiences, non-deterministic recommendations, A/B test variants, and payment-provider instability.",
+      "Customer-facing Gen AI features add new risks: hallucinated product details, incorrect policy guidance, unsafe responses, prompt drift, and inconsistent output after model or prompt changes."
+    ],
+    "keyTakeaways": [
+      "Enterprise e-commerce platforms require a quality engineering model that is adaptive, intelligent, and capable of managing constant change.",
+      "Generative AI and LLMs can improve test design, defect analysis, prompt validation, and autonomous decision support, but these capabilities must operate within strong governance, measurable quality indicators, and human oversight.",
+      "The proposed framework positions quality engineering as a strategic capability that supports faster delivery, better customer experience, lower operational risk, and greater release confidence across complex e-commerce ecosystems."
+    ],
+    "meta": {
+      "description": "Autonomous Quality Engineering: Building AI Systems That Generate, Execute, Heal, Learn, and Govern Software Quality — session by Jyotheeswara Reddy Gottam at TestMu Conf 2026.",
+      "ogImage": "meta/JyotheeswaraGottamMeta.png",
+      "titleShort": "Autonomous Quality Engineering"
+    }
+  },
+  "agentic-ai-changed-what-we-test": {
+    "title": "Agentic AI Changed What We Test, And How We Test It",
+    "type": "SESSION",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "pooja-oza"
+    ],
+    "abstract": [
+      "Quality engineering has always rested on one quiet assumption: same input, same output, pass or fail. AI-driven and agentic systems break that assumption at the foundation. The same prompt can produce different — and not necessarily wrong — outputs across runs. An agent might choose a different valid path to the same goal. The old pass/fail model doesn't just get harder to apply; it stops being the right primary framework.",
+      "This talk covers what quality engineering looks like on the other side of that shift, drawn from a team actively living it — not a finished case study, but real, in-progress work. Rather than treating AI purely as something to be tested, we'll look at AI as a tool reshaping how testing itself gets done: AI-assisted test authoring that generates cases from requirements, self-healing automation that adapts without constant manual upkeep, and where AI is starting to absorb the repetitive, low-judgment parts of QA work.",
+      "Absorbing the manual work isn't the same as absorbing the judgment. We'll talk candidly about where human oversight still has to sit in the loop — deciding what \"good enough\" means when outputs are probabilistic, catching failure modes that don't look like traditional bugs, and building trust in AI-assisted processes without giving up responsibility for their quality.",
+      "Attendees will leave with a framework for quality as a spectrum rather than a binary, concrete examples of AI already changing day-to-day QA work, and a grounded sense of what leadership looks like navigating this shift.",
+      "The real question isn't how do we test AI — it's what quality engineering becomes when AI is doing some of the engineering."
+    ],
+    "keyTakeaways": [
+      "Correctness is now a spectrum, not a binary. Non-deterministic AI systems break the pass/fail model traditional QA is built on. Attendees will leave with a framework for evaluating quality when the same input can produce multiple valid outputs.",
+      "AI is already reshaping how testing gets done. Concrete, current examples of AI-assisted test authoring and self-healing automation — not speculative future tooling, but practices teams are adopting now.",
+      "Automating the work isn't automating the judgment. Where human oversight still has to sit in the loop, and how to build trust in AI-assisted QA processes without quietly giving up accountability for quality.",
+      "New failure modes require new instincts. How to recognize issues that don't look like traditional bugs: subtle behavioral drift, technically-correct-but-off-target outputs, agents taking unintended action.",
+      "A grounded view of what's next for QA leadership. What it looks like to lead a team through this shift in real time, based on a pivot still in progress rather than a polished retrospective."
+    ],
+    "meta": {
+      "description": "Agentic AI Changed What We Test, And How We Test It — session by Pooja Oza at TestMu Conf 2026.",
+      "ogImage": "meta/PoojaOzaMeta.png",
+      "titleShort": "Agentic AI Changed What and How We Test"
+    }
+  },
+  "scaling-trust-not-automation": {
+    "title": "Scaling Trust, Not Automation - Rethinking Quality for the AI Era",
+    "type": "SESSION",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "walter-zimerman"
+    ],
+    "abstract": [
+      "As AI reshapes how software systems are developed and delivered, most organizations still ask how to scale automation faster. In doing so they overlook a deeper challenge: AI doesn't merely automate tasks, it delegates judgment and decision-making in ways conventional systems never did.",
+      "Unlike traditional automation, which fails loudly and predictably, AI systems often fail silently — confident but incorrect outputs, context drift, and culturally misaligned responses that erode confidence over time. These failure modes demand a new approach to quality that goes beyond test coverage and accuracy metrics.",
+      "This session reframes quality engineering for AI-driven systems by treating trust as a first-class architectural concern. Attendees will learn why correctness must be defined in context, why benchmarks and pass/fail tests are insufficient, and how to design practical evaluation frameworks that scale with real-world complexity."
+    ],
+    "keyTakeaways": [
+      "A clear distinction between scaling automation and scaling trust.",
+      "Understanding AI-native failure modes missed by traditional QA.",
+      "A framework for defining correctness in complex, context-dependent systems.",
+      "Practical guidance on assigning accountability for AI decisions."
+    ],
+    "meta": {
+      "description": "Scaling Trust, Not Automation - Rethinking Quality for the AI Era — session by Walter Zimerman at TestMu Conf 2026.",
+      "ogImage": "meta/WalterZimermanMeta.png",
+      "titleShort": "Scaling Trust, Not Automation"
+    }
+  },
+  "why-does-ai-need-forward-deployed-engineers": {
+    "title": "Why Does AI Suddenly Need Forward-Deployed Engineers?",
+    "type": "SESSION",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "harinee-muralinath"
+    ],
+    "abstract": [
+      "Forward-deployed engineers are not new. For years, they have worked between complex products, difficult customer problems and real-world delivery.",
+      "So why has AI suddenly made the role feel like the future of engineering?",
+      "Is the current excitement recognition of a proven model—or an industry-wide attempt to solve the uncertainty of AI adoption by creating a new kind of \"everything engineer\"? Does the role represent a durable shift in how technology will be built and deployed, or is it a temporary answer while products, organisations and skills catch up?",
+      "This talk looks beyond the title to ask what is genuinely changing—and what may simply be old work amplified by new hype."
+    ],
+    "keyTakeaways": [
+      "Understand why forward-deployed engineering has re-emerged so strongly in the AI era, despite not being a new model.",
+      "Separate the enduring value of the role from the hype surrounding its current label.",
+      "Examine whether the \"everything engineer\" expectation strengthens delivery or dilutes technical and domain expertise.",
+      "Identify the skills worth building for the long term, regardless of whether the FDE title survives."
+    ],
+    "meta": {
+      "description": "Why Does AI Suddenly Need Forward-Deployed Engineers? — session by Harinee Muralinath at TestMu Conf 2026.",
+      "ogImage": "meta/HarineeMuralinathMeta.png",
+      "titleShort": "Why AI Needs Forward-Deployed Engineers"
+    }
+  },
+  "working-with-developers-testers-survival-guide": {
+    "title": "Working With Developers: A Tester's Survival Guide",
+    "type": "SESSION",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "wessel-braakman"
+    ],
+    "abstract": [
+      "Working with developers can sometimes feel like navigating a jungle. You never quite know which species you'll encounter. Some want to code at lightning speed, others dive into every detail, some prefer working quietly, while others think out loud.",
+      "As testers, our success often depends less on the tools we use and more on how we communicate with these different personalities. In this practical and entertaining session, we'll explore common developer types and how testers can adapt their approach to collaborate more effectively with each of them.",
+      "Through relatable scenarios, you'll see how conversations can go wrong—and how a different approach can completely change the outcome. Every example comes with practical techniques you can apply immediately to reduce friction, improve collaboration, and make quality discussions more productive.",
+      "By the end of this talk, you'll recognize different developer communication styles, learn practical techniques to adapt your communication, improve collaboration without changing who you are, and leave with a survival guide you can apply in your next sprint.",
+      "If you've ever thought, \"Working with developers shouldn't be this hard,\" this talk will give you practical strategies to not only survive those interactions, but enjoy them!"
+    ],
+    "keyTakeaways": [
+      "Recognize common developer \"types\".",
+      "Apply practical survival strategies.",
+      "Turn daily challenges into opportunities."
+    ],
+    "meta": {
+      "description": "Working With Developers: A Tester's Survival Guide — session by Wessel Braakman at TestMu Conf 2026.",
+      "ogImage": "meta/WesselBraakmanMeta.png",
+      "titleShort": "A Tester's Survival Guide"
+    }
+  },
+  "ai-in-mobile-qa-what-actually-works-today": {
+    "title": "AI in Mobile QA: What Actually Works Today?",
+    "type": "PANEL",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "jan-schnyder",
+      "nicolas-muntwyler",
+      "justin-yuan"
+    ],
+    "abstract": [
+      "Join us for a fireside chat with nunu.ai on the current state of AI agents in mobile QA. Working with enterprise customers across mobile apps and games, nunu.ai is helping automate large parts of manual testing and mobile workflows using AI agents. Their agents currently lead public phone-use benchmarks, offering a glimpse into what's possible today. We'll discuss how studios are already deploying AI in production, where the technology delivers real value, how you can get the most out of it and what the future of mobile QA looks like."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "AI in Mobile QA: What Actually Works Today? — panel discussion with nunu.ai co-founders Jan Schnyder and Nicolas Muntwyler, and Tirta Ventures partner Justin Yuan at TestMu Conf 2026.",
+      "ogImage": "meta/JanNicolasJustinMeta.png",
+      "titleShort": "AI in Mobile QA: What Actually Works Today?"
+    }
+  },
+  "cloud-assumes-you-know-what-a-request-will-cost": {
+    "title": "Cloud Assumes You Know What a Request Will Cost",
+    "type": "SESSION",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "ojus-save"
+    ],
+    "abstract": [
+      "Cloud infrastructure was built around a request whose cost you can estimate before it runs. You size timeouts to it, forecast capacity from its average, rate-limit against it, and bill by it. Agent workloads break that assumption at the source: an agent decides what work to do while it executes, so the count of tool calls, model invocations, and retries is only settled once the run is finished.",
+      "This session traces what fails when unpredictable work lands on infrastructure designed for predictable requests. Timeouts fire in the middle of legitimate long runs and surface as silent failures. Capacity plans built on averages miss a heavy tail that a few runs can dominate. Per-request billing and rate limits drift away from the resources actually being consumed.",
+      "The larger argument is that the request is the wrong thing to price and bound. The talk proposes a different unit of accounting, closer to the run and its budget, and covers what teams can do about timeouts, forecasting, and cost controls today while the platforms catch up."
+    ],
+    "keyTakeaways": [
+      "The request assumes a knowable cost; agent runs discover their work mid-execution, so that assumption quietly breaks everything built on it.",
+      "Timeouts, capacity forecasts, and per-request billing all fail on agent workloads because they're tuned to an average that a heavy tail ignores.",
+      "Stop pricing and bounding the request; move to the run and its budget, and here's what you can do about it today."
+    ],
+    "meta": {
+      "description": "Cloud Assumes You Know What a Request Will Cost — session by Ojus Save of Render at TestMu Conf 2026.",
+      "ogImage": "meta/OjusSaveMeta.png",
+      "titleShort": "Cloud Assumes You Know What a Request Will Cost"
+    }
+  },
+  "testing-in-the-era-of-ai-from-qa-to-trust-engineering": {
+    "title": "Testing in the Era of AI: From QA to Trust Engineering",
+    "type": "KEYNOTE",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "kishor-wikhe"
+    ],
+    "abstract": [
+      "AI is changing the role of testing from finding defects to building trust. This session will explore how Quality Engineering must evolve to assure AI-enabled systems across reliability, security, governance, observability, and real-world outcomes."
+    ],
+    "keyTakeaways": [
+      "Why testing is evolving, not dying.",
+      "How the key question shifts from “Does it work?” to “Can it be trusted?”",
+      "The role of Trust Engineering in enabling confident AI adoption."
+    ],
+    "meta": {
+      "description": "Testing in the Era of AI: From QA to Trust Engineering — keynote by Kishor Wikhe, Executive Vice President and Head of Sogeti India at Capgemini, at TestMu Conf 2026.",
+      "ogImagePlanned": "meta/KishorWikheMeta.png",
+      "titleShort": "Testing in the Era of AI"
+    }
+  },
+  "agentic-engineering-from-writing-code-to-reviewing-it": {
+    "title": "Agentic Engineering: From Writing Code to Reviewing It",
+    "type": "SESSION",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "sumit-shatwara"
+    ],
+    "abstract": [
+      "AI coding agents are changing the unit of software work from the keystroke to the ticket. An agent now accepts a scoped task and returns a plan, a traceable change, tests, and a pull request ready for review.",
+      "This session presents a practical operating model for agentic engineering, drawn from deployments in large regulated enterprises: local agents as an extension of your hands, cloud agents as team members, event-driven workflows with human approval gates, and delivery as a closed-loop quality system. A live walkthrough shows what green CI can hide and how evidence-based review catches it. One rule to take home: run the task where its verification lives."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "Agentic Engineering: From Writing Code to Reviewing It — session by Sumit Shatwara of Cognition at TestMu Conf 2026.",
+      "titleShort": "Agentic Engineering: From Writing Code to Reviewing It",
+      "ogImage": "meta/SumitShatwaraMeta.png"
+    }
+  },
+  "testing-at-the-speed-of-agents": {
+    "title": "Testing at the Speed of Agents: Salesforce's Evolving Approach to Agentic Testing",
+    "type": "SESSION",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "john-liang"
+    ],
+    "abstract": [
+      "Agentic AI systems don't behave like the software QA teams were built to test. Outputs vary run to run, decisions happen at runtime, and pass/fail is rarely binary. In this session, John Liang shares how Salesforce has evolved its testing approach to keep pace, the assumptions that broke, the practices that replaced them, and what quality engineering teams should be rethinking now as agents move deeper into production."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "Testing at the Speed of Agents: Salesforce's Evolving Approach to Agentic Testing — session by John Liang of Salesforce at TestMu Conf 2026.",
+      "titleShort": "Testing at the Speed of Agents",
+      "ogImage": "meta/JohnLiangMeta.png"
+    }
+  },
+  "agentic-ai-and-the-next-decade-of-quality-engineering": {
+    "title": "Agentic AI & the Next Decade of Quality Engineering",
+    "type": "SESSION",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "mallika-fernandes"
+    ],
+    "abstract": [
+      "This talk examines how AI is reshaping the SDLC by absorbing mechanical, repetitive work and shifting engineering effort toward higher-order judgment: architecture decisions, system-level integration, risk tradeoffs, and determining what's worth building in the first place.",
+      "As AI evolves, Quality Engineering is seeing a shift to fully autonomous processes. How should we manage AI in order to get the best value and maximize its benefits, and what are the risks and potential pitfalls that one should avoid?"
+    ],
+    "keyTakeaways": [
+      "The evolution of Quality Engineering from testing to intelligent, autonomous systems.",
+      "Why Agentic AI is set to redefine the future of Quality Engineering.",
+      "The skills and mindset quality professionals need for the next decade."
+    ],
+    "meta": {
+      "description": "Agentic AI & the Next Decade of Quality Engineering — session by Mallika Fernandes of Accenture at TestMu Conf 2026.",
+      "titleShort": "Agentic AI & the Next Decade of Quality Engineering",
+      "ogImage": "meta/MallikaFernandesMeta.png"
+    }
+  },
+  "ask-me-anything-ai-agents-skills-career-and-growth": {
+    "title": "Ask Me Anything: AI Agents, Skills, Career & Growth",
+    "type": "AMA",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "rahul-shetty"
+    ],
+    "abstract": [
+      "The way we build software is being rewritten in real time. A year ago, AI was the thing everyone was bracing for; today, agentic AI is already in the workflow, writing code, generating and triaging tests, and shipping alongside engineering teams. Automation is compounding, AI agents are becoming everyday coworkers, and the skills that define a strong engineer are shifting fast. If you're wondering what to learn next, how to grow in an agentic world, or how to stay relevant without burning out trying to keep up with every new tool, you're not alone.",
+      "In this candid AMA, Rahul Shetty, an educator and mentor to over a million engineers and testers, joins us to help you make sense of it all. From getting hands-on with AI agents, to building the skills that matter in an AI-native era, to future-proofing your career and mindset for what's ahead, this is your chance to ask what's really on your mind and get honest, practical answers.",
+      "Ask your questions live during the AMA and get them answered in real time. Whether you're just starting out, switching paths, or leveling up into the agentic engineering era, this session is for you."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "Ask Me Anything: AI Agents, Skills, Career & Growth — AMA with Rahul Shetty, founder of Rahul Shetty Academy, at TestMu Conf 2026.",
+      "titleShort": "AMA: AI Agents, Skills, Career & Growth",
+      "ogImage": "meta/RahulShettyMeta.png"
+    }
+  },
+  "confidence-is-not-correctness-the-agentic-validation-loop": {
+    "title": "Confidence ≠ Correctness: The Agentic Validation Loop",
+    "type": "SESSION",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "prince-verma"
+    ],
+    "abstract": [
+      "An AI agent is exactly as confident when it's right as when it's wrong. Documented failure patterns now include agents that write tests verifying mocks instead of code paths, rewrite failing tests until they pass, and report success over systems they quietly broke. The root cause is architectural, not a model-quality problem: in most agentic pipelines, the system that generates the work also grades it. Confidence and correctness become indistinguishable — and every failure ships as a green checkmark.",
+      "This talk introduces the Agentic Validation Loop: a closed-loop architecture where validation is performed by a layer the generating agent doesn't control. We'll walk through its five stages, extracting verifiable acceptance criteria from requirements, designing tests that always carry their own check, executing against real systems rather than mocks, measuring coverage from run evidence instead of assertions, and detecting drift so the suite keeps matching the spec. Central to the loop is evidence as a first-class artifact: a portable, tamper-evident proof pack per run that outlives the run, gates the pull request as a required check, and gives the human who signs off something better than hope. We'll close with a live end-to-end demonstration and the open problems: judging the judge, evidence at scale, and where human accountability must remain non-transferable."
+    ],
+    "keyTakeaways": [
+      "Why agent failures are invisible by design. Self-grading architectures make confidence and correctness indistinguishable, a diagnostic framework for spotting this anti-pattern in your own pipelines, and why better models can't fix a structural problem.",
+      "The Agentic Validation Loop, a reusable pattern. Five stages — criteria extraction, check-carrying test design, real-system execution, evidence-derived coverage, drift maintenance — implementable with any agent framework or toolchain.",
+      "Evidence as a first-class artifact. A concrete, plain-text, tamper-evident proof-pack schema that makes agent output auditable by people, other agents, and regulators — and turns coverage into a number that's read, never assumed.",
+      "Where humans stay in the loop. Automation can heal drift and measure coverage, but sign-off and the call to ship remain non-transferable — a practical model for accountability in agentic engineering."
+    ],
+    "meta": {
+      "description": "Confidence ≠ Correctness: The Agentic Validation Loop — session by Prince Verma, VP of Engineering at TestMu AI, at TestMu Conf 2026.",
+      "titleShort": "Confidence ≠ Correctness: The Agentic Validation Loop",
+      "ogImage": "meta/PrinceVermaMeta.png"
+    }
+  },
+  "legacy-vs-autonomous-qa-arena": {
+    "title": "Legacy vs. Autonomous QA Arena - Surviving the AI-Driven Quality Evolution",
+    "type": "WORKSHOP",
+    "day": "day3",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "athresh-guruprakash"
+    ],
+    "abstract": [
+      "Your test suite is failing more from flaky locators than actual bugs — and it's costing you 30–40% of your QA budget. This is not a lecture about AI hype. It's a live arena.",
+      "Software testing is undergoing its biggest architectural shift in a decade. Enterprise AI adoption in QA is projected to jump from 15% to 80% by 2027, Playwright adoption surged 235% year-over-year, and yet 89% of teams piloting GenAI in QA still can't get it reliably into production. Something doesn't add up — and this session is built to figure out why, together, in real time.",
+      "In 75 fast-moving minutes, we put legacy script-driven automation head-to-head against self-healing, AI-augmented execution — live. You'll vote on real failure logs before we reveal the root cause. You'll watch an actual test suite break on a live deploy, then watch an AI observation layer catch and heal it in seconds, with the exact resolution strategy shown on screen — no smoke, no vendor slideware. We'll deconstruct what \"self-healing\" actually means mechanically (spoiler: it's three measurable techniques, not magic), and confront the uncomfortable stat at the center of the AI-in-QA conversation: why almost everyone is piloting this, and almost no one has it in production.",
+      "This isn't a tooling sales pitch, and it isn't survivor bias from one team's lucky migration. It's a structural argument, backed by market data and a live technical demonstration, for why the QA professional's job is changing — not disappearing. The session closes by mapping the exact skill shift underway: from writing and maintaining scripts, to owning risk-based test strategy, GenAI evaluation, and AI governance. Attendees leave with a framework for that shift, not just a demo they watched."
+    ],
+    "keyTakeaways": [
+      "Diagnose the real cost of test flakiness — understand why locator and timing failures consume up to 40% of QA budgets, and how to make that case to non-technical stakeholders.",
+      "See self-healing test automation demystified live — not a vendor claim, but a working demonstration of the actual resolution mechanics (selector, timing, and runtime-error healing).",
+      "Understand why Selenium isn't dying, just being re-scoped — a clear framework for deciding what stays on legacy tooling vs. what moves to AI-native platforms.",
+      "Close the pilot-to-production gap — learn why 89% of GenAI-in-QA pilots stall before production, and what governance pattern (human-in-the-loop) actually gets teams past that wall.",
+      "Walk away with a personal skill roadmap — the four capabilities defining the shift from \"script author\" to \"quality owner,\" and how to start building them now."
+    ],
+    "meta": {
+      "description": "Legacy vs. Autonomous QA Arena - Surviving the AI-Driven Quality Evolution — workshop by Athresh Guruprakash of Equifax at TestMu Conf 2026.",
+      "titleShort": "Legacy vs. Autonomous QA Arena",
+      "ogImage": "meta/AthreshGuruprakashMeta.png"
+    }
+  },
+  "testing-what-matters-evaluating-llm-relevancy-with-deepeval": {
+    "title": "Testing What Matters: Evaluating LLM Relevancy with DeepEval",
+    "type": "SESSION",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "monika-sharma"
+    ],
+    "abstract": [
+      "Your LLM returns an answer — but is it actually relevant to what the user asked? Relevancy is the most deceptive failure mode in LLM applications: outputs look fluent, sound confident, and completely miss the point. This talk dives deep into measuring and testing relevancy using DeepEval, covering how to catch drift, hallucination disguised as helpfulness, and the gap between \"correct\" and \"useful.\""
+    ],
+    "keyTakeaways": [
+      "The relevancy problem — why fluent ≠ relevant, and how LLMs confidently answer the wrong question.",
+      "Decomposing relevancy — answer relevancy, contextual relevancy, and faithfulness as distinct failure axes.",
+      "DeepEval's relevancy metrics — how they work under the hood, what they actually measure, and where they break down.",
+      "Building golden datasets — crafting test cases that catch relevancy drift without becoming brittle.",
+      "LLM-as-judge for relevancy — when model-graded relevancy is trustworthy and when human eval is unavoidable."
+    ],
+    "meta": {
+      "description": "Testing What Matters: Evaluating LLM Relevancy with DeepEval — session by Monika Sharma of Salesforce at TestMu Conf 2026.",
+      "titleShort": "Evaluating LLM Relevancy with DeepEval",
+      "ogImage": "meta/MonikaSharmaMeta.png"
+    }
+  },
+  "when-software-starts-thinking-the-now-of-quality-engineering": {
+    "title": "When Software Starts Thinking: The Now of Quality Engineering",
+    "type": "SESSION",
+    "day": "day3",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "chinmaya-kothari"
+    ],
+    "abstract": [
+      "For decades, Quality Engineering has been built around a simple rule: given the same input, software produces the same output. Generative AI has fundamentally changed that.",
+      "Large Language Model based applications, Retrieval-Augmented Generation (RAG) systems and AI agents don't behave like traditional software. They reason, adapt, use memory, invoke tools and collaborate with other agents. The result is a new class of enterprise applications where correctness is no longer binary, and traditional testing techniques alone are no longer enough.",
+      "In this session, I'll explore how Quality Engineering must evolve into AI Assurance — a discipline focused on building confidence in AI systems rather than simply verifying functionality.",
+      "Using practical examples from enterprise AI implementations, we'll examine the new challenges AI introduces: evaluating non-deterministic outputs, validating RAG pipelines, measuring hallucinations, testing autonomous agent workflows, securing AI against prompt injection, and defining meaningful quality metrics beyond pass/fail test cases.",
+      "This talk presents a practical way of thinking about quality in AI-powered products. We'll discuss how concepts such as trust, risk, observability, governance and continuous evaluation are becoming as important as automation and regression testing.",
+      "Attendees will leave with a clear understanding of why AI systems require a different engineering mindset, how existing QE practices can evolve instead of being replaced, and what skills quality engineers need as AI agents become an integral part of enterprise software.",
+      "If your next product includes an LLM, an AI copilot or an autonomous agent, this session will help you rethink what \"quality\" really means."
+    ],
+    "keyTakeaways": [
+      "Why traditional testing approaches are insufficient for AI-powered applications.",
+      "The fundamental differences between testing deterministic software and evaluating AI systems.",
+      "A practical framework for AI Assurance covering risk, risk measurement and testing with evidence.",
+      "Common failure modes in enterprise AI — including hallucinations, prompt injection and agent behavior — and how to approach them.",
+      "How the role of the Quality Engineer is evolving in the age of AI agents."
+    ],
+    "meta": {
+      "description": "When Software Starts Thinking: The Now of Quality Engineering — session by Chinmaya Kothari of QualiZeal at TestMu Conf 2026.",
+      "titleShort": "When Software Starts Thinking",
+      "ogImage": "meta/ChinmayaKothariMeta.png"
+    }
+  },
+  "evidence-based-qa-proving-quality-with-agentic-test-runs": {
+    "title": "Evidence-Based QA: Proving Quality with Agentic Test Runs — and Open-Sourcing How We Do It",
+    "type": "SESSION",
+    "day": "day3",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "anubhav-singhmaar"
+    ],
+    "abstract": [
+      "In regulated industries, \"the tests passed\" isn't enough — you need evidence: what ran, against what build, with what result, traceable end to end. This session shows how agentic testing changes the compliance story. Because every Kane-CLI run produces structured execution logs, screenshots, and artifacts by default, evidence collection stops being a manual afterthought and becomes a byproduct of testing itself. We'll then go a step further and introduce evidence-cli, our newly open-sourced tool for capturing, structuring, and exporting quality evidence from test runs — walking through how it turns raw agent output into an audit-ready evidence trail you can attach to a PR, a release, or a compliance report. We'll connect this to DORA metrics and audit-readiness, drawing on patterns from enterprise QE teams in banking, and show how to satisfy both your engineering leaders and your auditors without slowing either down."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "Evidence-Based QA: Proving Quality with Agentic Test Runs — session by Anubhav Singhmaar, Product Manager at TestMu AI, at TestMu Conf 2026.",
+      "titleShort": "Evidence-Based QA with Agentic Test Runs",
+      "ogImage": "meta/AnubhavSinghmaarMeta.png"
+    }
+  },
+  "ai-applications-security-puzzle": {
+    "title": "AI Applications Security Puzzle",
+    "type": "SESSION",
+    "day": "day3",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "maryia-tuleika"
+    ],
+    "abstract": [
+      "Someone tells your AI assistant to ignore its instructions. It does. Someone asks it a question it was never supposed to answer. It answers. Someone crafts a message that makes it act outside its intended scope. And it doesn't push back.",
+      "These are patterns from live products, already deployed, already used. And in most of the teams where they happened, there was no test for it. Not because anyone was careless, but because nobody asked the right questions.",
+      "This talk is a grounded look at how AI systems get exploited in practice. We'll work through public cases, use the OWASP AI Testing Guide as our map, and name the failure patterns clearly enough that you'll recognize them when you see them in your own product.",
+      "As AI gets added to more products, the attack surface significantly grows. 44% is the year-over-year increase in the exploitation of public facing software. Most teams are focused on whether AI integration works: Does it give good answers? Does it feel right? Is it biased? The harder question: \"What happens when someone tries to manipulate it?\" — gets pushed to later. But later rarely comes.",
+      "AI security issues are not always caught by security specialists. They're caught by people who think critically, ask questions, and dig a level deeper to find the answer.",
+      "You may not walk out of this talk as an AI security expert. But you will walk out knowing what questions to ask and why asking them is already your job."
+    ],
+    "keyTakeaways": [
+      "Why knowing your app architecture is essential to see possible attack vectors.",
+      "How to use the OWASP AI Testing Guide to identify and prioritize AI-specific vulnerabilities.",
+      "Which failure patterns to look for in products you're already testing.",
+      "What questions to bring back to your team to start closing the AI security gap."
+    ],
+    "meta": {
+      "description": "AI Applications Security Puzzle — session by Maryia Tuleika of Regent AB at TestMu Conf 2026.",
+      "titleShort": "AI Applications Security Puzzle",
+      "ogImage": "meta/MaryiaTuleikaMeta.png"
+    }
+  },
+  "the-last-manual-handoff": {
+    "title": "The Last Manual Handoff: Redesigning End-to-End Testing in the Age of AI",
+    "type": "SESSION",
+    "day": "day3",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "sachin-sharma"
+    ],
+    "abstract": [
+      "We automated test execution. We automated regression. We automated reporting, data creation, test design, and even parts of defect analysis. And yet, end-to-end testing still feels painfully manual.",
+      "Why? Because while we automated the activities, we forgot the spaces between them. Requirements wait to be understood. Test data waits to be prepared. Systems wait to be configured. Scripts wait for context. Failures wait to be investigated. Defects wait to be documented. And engineers remain the invisible integration layer carrying information from one testing activity to another. Perhaps the biggest inefficiency left in modern Quality Engineering is not another manual task. It is the manual handoff.",
+      "This talk explores the next evolution of AI in testing: moving from isolated copilots and productivity tools toward agentic, context-aware Quality Engineering systems capable of participating across an end-to-end testing lifecycle. Through the real engineering journey behind Main Tester United, I will demonstrate how we connected AI agents, enterprise systems, test data, automation, engineering knowledge, execution, and reporting into a productionized approach used for real end-to-end testing.",
+      "The live demonstration goes beyond generating test cases or writing automation scripts. It shows how AI can gather context, understand testing objectives, prepare prerequisites, coordinate activities, create engineering artifacts, support execution, investigate failures, and connect insights across the testing lifecycle.",
+      "But the talk also confronts the harder questions. What decisions should remain human? How much autonomy should we give AI agents? What happens when incorrect context travels faster than correct information? And are we ready to trust an engineering system that can act, not merely answer?",
+      "The future of Quality Engineering may not be about automating the next testing task. It may be about removing the gaps between all of them. We automated the work. Now it's time to engineer the flow."
+    ],
+    "keyTakeaways": [
+      "Recognize the hidden cost of handoffs in E2E testing — understand why engineers still act as the invisible integration layer, manually carrying context, data, decisions, and knowledge between increasingly automated testing activities.",
+      "Shift from task automation to intelligent flow orchestration — discover how AI and agentic systems can connect understanding, preparation, execution, investigation, and reporting into a continuous Quality Engineering flow rather than optimizing isolated tasks.",
+      "Redefine the human role in AI-powered Quality Engineering — learn where human judgment must remain central, how much autonomy AI should receive, and why the future belongs not to teams that automate the most, but to those that engineer the flow best."
+    ],
+    "meta": {
+      "description": "The Last Manual Handoff: Redesigning End-to-End Testing in the Age of AI — session by Sachin Sharma of Adidas at TestMu Conf 2026.",
+      "titleShort": "The Last Manual Handoff",
+      "ogImage": "meta/SachinSharmaMeta.png"
+    }
+  },
+  "the-economics-of-ai-agents": {
+    "title": "The Economics of AI Agents: How Startups are Rethinking Value and Monetization",
+    "type": "FIRESIDE CHAT",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "vibhor-rastogi"
+    ],
+    "abstract": [
+      "For twenty years, software economics rested on one unit: a human, a login, a subscription. Agents break that unit. In this fireside chat, Vibhor Rastogi, Managing Director at Citi Ventures, will explore the emerging landscape of agentic pricing. The session will dissect the mechanics, trade-offs, and strategic implications of various monetization frameworks, including outcome, consumption, and productivity-multiplier. Drawing on observations from the venture ecosystem and how leading startups are experimenting with these models, Vibhor will discuss how founders can align their pricing with the actual value their agents deliver, without prescribing a single \"correct\" path. Founders will walk away with a framework for evaluating their own pricing strategies in the agentic era."
+    ],
+    "keyTakeaways": [
+      "Choosing a model is a strategic bet, not packaging. It requires robust technical infrastructure for real-time metering, clear audit trails for billing, and unambiguous definitions of \"completed tasks\" or \"outcomes.\"",
+      "Outcome pricing needs an agreed, auditable definition of \"success.\" Founders must identify the value metric that most closely correlates with their customer's success.",
+      "\"Agent\" is doing a lot of work as a word. Telling reasoning systems from orchestration is largely an evidence problem.",
+      "The optimal model depends heavily on the target customer segment (enterprise vs. SMB), the predictability of the agent's workflows, and the maturity of the product category. Experimentation and iterative feedback are essential."
+    ],
+    "meta": {
+      "description": "The Economics of AI Agents: How Startups are Rethinking Value and Monetization — fireside chat with Vibhor Rastogi, Managing Director at Citi Ventures, at TestMu Conf 2026.",
+      "titleShort": "The Economics of AI Agents",
+      "ogImage": "meta/VibhorRastogiMeta.png"
+    }
+  },
+  "the-bfsi-playbook-scaling-ai-with-trust-and-quality": {
+    "title": "The BFSI Playbook: Scaling AI with Trust and Quality",
+    "type": "PANEL",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "eshwar-pastapur",
+      "brianna-elsass",
+      "brian-corkery",
+      "anand-moorthy"
+    ],
+    "abstract": [
+      "No sector has more to gain from AI, and less room for error, than BFSI. Banks are deploying AI across lending, fraud, and customer servicing; insurers are reimagining underwriting and claims; financial services firms are racing to move agentic AI from pilot to production. Yet every deployment must answer to regulators, auditors, and customers whose trust is the entire business. This panel brings together leaders from banking, insurance, and financial services technology to share their playbooks: which AI use cases have genuinely earned their place in production, how trust becomes an engineering discipline rather than a slogan, and what quality at scale looks like when the systems you're testing are non-deterministic and the stakes are someone's loan, claim, or life savings."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "The BFSI Playbook: Scaling AI with Trust and Quality — panel with Eshwar Pastapur (Symplyphy.ai), Brianna Elsass (Associated Bank), Brian Corkery (TestMu AI), and Anand Moorthy (Fénix Advisory Service) at TestMu Conf 2026.",
+      "titleShort": "The BFSI Playbook: Scaling AI with Trust and Quality",
+      "ogImage": "meta/BFSIPanelMeta.png"
+    }
+  },
+  "securing-agentic-ai": {
+    "title": "Securing Agentic AI",
+    "type": "SESSION",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "deepshikha",
+      "anamika-mukhopadhyay"
+    ],
+    "abstract": [
+      "A practical session for testers on detecting risks like manipulation, data exposure, and unsafe behavior in AI agents before they reach production.",
+      "Your AI-powered application can pass every functional test and still create a serious security incident. Not because it is broken, but because it follows the wrong instructions.",
+      "AI agents read content, use tools, call APIs, and act on our behalf. That makes them useful, but also vulnerable. A document can change its behavior. A message can bypass intended limits. A simple request can expose sensitive data or trigger unintended actions, while everything appears to be working normally.",
+      "This session explores how to test AI agents for the way they fail in the real world. You will learn how to design realistic security tests, uncover unsafe behavior early, and validate that an agent behaves safely under pressure, not just correctly."
+    ],
+    "keyTakeaways": [
+      "Learn how to test AI agents for manipulation, data exposure, and unintended actions.",
+      "Design realistic security tests that go beyond happy-path scenarios.",
+      "Build confidence that AI agents behave safely, not just correctly."
+    ],
+    "meta": {
+      "description": "Securing Agentic AI — session by Deepshikha and Anamika Mukhopadhyay of Nagarro at TestMu Conf 2026.",
+      "titleShort": "Securing Agentic AI",
+      "ogImage": "meta/DeepshikhaAnamikaMeta.png"
+    }
+  },
+  "redefining-test-data-strategy-in-the-era-of-generative-ai": {
+    "title": "Redefining Test Data Strategy in the Era of Generative AI",
+    "type": "SESSION",
+    "day": "day3",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "manideep-singireddy"
+    ],
+    "abstract": [
+      "For years, test automation has focused on better frameworks, faster execution, and expanding CI/CD pipelines. One challenge still slows delivery: test data.",
+      "Modern applications depend on datasets that are complex, interconnected, and often privacy sensitive. Traditional approaches — copying production databases, hand-building records, maintaining static datasets — don't scale well and are slow and costly to maintain.",
+      "Generative AI changes what's possible here. Instead of treating test data as a one-time setup task, teams can build intelligent workflows that help discover data requirements, generate realistic datasets, mask sensitive information, surface edge cases, and maintain reusable data assets across the testing lifecycle.",
+      "This session introduces an AI-Driven Test Data Strategy Framework that combines generative AI with established test data management practices to improve both automation quality and delivery speed. You'll see where AI adds value, where human expertise remains essential, and how to adopt AI responsibly while maintaining data privacy, regulatory compliance, and trust.",
+      "Through practical examples and enterprise scenarios, you'll see how AI can cut test data bottlenecks, improve coverage, and support quality engineering at scale without loosening governance.",
+      "Whether you're a test automation engineer, QA lead, SDET, or quality architect, you'll leave with practical ideas for modernizing your organization's test data strategy using AI."
+    ],
+    "keyTakeaways": [
+      "Why test data remains a major bottleneck in modern test automation — and why traditional approaches haven't solved it.",
+      "How generative AI can accelerate test data discovery, generation, masking, and maintenance.",
+      "A practical framework for integrating AI into enterprise test data management.",
+      "How to balance AI-driven innovation with privacy, governance, and compliance requirements.",
+      "Actionable steps for evolving from manual test data preparation to an AI-assisted strategy."
+    ],
+    "meta": {
+      "description": "Redefining Test Data Strategy in the Era of Generative AI — session by Manideep Reddy Singireddy of Equinox at TestMu Conf 2026.",
+      "titleShort": "Redefining Test Data Strategy in the Era of GenAI",
+      "ogImage": "meta/ManideepSingireddyMeta.png"
+    }
+  },
+  "testing-the-untestable-owasp-ai-llm-risks": {
+    "title": "Testing the Untestable: Turning OWASP AI/LLM Risks into Practical QA Checks",
+    "type": "SESSION",
+    "day": "day3",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "thejes-sree-satheesh-kumar"
+    ],
+    "abstract": [
+      "AI and LLM features are now entering products faster than most teams can test them. That speed creates a new quality gap: traditional test automation verifies APIs and UI flows, but it often misses prompt injection, data leakage, unsafe output, hallucinations, agent misuse and model behavior drift. This talk shows how testers can translate OWASP AI/LLM risk categories into a practical testing approach that fits real QA pipelines.",
+      "Attendees will learn how to think about AI systems as testable software components across the application, model, infrastructure and data layers. The session will demonstrate how to design test cases for prompt injection, indirect prompt injection, sensitive-data exposure, output safety and agentic behavior limits, then convert those into repeatable checks for regression, CI/CD, and release gates.",
+      "The focus is deliberately testing-first: what a QA engineer can observe, assert, automate and report. By the end, participants will leave with a tester's checklist for AI features, a simple risk-based framework for prioritizing test effort and ideas for integrating AI security verification into everyday quality engineering practice."
+    ],
+    "keyTakeaways": [
+      "Testers will learn how to convert OWASP AI/LLM risks into test cases that can be executed in QA workflows.",
+      "The audience will understand how to check for prompt injection, data leakage, unsafe output, hallucination, and agent misuse.",
+      "Attendees will see how to add AI risk checks into regression, CI/CD, and release gates.",
+      "The talk will help QA teams treat AI behavior as something measurable, assertable, and reviewable, not as a black box."
+    ],
+    "meta": {
+      "description": "Testing the Untestable: Turning OWASP AI/LLM Risks into Practical QA Checks — session by Thejes Sree Satheesh Kumar of Thoughtworks at TestMu Conf 2026.",
+      "titleShort": "Turning OWASP AI/LLM Risks into QA Checks",
+      "ogImage": "meta/ThejesSreeSatheeshKumarMeta.png"
+    }
+  },
+  "ml-driven-test-intelligence-at-scale": {
+    "title": "Beyond the Hype: ML-Driven Test Intelligence at Scale - What Works, What Fails, and Why It Matters",
+    "type": "SESSION",
+    "day": "day3",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "tanvi-mittal"
+    ],
+    "abstract": [
+      "The promise of ML-driven test intelligence is compelling: faster feedback loops, smarter test selection, and anomaly detection that catches what traditional automation misses. But the gap between that promise and production reality is where most teams quietly struggle and rarely talk about it publicly. This session closes that gap.",
+      "Drawing from hands-on production experience integrating machine learning into an enterprise QA pipeline inside one of the largest financial institutions in the United States, this talk delivers an unfiltered account of what ML-augmented testing looks like when the stakes are real — regulated environments, high transaction volumes, zero tolerance for silent failures, and teams that still need to ship on time.",
+      "We'll walk through a dual-layer ML architecture: a gradient boosting model (XGBoost + scikit-learn) for intelligent test selection, and an LSTM autoencoder (TensorFlow/PyTorch) for post-deployment anomaly detection. Not as a vendor showcase but as a case study in failure, iteration, and eventual production stability. You'll see where the models performed beyond expectations, cutting test execution time dramatically while maintaining defect detection precision. You'll also see where they failed, including a production payment bug that passed ML-assisted test selection cleanly and only surfaced through a human engineer's judgment. That failure became the foundation of a human-veto policy that now governs every ML recommendation in the pipeline.",
+      "This talk also tackles the organizational side that most technical sessions ignore: how QA roles evolve when ML enters the pipeline, how to govern model recommendations without creating bottleneck processes, and how to build team trust in a system that sometimes says \"skip this test.\" Critically, this session addresses the security dimension, specifically prompt injection risks in AI-augmented pipelines and why testing AI-integrated systems requires a fundamentally different threat model than testing traditional software.",
+      "Whether you are exploring ML for test optimization, mid-implementation and hitting friction, or evaluating whether the investment is worth it, this session gives you the real data, the real failures, and four reusable human-ML collaboration patterns you can take back to your team on day one."
+    ],
+    "keyTakeaways": [
+      "ML test selection works with guardrails: gradient boosting models reduce execution time significantly but require a human-veto policy to catch edge cases the model structurally cannot see.",
+      "Anomaly detection is post-deployment QA's most underused lever: LSTM autoencoders catch behavioral drift after release that no pre-deploy test suite will ever surface.",
+      "Your biggest ML risk isn't accuracy, it's trust: explainability is not optional if teams are to neither override recommendations arbitrarily nor follow them blindly.",
+      "AI-integrated pipelines need security testing, not just functional testing: prompt injection is a real attack surface your QA strategy must account for before production.",
+      "QA roles don't disappear with ML, they evolve: the engineers who thrive shift from writing test cases to governing model behavior, validating training data, and owning the human-ML boundary."
+    ],
+    "meta": {
+      "description": "Beyond the Hype: ML-Driven Test Intelligence at Scale — session by Tanvi Mittal of US Bancorp at TestMu Conf 2026.",
+      "titleShort": "ML-Driven Test Intelligence at Scale",
+      "ogImage": "meta/TanviMittalMeta.png"
+    }
+  },
+  "engineering-remotexpc-wireless-ios-automation-appium": {
+    "title": "Engineering RemoteXPC: Building Wireless iOS Automation with Appium",
+    "type": "WORKSHOP",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "swastik-baranwal",
+      "navin-chandra"
+    ],
+    "abstract": [
+      "Running large-scale iOS automation has traditionally required keeping devices physically connected over USB. As device labs grow, cable management, unstable USB connections, limited observability, and host constraints become common sources of flaky automation.",
+      "RemoteXPC changes this model by enabling secure network-based communication with iOS devices. Built as an open source implementation of Apple's RemoteXPC protocol, appium-ios-remotexpc provides the communication layer that allows Appium to interact with modern iOS devices wirelessly while exposing services such as diagnostics, logging, and device management.",
+      "In this hands-on workshop, participants will learn how RemoteXPC fits into the Appium ecosystem, set up wireless communication with real iOS devices, explore the services it provides, and understand how these capabilities are being integrated into the Appium XCUITest Driver.",
+      "By the end of the workshop, attendees will understand when to use RemoteXPC, how to migrate existing workflows, and how wireless device communication enables more scalable and reliable iOS automation."
+    ],
+    "keyTakeaways": [
+      "Leave with the knowledge and hands-on experience to connect iOS devices wirelessly using RemoteXPC, integrate it into Appium workflows, and understand how it improves the scalability and reliability of iOS test automation."
+    ],
+    "meta": {
+      "description": "Engineering RemoteXPC: Building Wireless iOS Automation with Appium — workshop by Swastik Baranwal and Navin Chandra of TestMu AI at TestMu Conf 2026.",
+      "titleShort": "Wireless iOS Automation with RemoteXPC",
+      "ogImage": "meta/SwastikNavinMeta.png"
+    }
+  },
+  "beyond-scoring-rethinking-ranking-llm-era": {
+    "title": "Beyond Scoring: Rethinking Ranking in the LLM Era",
+    "type": "SESSION",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "rhea-goel"
+    ],
+    "abstract": [
+      "Ranking systems have traditionally been built around carefully engineered objective functions, learned behavior, and years of optimization. But what happens when we introduce models that can reason, interpret intent, and understand natural language? This talk explores how LLMs are reshaping modern ranking systems through the lens of engineering tradeoffs.",
+      "Drawing on the latest academic research and public industry work, we'll examine emerging approaches to expressing ranking objectives, combining reasoning with prediction, designing production-ready architectures, and tackling new challenges around validation and continuous improvement. Rather than focusing on a single architecture, this session explores what researchers and industry practitioners are trying today, what seems promising, and what questions remain open."
+    ],
+    "keyTakeaways": [
+      "Practical challenges with launching LLM-powered systems in production and open research areas."
+    ],
+    "meta": {
+      "description": "Beyond Scoring: Rethinking Ranking in the LLM Era — session by Rhea Goel of Amazon at TestMu Conf 2026.",
+      "titleShort": "Rethinking Ranking in the LLM Era",
+      "ogImage": "meta/RheaGoelMeta.png"
+    }
+  },
+  "discovery-found-everything-agent-context-integrity": {
+    "title": "Discovery Found Everything. Your Agent Still Doesn't Know What Matters",
+    "type": "SESSION",
+    "day": "day3",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "angela-cutulenco"
+    ],
+    "abstract": [
+      "I have an AI service desk analyst agent running in production right now. It completes work on its own, without a person confirming it. It is also restricted to one incident type on one service, and this session is about why.",
+      "The agentic testing conversation has focused on one question. Is the agent reasoning correctly? We build evaluation suites, we score outputs, we trace decisions. What we have not examined is the quality of the enterprise context the agent reasons over, and the assumption underneath it that a populated CMDB means an informed agent.",
+      "That assumption deserves scrutiny, but not the kind it usually gets. Where automated discovery is running, the asset layer is often excellent. Discovery runs on a schedule and finds what is actually deployed. The CMDB is accurate about what exists. It is far less reliable about what those things mean to the business. Service mapping is a project rather than a scheduled job, and most organizations never finish it. Criticality was entered once at build time. Ownership drifts after every reorganization. Failure behaviour is discovered during outages and rarely written down. Every layer carrying meaning is human-maintained, and nothing forces it to stay correct.",
+      "This was survivable while humans read the CMDB, because experienced people silently correct it as they go. An agent cannot. It reads the record and accepts it exactly as written. We chose our first use case the way everybody does, on ticket volume, and it was the right decision. But volume told us how often the work happens. It told us nothing about whether our data could support an agent doing it. We got a good outcome by coincidence, and the next use case is where that stops working.",
+      "Drawing on two decades building and running configuration management, change governance and testing in an organization where a failed change is a public service disruption, this session offers a four-part Context Integrity Test that fits inside the change process you already run."
+    ],
+    "keyTakeaways": [
+      "Why an accurate CMDB and a trustworthy CMDB are different things, and why discovery solves the first and not the second.",
+      "The four layers that carry meaning rather than inventory, and how each one degrades.",
+      "Why choosing an agent's first use case on volume works, and why it fails for the second one.",
+      "A four-part Context Integrity Test, and how to match an agent's permission level to the data quality of the specific service it touches."
+    ],
+    "meta": {
+      "description": "Discovery Found Everything. Your Agent Still Doesn't Know What Matters — session by Angela Cutulenco of the Toronto Transit Commission at TestMu Conf 2026.",
+      "titleShort": "Agent Context Integrity Beyond Discovery",
+      "ogImage": "meta/AngelaCutulencoMeta.png"
+    }
+  },
+  "mobile-app-validation-agentic-loop": {
+    "title": "“Every Agent Drives a Browser. Nobody Drives Your App.” Bringing mobile app validation into the agentic loop",
+    "type": "SESSION",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "shantanu-wali"
+    ],
+    "abstract": [
+      "Agentic testing has transformed how the web gets tested — but it left something behind. The majority of digital time, engagement, and revenue now flows through mobile apps, yet nearly every testing agent shipped in the last two years drives a browser. The industry automated the surface that was easy, not the surface that matters most.",
+      "The irony? Agents already know how to work with mobile. Frontier coding agents like Claude now launch iOS simulators on their own to build, run, and verify the apps they’re writing. Development has crossed into the agent era on mobile — testing hasn’t. And the reasons are structural, not incidental: there’s no DOM, only native view hierarchies that shift across iOS, Android, and OS versions. Hybrid apps jump between native screens and WebViews mid-flow. Permissions dialogs, lifecycle events, locales, and network states turn every run into a moving target. The result is what mobile teams live with today — brittle Appium scripts, exploding device matrices, and more effort spent keeping old tests green than covering anything new.",
+      "This session brings your mobile app into the full agentic loop — not just authoring, but assurance. With Kane-CLI, you bring an .apk or .ipa, state an objective in plain language, and an agent drives a cloud simulator or emulator to author, execute, and version a complete test. But an agent-authored test is a claim until it’s verified — so we’ll walk the mobile assurance flow end to end: deterministic replay on clean Sim/Emu, evidence capture (video, per-step screenshots, device logs), and maintenance that turns app changes into reviewable diffs instead of broken suites. We’ll unpack how mobile’s messy contexts get modeled rather than fought, show the whole loop in a live terminal-first demo, and close with the roadmap from simulators to real devices."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "Bringing mobile app validation into the agentic loop, a session by Shantanu Wali at TestMu Conf 2026.",
+      "ogImage": "meta/ShantanuWaliMeta.png",
+      "titleShort": "Bringing mobile app validation into the agentic loop"
+    }
+  },
+  "ai-trust-and-governance-in-qe": {
+    "title": "AI Trust and Governance in QE: Who Actually Signs Off?",
+    "type": "FIRESIDE CHAT",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "harleen-bedi"
+    ],
+    "abstract": [
+      "Every QE organization is now shipping software that AI helped write, test, and increasingly approve. Most are doing it without a clear answer to a simple question: who is accountable when the AI gets it wrong? “AI governance” has become a boardroom phrase, but on the ground it tends to collapse into either compliance theater or nothing at all.",
+      "In this fireside chat, Harleen Bedi, Associate Vice President & Unit Technology Officer - Quality Engineering, at Infosys, unpacks what trust and governance actually mean for teams adopting AI across the quality lifecycle, the controls that earn their keep, the decisions that should never be fully delegated to a model, the evidence teams need when someone asks how they know a release is safe, and how the QE role itself is being redefined as the accountability layer for AI-built software."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "AI Trust and Governance in QE: Who Actually Signs Off? — a fireside chat with Harleen Bedi at TestMu Conf 2026.",
+      "ogImage": "meta/HarleenBediMeta.png",
+      "titleShort": "AI Trust and Governance in QE: Who Actually Signs Off?"
+    }
+  },
+  "building-once-running-everywhere-portable-ai": {
+    "title": "Building Once, Running Everywhere: The Future of Portable AI Applications",
+    "type": "SESSION",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "prashant-sharma"
+    ],
+    "abstract": [
+      "AI is rapidly moving beyond the cloud — onto laptops, phones, browsers, vehicles, and edge devices. But for developers and testers, this creates a new challenge: how do you build, validate, and optimize an AI application once, then confidently run it across an increasingly diverse world of hardware?",
+      "This session explores the emerging era of portable AI applications, where models and applications can move seamlessly across CPUs, GPUs, NPUs, and other accelerators without requiring developers to reinvent their software for every target.",
+      "We’ll look at the technologies making this possible — from portable AI runtimes and hardware abstraction to intelligent compilation and automated testing — and the new challenges they introduce for performance, consistency, accuracy, and quality assurance.",
+      "Most importantly, we’ll explore what “build once, run everywhere” really means for AI developers and testers, and how portable AI could fundamentally change the way we build, test, and ship the next generation of intelligent applications."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "Building Once, Running Everywhere: The Future of Portable AI Applications, a session by Prashant Sharma at TestMu Conf 2026.",
+      "ogImage": "meta/PrashantSharmaMeta.png",
+      "titleShort": "Building Once, Running Everywhere"
+    }
+  },
+  "testers-guide-to-agentic-quality": {
+    "title": "You Can’t assertEquals an Agent: A Tester’s Guide to Agentic Quality",
+    "type": "SESSION",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "gaurav-khurana"
+    ],
+    "abstract": [
+      "The first time I tried to write a test for an agentic workflow, I reached for assertEquals — and immediately realized how useless it was. The output was different every run. The tool calls happened in a different order. The reasoning path shifted mid-conversation. Everything I knew about testing said this system was broken. But it was working exactly as designed.",
+      "This is not a theoretical problem anymore. Teams across the industry are shipping agents that plan, reason, invoke tools, and make autonomous decisions in production. But testing practices have not kept up — most teams rely on happy-path prompts and manual spot checks because the traditional playbook was never built for systems that think for themselves.",
+      "In this talk, I will present a practical testing playbook built from real-world experience of breaking, debugging, and hardening agentic workflows. I will introduce a layered mental model that decomposes any agentic workflow into distinct testable components — giving your team a shared vocabulary to move from “where do we even start” to a structured strategy.",
+      "Then I will open a live demo. Using an open-source orchestration framework with a visual graph interface, I will walk through a working agent and systematically break each layer on screen — showing subtle, dangerous failure modes and the concrete testing techniques that catch them. You will walk away with a testing mental model, a working demo you can clone, and the confidence to stop guessing and start testing agents with intention."
+    ],
+    "keyTakeaways": [
+      "A five-layer mental model for decomposing any agentic workflow into testable components — reasoning, tool use, memory, orchestration, and output quality.",
+      "Practical testing techniques for non-deterministic systems including trajectory testing, LLM-as-judge evaluation, chaos injection, and semantic regression suites.",
+      "A clear framework for deciding what to automate, what needs human review, and where to draw the line between flaky and broken."
+    ],
+    "meta": {
+      "description": "You Can’t assertEquals an Agent: A Tester’s Guide to Agentic Quality, a session by Gaurav Khurana at TestMu Conf 2026.",
+      "ogImage": "meta/GauravKhuranaMeta.png",
+      "titleShort": "You Can’t assertEquals an Agent"
+    }
+  },
+  "ai-powered-impact-based-testing": {
+    "title": "AI-Powered Impact-Based Testing for Faster, Safer Releases",
+    "type": "SESSION",
+    "day": "day3",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "srikanta-sahoo",
+      "navneet-goyal"
+    ],
+    "abstract": [
+      "The Smart Engine uses artificial intelligence to optimize software testing by identifying the tests most relevant to each code change. It analyzes code modifications, dependencies, historical test results, semantic relationships, and test reliability to predict potential impact. By executing only the required subset of tests, it reduces feedback time and avoids the cost of repeatedly running the entire test suite.",
+      "The approach improves developer productivity while maintaining confidence that critical defects are not overlooked. With every test cycle, the engine learns from new outcomes and continuously adapts to the application and its evolving codebase."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "AI-Powered Impact-Based Testing for Faster, Safer Releases, a session by Srikanta Sahoo and Navneet Goyal at TestMu Conf 2026.",
+      "ogImage": "meta/SrikantaNavneetMeta.png",
+      "titleShort": "AI-Powered Impact-Based Testing"
+    }
+  },
+  "debug-with-appium-mcp": {
+    "title": "Debug with Appium MCP",
+    "type": "WORKSHOP",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "srinivasan-sekar",
+      "sai-krishna"
+    ],
+    "abstract": [
+      "The future of test automation is conversational. In this talk, we’ll explore how the Model Context Protocol (MCP) transforms Appium from a traditional automation framework into an AI-native testing platform that understands natural language commands and intelligently interacts with mobile applications.",
+      "We’ll demonstrate mcp-appium, an open-source solution that creates a seamless bridge between AI assistants like Claude and Appium’s mobile automation capabilities. By exposing Appium’s WebDriver protocol through MCP’s standardized interface, we enable developers and QA engineers to write, debug, and execute mobile tests using natural language.",
+      "What makes this solution truly revolutionary is its ability to learn from your testing journey: as you explore and interact with your mobile app through natural language commands, mcp-appium automatically generates production-ready test code, transforming exploratory testing sessions into maintainable automation suites.",
+      "One of the biggest pain points in iOS testing is getting real device tests running — provisioning profiles, certificates, and WebDriverAgent setup often consume hours of valuable time. We’ll demonstrate how two MCP servers can communicate with each other: mcp-appium talking to mcp-webdriveragent to dramatically accelerate iOS real device setup and test execution.",
+      "Live demonstrations include converting English descriptions into executable Appium tests, AI-assisted element location and interaction strategies, automatic test code generation from exploratory testing sessions, seamless iOS real device setup through inter-MCP communication, dynamic test adaptation based on app state changes, and integration with popular AI assistants and development environments.",
+      "As mobile applications grow more complex, traditional scripted automation struggles to keep pace. MCP-Appium represents a paradigm shift — where AI doesn’t replace test engineers but amplifies their capabilities, making test creation faster, test maintenance easier, and test coverage broader. Additionally, the MCP-to-MCP communication pattern opens new possibilities for solving infrastructure challenges that have plagued mobile testing for years.",
+      "Whether you’re a seasoned Appium user curious about AI integration or exploring next-generation automation approaches, this session will provide practical insights and actionable strategies for adopting AI-powered mobile testing in your organization. It’s for mobile test automation engineers, QA architects and technical leads, developers interested in AI-enhanced testing, and anyone curious about the intersection of LLMs and test automation."
+    ],
+    "keyTakeaways": [
+      "How Model Context Protocol enables AI agents to safely and efficiently control Appium test sessions.",
+      "Real-world demonstrations of natural language test creation for iOS and Android.",
+      "MCP-to-MCP communication: how mcp-appium and mcp-webdriveragent work together to solve iOS real device testing challenges.",
+      "Architecture patterns for integrating MCP servers with existing Appium infrastructure.",
+      "Best practices for building AI-augmented mobile testing workflows.",
+      "The future of intelligent test automation and self-healing test scenarios."
+    ],
+    "meta": {
+      "description": "Debug with Appium MCP, a workshop by Srinivasan Sekar and Sai Krishna at TestMu Conf 2026.",
+      "titleShort": "Debug with Appium MCP",
+      "ogImage": "meta/DebugAppiumMCPMeta.png"
+    }
+  },
+  "the-agentic-software-factory-that-enterprises-actually-need": {
+    "title": "The Agentic Software Factory That Enterprises Actually Need",
+    "type": "PANEL",
+    "day": "day1",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "heena-purohit",
+      "chase-norton",
+      "itamar-friedman",
+      "patrick-vuong"
+    ],
+    "abstract": [
+      "The first wave of developer AI focused on helping individuals write code faster. The next wave is where agents transform the entire software delivery lifecycle. But enterprises have different needs. They do not simply need more code generated faster. They need an agentic software factory that operates with quality, control, reliability, and accountability at scale.",
+      "That takes more than deploying coding agents. Enterprises must be able to modernize large, complex codebases, ensure consistent standards across thousands of repositories, validate AI-generated changes, manage security and compliance requirements, resolve production issues, and determine whether increased AI usage is producing better engineering and business outcomes. The goal isn't tokenmaxxing. It’s outcome-maxxing.",
+      "This session brings together leaders building different layers of the emerging agentic software engineering stack to examine what it takes to move from isolated coding copilots to a connected, enterprise-grade engineering system. The discussion will explore how organizations can introduce greater automation while maintaining visibility, governance, reliability, trust, and human oversight.",
+      "Attendees will leave with a clearer view of what an enterprise-ready agentic software factory looks like, which parts of the lifecycle are ready for deeper automation, and what enterprises must put in place before they can trust agents to build, change, and operate critical software."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "The Agentic Software Factory That Enterprises Actually Need — panel with Heena Purohit (Microsoft), Chase Norton (Faros AI), Itamar Friedman (Qodo AI), and Patrick Vuong (Moderne) at TestMu Conf 2026.",
+      "titleShort": "The Agentic Software Factory That Enterprises Actually Need",
+      "ogImage": "meta/AgenticSoftwareFactoryPanelMeta.png"
+    }
+  },
+  "build-your-own-benchmark-why-agents-need-custom-evals": {
+    "title": "Build Your Own Benchmark: Why Agents Need Custom Evals (and How to Create Them)",
+    "type": "SESSION",
+    "day": "day3",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "haritha-sreedharan-nair"
+    ],
+    "abstract": [
+      "Agents are becoming software’s primary users. The question is no longer which model ranks highest on public leaderboards - it is whether agents can reliably complete the real-world tasks your product promises.",
+      "Public benchmarks miss local context: your workflows, state, permissions, edge cases, and tool surfaces. Product failures are specific - bad defaults, missing docs, and friction that only appear when agents actually use your SDK, CLI, or MCP. Custom benchmarks solve this by turning real tasks into reproducible experiments you can rerun after every model, harness, or product change.",
+      "In this talk, we’ll discuss how anyone can define their own custom eval suite and benchmarks, what are the advantages of having them, and how to make them scalable and maintainable. You’ll see how to define tasksets, seed environments and agent harnesses, apply treatments (SDK/CLI/MCP/custom agents), add validators, and collect comparable evidence - completion scores, trajectories, metrics, and file changes - so you can compare, debug, and improve systems that work for agents."
+    ],
+    "keyTakeaways": [
+      "A clear mental model for why public benchmarks fail their product (and what to do instead)",
+      "A practical framework for turning real agent workflows into reproducible experiments",
+      "Confidence that they can start building useful custom benchmarks without a research team"
+    ],
+    "meta": {
+      "description": "Build Your Own Benchmark: Why Agents Need Custom Evals (and How to Create Them) — session by Haritha Sreedharan Nair (Co-founder & CTO, Oqoqo) at TestMu Conf 2026.",
+      "titleShort": "Build Your Own Benchmark: Why Agents Need Custom Evals",
+      "ogImage": "meta/HarithaSreedharanNairMeta.png"
+    }
+  },
+  "money-moves-at-machine-speed-trust-risk-and-quality-in-agentic-finance": {
+    "title": "Money Moves at Machine Speed: Trust, Risk, and Quality in Agentic Finance",
+    "type": "PANEL",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "trincy-thomas",
+      "preetham-sunilkumar",
+      "veena-setlur",
+      "krystyna-sylyvonchyk"
+    ],
+    "abstract": [
+      "AI in BFSI is crossing a threshold, from models that recommend to agents that act. Banks are piloting agents that resolve disputes and move money, insurers are deploying agents across claims and underwriting workflows, and financial services firms are wiring agents into fraud, servicing, and even software delivery itself. But an agent that acts is an agent that must be governed, audited, and tested like any regulated actor.",
+      "This panel brings together leaders across banking, financial services, and insurance to discuss what it takes to put autonomous agents into production where real money and real customers are on the line: the guardrails and human-in-the-loop checkpoints that regulators will expect, how to test and certify systems that are non-deterministic by design, and where the line sits today between what agents are allowed to do, and what they've actually earned the trust to do."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "Money Moves at Machine Speed: Trust, Risk, and Quality in Agentic Finance — panel with Trincy Thomas (Gen Digital), Preetham Sunilkumar (LPL Financial), Veena Setlur, and Krystyna Sylyvonchyk (Voya Financial) at TestMu Conf 2026.",
+      "titleShort": "Money Moves at Machine Speed",
+      "ogImagePlanned": "meta/MoneyMovesPanelMeta.png"
+    }
+  },
+  "who-tests-the-machines-software-quality-in-the-age-of-ai-written-code": {
+    "title": "Who Tests the Machines? QE Leaders on Software Quality in the Age of AI-Written Code",
+    "type": "PANEL",
+    "day": "day2",
+    "time": "TBD",
+    "duration": "",
+    "speakers": [
+      "ankur-agarwal",
+      "nandini-srinivasan",
+      "somu-suryanarayanan",
+      "rahul-nethi"
+    ],
+    "abstract": [
+      "A growing share of the world's code is now written by AI, and the people responsible for quality are the first to feel it. This panel brings together QE leaders who live that shift every day: teams reviewing code no human wrote, automation that heals itself, and quality organizations that now ship production code of their own. They will get into what the SDLC looks like when agents generate, review, and test software, whether quality engineering becomes more critical or gets absorbed into the platform, how trust and provenance work for AI written code at enterprise scale, and which skills the next generation of testers will actually need."
+    ],
+    "keyTakeaways": [],
+    "meta": {
+      "description": "Who Tests the Machines? QE Leaders on Software Quality in the Age of AI-Written Code — panel with Ankur Agarwal (NielsenIQ), Nandini Srinivasan (Motive), Somu Suryanarayanan (CookUnity), and Rahul Nethi (Little Caesar Enterprises Inc.) at TestMu Conf 2026.",
+      "titleShort": "Who Tests the Machines?",
+      "ogImagePlanned": "meta/WhoTestsTheMachinesPanelMeta.png"
+    }
+  }
+}

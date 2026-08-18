@@ -1,0 +1,356 @@
+.row {
+  background: #1e1a14;
+  border: 0.5px solid #6c6c58;
+  border-bottom: none;
+  transition: background 220ms ease;
+  /* Keynote-card click triggers scrollIntoView on the row id; this margin
+     keeps the row from landing flush against the global sticky header. */
+  scroll-margin-top: 96px;
+}
+
+.row:last-child {
+  border-bottom: 0.5px solid #6c6c58;
+}
+
+.rowOpen {
+  background: #2a2620;
+}
+
+.toggle {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 32px;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+
+.tile {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  border: 2px solid #ffffe3;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.tileImg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tileTint {
+  position: absolute;
+  inset: 0;
+  opacity: 0.55;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.text {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  min-width: 0;
+}
+
+.name {
+  font-family: "Geist Mono", monospace;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -1.6px;
+  color: #ffffe3;
+  text-transform: uppercase;
+  margin: 0;
+  width: 444px;
+  word-break: break-word;
+}
+
+/* By default the two name spans render inline with a literal space between
+   them — visually identical to the original single-string version. Mobile
+   redeclares them as block to produce the Figma stair-step. */
+.nameFirst,
+.nameLast {
+  display: inline;
+}
+
+/* Both pieces are visible on mobile only — see breakpoint override.
+   `.roleCompanyComma` becomes inline (sits at the end of the role line) and
+   `.roleCompany` becomes block (drops to the next line). */
+.roleCompanyComma,
+.roleCompany {
+  display: none;
+}
+
+.role {
+  font-family: "Geist Mono", monospace;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.8px;
+  color: #ffffe3;
+  text-transform: uppercase;
+  margin: 0;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.company {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+}
+
+.companyLogo {
+  object-fit: contain;
+  display: block;
+}
+
+.companyName {
+  font-family: "Geist Mono", monospace;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.7px;
+  color: rgba(255, 255, 227, 0.7);
+  text-transform: uppercase;
+}
+
+.chevron {
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(59, 55, 49, 0.5);
+  border: 0.536px solid rgba(255, 255, 227, 0.2);
+  flex-shrink: 0;
+  transition: transform 250ms ease;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+.chevronIcon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.expanded {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 320ms ease, opacity 200ms ease;
+  opacity: 0;
+}
+
+.expandedOpen {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.expandedInner {
+  overflow: hidden;
+  min-height: 0;
+}
+
+.expandedBody {
+  padding: 0 32px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.bioRow {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  padding-left: 96px;
+}
+
+.bio {
+  font-family: "Geist", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffe3;
+  margin: 0;
+  flex: 1 1 0;
+  max-width: 824px;
+}
+
+.socials {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  color: #ffffe3;
+  transition: opacity 180ms ease;
+}
+
+.socialLink:hover {
+  opacity: 0.7;
+}
+
+.socialIcon {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.sessionWrap {
+  padding-left: 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+@media (max-width: 1179px) {
+  .toggle {
+    padding: 24px;
+    gap: 16px;
+  }
+  /* Bump the gap inside the text row so name and role stop touching — at
+     desktop the explicit 444px name width handles spacing; at tablet the
+     name shrinks to its content width and the 2px default gap is too tight. */
+  .text {
+    gap: 32px;
+  }
+  .name {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.2px;
+    width: auto;
+    flex: 0 0 auto;
+    min-width: 220px;
+  }
+  .role {
+    font-size: 14px;
+  }
+  .expandedBody {
+    padding: 0 24px 24px;
+  }
+  .bioRow,
+  .sessionWrap {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Mobile row per Figma: tile + vertical (name | role | company-logo) +
+     small chevron. Name stays on a single line; the company logo replaces
+     the company-name text fallback below the role. */
+  .row {
+    border-width: 0.25px;
+  }
+  .row:last-child {
+    border-bottom-width: 0.25px;
+  }
+  .toggle {
+    padding: 16px;
+    gap: 12px;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .tile {
+    width: 64px;
+    height: 64px;
+    border-width: 1.6px;
+    order: 0;
+  }
+  .text {
+    flex: 1 1 0;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 6px;
+    min-width: 0;
+    order: 0;
+  }
+  /* Single-line name — drop the stair-step. */
+  .name {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.8px;
+  }
+  .nameFirst,
+  .nameLast {
+    display: inline;
+    white-space: normal;
+  }
+  .nameLast {
+    padding-left: 0;
+  }
+  .role {
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: -0.5px;
+    flex: 0 0 auto;
+  }
+  /* Comma stays at the end of the role line (matches Figma); company-name
+     text is hidden because we render the actual logo below instead. */
+  .roleCompanyComma {
+    display: inline;
+  }
+  .roleCompany {
+    display: none;
+  }
+  /* Show the company logo column on mobile too, sized to the Figma spec
+     (~12px tall × 65px wide inside a 72×20 slot). */
+  .company {
+    display: flex;
+    flex: 0 0 auto;
+    width: 72px;
+    justify-content: flex-start;
+  }
+  .companyName {
+    font-size: 10px;
+    letter-spacing: -0.5px;
+  }
+  .chevron {
+    order: 0;
+    width: 24px;
+    height: 24px;
+    border-width: 0.321px;
+    align-self: center;
+    margin-left: 0;
+  }
+  .chevronIcon {
+    width: 14.4px;
+    height: 14.4px;
+  }
+  .bioRow {
+    flex-direction: column;
+  }
+  .bio {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
