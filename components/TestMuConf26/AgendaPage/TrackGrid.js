@@ -200,7 +200,15 @@ const PlenaryBand = ({ row, rowSpeakers, live, timeLabel }) => {
   );
 };
 
-const TrackGrid = ({ rows, sessions, getSpeakers, dayId, formatTime, isLive }) => {
+const TrackGrid = ({
+  rows,
+  allRows,
+  sessions,
+  getSpeakers,
+  dayId,
+  formatTime,
+  isLive,
+}) => {
   /* Notify-me toggles, kept per signed-in email in localStorage. */
   const { email } = usePersona();
   const storageKey = `tm26:reminders:${email}`;
@@ -234,9 +242,18 @@ const TrackGrid = ({ rows, sessions, getSpeakers, dayId, formatTime, isLive }) =
   const isPlenary = (row) =>
     isPlenaryType(row) && (!row.track || !shownTrackIds.has(row.track));
 
-  /* Group rows into time slots, ordered by start time. */
+  /* Group rows into time slots, ordered by start time. The slot list
+     comes from the full unfiltered day (allRows) so slots emptied by a
+     track/search filter still appear, as visible gaps in the timeline. */
   const slotOrder = [];
   const slots = new Map();
+  (allRows || rows).forEach((row) => {
+    const key = row.time || "TBD";
+    if (!slots.has(key)) {
+      slots.set(key, []);
+      slotOrder.push(key);
+    }
+  });
   rows.forEach((row) => {
     const key = row.time || "TBD";
     if (!slots.has(key)) {
@@ -325,6 +342,14 @@ const TrackGrid = ({ rows, sessions, getSpeakers, dayId, formatTime, isLive }) =
                 className="flex flex-col gap-2"
                 style={{ gridColumn: `2 / span ${dayTracks.length || 1}` }}
               >
+                {slotRows.length === 0 && (
+                  <div
+                    className="flex items-center border border-dashed border-[#fffef2]/15 px-4 py-3 text-[11px] tracking-[0.08em] uppercase text-[#fffef2]/40"
+                    aria-label={`No matching sessions${timeLabel ? `, ${timeLabel}` : ""}`}
+                  >
+                    No sessions in this slot
+                  </div>
+                )}
                 {plenary.map((row) => (
                   <PlenaryBand
                     key={row.id}

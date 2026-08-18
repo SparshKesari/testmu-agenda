@@ -684,6 +684,7 @@ const AgendaLanding = ({ agenda, sessions, speakers }) => {
                           <div className="mx-[calc(50%-50vw)] px-6 smtablet:px-3">
                             <TrackGrid
                               rows={rows}
+                              allRows={agenda[d.id] || []}
                               sessions={sessions}
                               getSpeakers={resolveRowSpeakers}
                               dayId={d.id}
