@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import Head from "next/head";
 
 import "../styles/globals.css";
-import EmailGate from "../components/EmailGate";
 import { PersonaContext } from "../lib/PersonaContext";
 import { getPersona } from "../lib/personalization";
 
@@ -49,18 +48,12 @@ export default function App({ Component, pageProps }) {
     );
   }
 
-  if (!email) {
-    return (
-      <>
-        {shell}
-        <EmailGate onSubmit={saveEmail} />
-      </>
-    );
-  }
-
+  /* No email gate: the agenda is open to everyone. A stored email (from
+     an earlier visit) still personalizes; saveEmail stays available to
+     any future opt-in UI. */
   return (
     <PersonaContext.Provider
-      value={{ email, persona: getPersona(email), changeEmail }}
+      value={{ email, persona: getPersona(email), saveEmail, changeEmail }}
     >
       {shell}
       <Component {...pageProps} />

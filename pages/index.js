@@ -68,7 +68,7 @@ export async function getStaticProps() {
 }
 
 const AgendaLanding = ({ agenda, sessions, speakers }) => {
-  const { persona } = usePersona();
+  const { email, persona } = usePersona();
   const [activeDay, setActiveDay] = useState("day1");
   const [query, setQuery] = useState("");
   const [selectedType, setSelectedType] = useState("All");
@@ -226,7 +226,11 @@ const AgendaLanding = ({ agenda, sessions, speakers }) => {
   return (
     <>
       <Head>
-        <title>{`Agenda for ${persona.firstName} — TestMu Conf 2026`}</title>
+        <title>
+          {email
+            ? `Agenda for ${persona.firstName} — TestMu Conf 2026`
+            : "Agenda — TestMu Conf 2026"}
+        </title>
       </Head>
 
       <div className="bg-[#1e1a14] min-h-screen">
