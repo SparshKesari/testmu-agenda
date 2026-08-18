@@ -111,6 +111,11 @@ const SessionCell = ({
           {speakerNames(rowSpeakers)}
         </p>
       )}
+      {row.hosts?.length > 0 && (
+        <p className="text-[10px] tracking-[0.14em] uppercase text-[#fffef2]/50 mt-1.5">
+          Host · {row.hosts.join(" / ")}
+        </p>
+      )}
 
       <div className="flex items-center justify-end gap-1.5 mt-auto pt-2.5">
         {href && (
@@ -185,6 +190,11 @@ const PlenaryBand = ({ row, rowSpeakers, live, timeLabel }) => {
           </span>
         )}
       </p>
+      {row.hosts?.length > 0 && (
+        <p className="text-[10px] tracking-[0.14em] uppercase text-[#fffef2]/50 mt-1">
+          Host · {row.hosts.join(" / ")}
+        </p>
+      )}
     </article>
   );
 };
