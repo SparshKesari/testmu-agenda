@@ -142,6 +142,9 @@ const AgendaRow = ({
               HOST · {row.hosts.join(" / ")}
             </span>
           )}
+          {row.recorded && (
+            <span className={styles.hostTag}>◉ RECORDED</span>
+          )}
         </div>
 
         {!isOpen && <AvatarStack speakers={speakers} />}

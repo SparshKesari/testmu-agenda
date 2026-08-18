@@ -165,29 +165,6 @@ const StickyHeader = ({ revealOnScroll = false, mainClassName = "", innerClassNa
               </div>
             </div>
 
-            <Link
-              href="https://www.testmuai.com/testmuconf-2026/#register"
-              className={`${styles.registerCta} ${
-                isStuck ? styles.slotVisible : styles.slotHidden
-              }`}
-              aria-hidden={isStuck ? "false" : "true"}
-              tabIndex={isStuck ? 0 : -1}
-              aria-label="Register Now"
-            >
-              <span className={styles.registerCtaImgWrap}>
-                <img
-                  alt="Register Now"
-                  className={`${styles.registerCtaImg} ${styles.registerCtaDefault}`}
-                  src={`${resourcesHost}/images/testmuConf26/main/images/HeroRegisterButton.svg`}
-                />
-                <img
-                  alt=""
-                  aria-hidden="true"
-                  className={`${styles.registerCtaImg} ${styles.registerCtaHover}`}
-                  src={`${resourcesHost}/images/testmuConf26/main/images/HeroRegisterButton-Hover.svg`}
-                />
-              </span>
-            </Link>
           </div>
         </div>
       </div>
@@ -202,15 +179,7 @@ const StickyHeader = ({ revealOnScroll = false, mainClassName = "", innerClassNa
         id="testmuconf-mobile-menu"
         className={`${styles.mobileCta} ${isMenuOpen ? styles.mobileCtaOpen : ""}`}
       >
-        <div className={styles.mobileCtaRow}>
-          <Link
-            href="https://www.testmuai.com/testmuconf-2026/#register"
-            className={styles.mobileRegisterBtn}
-            onClick={closeMenu}
-          >
-            REGISTER NOW
-          </Link>
-        </div>
+        <div className={styles.mobileCtaRow} />
       </div>
     </>
   );

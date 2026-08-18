@@ -98,6 +98,9 @@ const SessionCell = ({
       >
         {row.type || "SESSION"}
         {row.duration ? ` · ${row.duration}` : ""}
+        {row.recorded && (
+          <span className="ml-2 text-[#fffef2]/50">◉ RECORDED</span>
+        )}
         {trackName && <span className="sr-only">, {trackName}</span>}
         {timeLabel && <span className="sr-only">, {timeLabel}</span>}
         {live && (
@@ -169,6 +172,9 @@ const PlenaryBand = ({ row, rowSpeakers, live, timeLabel }) => {
       <p className="text-[10px] tracking-[0.2em] uppercase text-[#fffef2]/75 mb-1">
         {row.type || "NOTE"}
         {row.duration ? ` · ${row.duration}` : ""}
+        {row.recorded && (
+          <span className="ml-2 text-[#fffef2]/50">◉ RECORDED</span>
+        )}
         {timeLabel && <span className="sr-only">, {timeLabel}</span>}
         {live && (
           <span className="ml-2 text-[#ff9c8f]">

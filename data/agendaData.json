@@ -34,7 +34,8 @@
       "hosts": [
         "Saiby",
         "Kavita"
-      ]
+      ],
+      "recorded": true
     },
     {
       "id": "d1s17",
@@ -86,7 +87,8 @@
       "track": "agentic",
       "hosts": [
         "Vaishali"
-      ]
+      ],
+      "recorded": true
     },
     {
       "id": "d1s19",
@@ -141,7 +143,8 @@
       "type": "FIRESIDE CHAT",
       "speaker": "harleen-bedi",
       "session": "ai-trust-and-governance-in-qe",
-      "track": "scale"
+      "track": "scale",
+      "recorded": true
     },
     {
       "id": "d1s7",
@@ -431,7 +434,8 @@
       "type": "KEYNOTE",
       "speaker": "thomas-dohmke",
       "session": "is-the-developer-lifecycle-dead",
-      "track": "trust"
+      "track": "trust",
+      "recorded": true
     },
     {
       "id": "d2s15",
@@ -699,7 +703,8 @@
       "track": "build",
       "hosts": [
         "Devansh"
-      ]
+      ],
+      "recorded": true
     },
     {
       "id": "d2s8",
@@ -754,7 +759,8 @@
       "track": "ship",
       "hosts": [
         "Sparsh"
-      ]
+      ],
+      "recorded": true
     },
     {
       "id": "d2s26",
@@ -834,7 +840,8 @@
       "type": "SESSION",
       "speaker": "mallika-fernandes",
       "session": "agentic-ai-and-the-next-decade-of-quality-engineering",
-      "track": "quality"
+      "track": "quality",
+      "recorded": true
     },
     {
       "id": "d2s12",
@@ -857,7 +864,8 @@
       "type": "KEYNOTE",
       "speaker": "andrew-duncan",
       "session": "the-next-era-of-ai-from-can-we-build-it-to-can-we-trust-it",
-      "track": "trust"
+      "track": "trust",
+      "recorded": true
     },
     {
       "id": "d2s34",
@@ -953,7 +961,8 @@
       "duration": "15 MINS",
       "type": "KEYNOTE",
       "speaker": "luis-hector-chavez",
-      "track": "trust"
+      "track": "trust",
+      "recorded": true
     },
     {
       "id": "d3s4",
