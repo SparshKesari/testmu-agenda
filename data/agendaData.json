@@ -17,7 +17,10 @@
       "type": "KEYNOTE",
       "speaker": "kishor-wikhe",
       "session": "testing-in-the-era-of-ai-from-qa-to-trust-engineering",
-      "track": "trust"
+      "track": "trust",
+      "hosts": [
+        "Maneesh"
+      ]
     },
     {
       "id": "d1s3",
@@ -27,7 +30,11 @@
       "type": "SESSION",
       "speaker": "nishant-gupta",
       "session": "deterministic-infrastructure-non-deterministic-ai-agents",
-      "track": "agentic"
+      "track": "agentic",
+      "hosts": [
+        "Saiby",
+        "Kavita"
+      ]
     },
     {
       "id": "d1s17",
@@ -37,7 +44,10 @@
       "type": "SESSION",
       "speaker": "prince-verma",
       "session": "confidence-is-not-correctness-the-agentic-validation-loop",
-      "track": "trust"
+      "track": "trust",
+      "hosts": [
+        "Harshit"
+      ]
     },
     {
       "id": "d1s18",
@@ -47,7 +57,10 @@
       "type": "AMA",
       "speaker": "rahul-shetty",
       "session": "ask-me-anything-ai-agents-skills-career-and-growth",
-      "track": "scale"
+      "track": "scale",
+      "hosts": [
+        "Sparsh"
+      ]
     },
     {
       "id": "d1s4",
@@ -57,7 +70,10 @@
       "type": "SESSION",
       "speaker": "jaydeep-chakrabarty",
       "session": "context-that-dreams",
-      "track": "ship"
+      "track": "ship",
+      "hosts": [
+        "Poornima"
+      ]
     },
     {
       "id": "d1s5",
@@ -67,7 +83,10 @@
       "type": "SESSION",
       "speaker": "nilesh-dalvi",
       "session": "from-ai-assistants-to-ai-coworkers",
-      "track": "agentic"
+      "track": "agentic",
+      "hosts": [
+        "Vaishali"
+      ]
     },
     {
       "id": "d1s19",
@@ -80,7 +99,10 @@
         "srinivasan-sekar"
       ],
       "session": "testing-autonomous-ai-agents-beyond-traditional-qa",
-      "track": "quality"
+      "track": "quality",
+      "hosts": [
+        "Mudit"
+      ]
     },
     {
       "id": "d1s6",
@@ -90,7 +112,10 @@
       "type": "SESSION",
       "speaker": "sobhitha-neelanath",
       "session": "architects-of-trust-quality-leadership-agentic-world",
-      "track": "trust"
+      "track": "trust",
+      "hosts": [
+        "Nikhil"
+      ]
     },
     {
       "id": "d1s20",
@@ -103,7 +128,10 @@
         "gurleen-kaur"
       ],
       "session": "when-software-becomes-everyones-job",
-      "track": "build"
+      "track": "build",
+      "hosts": [
+        "Devansh"
+      ]
     },
     {
       "id": "d1s26",
@@ -123,7 +151,10 @@
       "type": "SESSION",
       "speaker": "rakesh-sukla",
       "session": "time-travel-simulation-financial-systems",
-      "track": "ship"
+      "track": "ship",
+      "hosts": [
+        "Sparsh"
+      ]
     },
     {
       "id": "d1s8",
@@ -133,7 +164,10 @@
       "type": "SESSION",
       "speaker": "gil-zilberfeld",
       "session": "can-you-trust-your-chatbot-testing-llm-responses",
-      "track": "agentic"
+      "track": "agentic",
+      "hosts": [
+        "Pooja"
+      ]
     },
     {
       "id": "d1s21",
@@ -143,7 +177,10 @@
       "type": "SESSION",
       "speaker": "mesut-durukal",
       "session": "flaky-fragile-forgotten-test-automation",
-      "track": "quality"
+      "track": "quality",
+      "hosts": [
+        "Kavita"
+      ]
     },
     {
       "id": "d1s9",
@@ -153,7 +190,10 @@
       "type": "SESSION",
       "speaker": "viktoria-semaan",
       "session": "right-model-right-job-cutting-llm-costs",
-      "track": "trust"
+      "track": "trust",
+      "hosts": [
+        "Harshit"
+      ]
     },
     {
       "id": "d1s10",
@@ -163,7 +203,10 @@
       "type": "SESSION",
       "speaker": "amanda-martin",
       "session": "system-prompt-design-for-voice-agents",
-      "track": "scale"
+      "track": "scale",
+      "hosts": [
+        "Kavya"
+      ]
     },
     {
       "id": "d1s22",
@@ -173,7 +216,10 @@
       "type": "SESSION",
       "speaker": "john-liang",
       "session": "testing-at-the-speed-of-agents",
-      "track": "build"
+      "track": "build",
+      "hosts": [
+        "Misbah"
+      ]
     },
     {
       "id": "d1s27",
@@ -188,7 +234,10 @@
         "patrick-vuong"
       ],
       "session": "the-agentic-software-factory-that-enterprises-actually-need",
-      "track": "ship"
+      "track": "ship",
+      "hosts": [
+        "Heena Purohit (External)"
+      ]
     },
     {
       "id": "d1s28",
@@ -198,7 +247,10 @@
       "type": "SESSION",
       "speaker": "lisha-rakesh",
       "session": "bionic-workforce-where-humans-ai-coexist",
-      "track": "agentic"
+      "track": "agentic",
+      "hosts": [
+        "Pulkit"
+      ]
     },
     {
       "id": "d1s11",
@@ -208,7 +260,10 @@
       "type": "KEYNOTE",
       "speaker": "francesca-lazzeri",
       "session": "beyond-benchmarks-evaluating-agents",
-      "track": "trust"
+      "track": "trust",
+      "hosts": [
+        "Mudit"
+      ]
     },
     {
       "id": "d1s12",
@@ -218,7 +273,10 @@
       "type": "SESSION",
       "speaker": "rushabh-mehta",
       "session": "build-trustworthy-ai-agents-powered-by-evals",
-      "track": "quality"
+      "track": "quality",
+      "hosts": [
+        "Shahzeb"
+      ]
     },
     {
       "id": "d1s13",
@@ -228,7 +286,10 @@
       "type": "SESSION",
       "speaker": "deepak-kamboj",
       "session": "real-world-lessons-scaling-test-automation-microsoft",
-      "track": "agentic"
+      "track": "agentic",
+      "hosts": [
+        "Mohit Juneja"
+      ]
     },
     {
       "id": "d1s14",
@@ -238,7 +299,10 @@
       "type": "SESSION",
       "speaker": "magnus-hillestad",
       "session": "canal-mania-and-the-philosophers-stone",
-      "track": "scale"
+      "track": "scale",
+      "hosts": [
+        "Nikhil"
+      ]
     },
     {
       "id": "d1s29",
@@ -248,7 +312,10 @@
       "type": "SESSION",
       "speaker": "mahesh-sathiamoorthy",
       "session": "why-rl-environments-are-all-you-need-for-building-agents",
-      "track": "build"
+      "track": "build",
+      "hosts": [
+        "Kavya"
+      ]
     },
     {
       "id": "d1s30",
@@ -262,7 +329,10 @@
         "todd-lemmonds"
       ],
       "session": "qe-at-enterprise-scale-what-will-a-qe-org-look-like-in-2027",
-      "track": "workshop"
+      "track": "workshop",
+      "hosts": [
+        "Mudit Singh"
+      ]
     },
     {
       "id": "d1s31",
@@ -272,7 +342,10 @@
       "type": "SESSION",
       "speaker": "wessel-braakman",
       "session": "working-with-developers-testers-survival-guide",
-      "track": "trust"
+      "track": "trust",
+      "hosts": [
+        "Prince Dewani"
+      ]
     },
     {
       "id": "d1s23",
@@ -282,7 +355,10 @@
       "type": "SESSION",
       "speaker": "monika-sharma",
       "session": "testing-what-matters-evaluating-llm-relevancy-with-deepeval",
-      "track": "ship"
+      "track": "ship",
+      "hosts": [
+        "Sparsh"
+      ]
     },
     {
       "id": "d1s25",
@@ -292,7 +368,10 @@
       "type": "SESSION",
       "speaker": "rhea-goel",
       "session": "beyond-scoring-rethinking-ranking-llm-era",
-      "track": "agentic"
+      "track": "agentic",
+      "hosts": [
+        "Poornima"
+      ]
     },
     {
       "id": "d1s15",
@@ -302,7 +381,10 @@
       "type": "SESSION",
       "speaker": "partha-sarathi-samal",
       "session": "backwards-scoring-ranking-test-suites",
-      "track": "quality"
+      "track": "quality",
+      "hosts": [
+        "Himanshu Gulati"
+      ]
     },
     {
       "id": "d1s24",
@@ -317,13 +399,19 @@
         "eshwar-pastapur"
       ],
       "session": "the-bfsi-playbook-scaling-ai-with-trust-and-quality",
-      "track": "scale"
+      "track": "scale",
+      "hosts": [
+        "Brian Corkery"
+      ]
     },
     {
       "id": "d1s16",
       "title": "Closing Note",
       "time": "12:30 - 12:45 PM (PT)",
-      "duration": "15 MINS"
+      "duration": "15 MINS",
+      "hosts": [
+        "Kavya"
+      ]
     }
   ],
   "day2": [
@@ -353,7 +441,10 @@
       "type": "SESSION",
       "speaker": "lazar-jovanovic",
       "session": "going-past-the-vibes-how-to-build-real-apps",
-      "track": "build"
+      "track": "build",
+      "hosts": [
+        "Kavya"
+      ]
     },
     {
       "id": "d2s24",
@@ -363,7 +454,10 @@
       "type": "SESSION",
       "speaker": "shantanu-wali",
       "session": "mobile-app-validation-agentic-loop",
-      "track": "trust"
+      "track": "trust",
+      "hosts": [
+        "Sparsh"
+      ]
     },
     {
       "id": "d2s27",
@@ -373,7 +467,10 @@
       "type": "WORKSHOP",
       "speaker": "andrew-knight",
       "session": "advanced-web-testing-playwright-ai",
-      "track": "workshop"
+      "track": "workshop",
+      "hosts": [
+        "Payam"
+      ]
     },
     {
       "id": "d2s3",
@@ -387,7 +484,10 @@
         "justin-yuan"
       ],
       "session": "ai-in-mobile-qa-what-actually-works-today",
-      "track": "quality"
+      "track": "quality",
+      "hosts": [
+        "Mudit"
+      ]
     },
     {
       "id": "d2s16",
@@ -397,7 +497,10 @@
       "type": "SESSION",
       "speaker": "shafik-quoraishee",
       "session": "local-agentic-theory-accessible-mobile-games",
-      "track": "agentic"
+      "track": "agentic",
+      "hosts": [
+        "Poornima"
+      ]
     },
     {
       "id": "d2s22",
@@ -410,7 +513,10 @@
         "anamika-mukhopadhyay"
       ],
       "session": "securing-agentic-ai",
-      "track": "ship"
+      "track": "ship",
+      "hosts": [
+        "Pulkit"
+      ]
     },
     {
       "id": "d2s17",
@@ -420,7 +526,10 @@
       "type": "SESSION",
       "speaker": "sumit-shatwara",
       "session": "agentic-engineering-from-writing-code-to-reviewing-it",
-      "track": "build"
+      "track": "build",
+      "hosts": [
+        "Kavya"
+      ]
     },
     {
       "id": "d2s4",
@@ -430,7 +539,10 @@
       "type": "SESSION",
       "speaker": "pramod-yadav",
       "session": "revisit-old-problems-with-new-eyes",
-      "track": "trust"
+      "track": "trust",
+      "hosts": [
+        "Devansh"
+      ]
     },
     {
       "id": "d2s33",
@@ -446,7 +558,10 @@
         "nagendra-bs"
       ],
       "session": "scaling-enterprise-practice-in-agentic-era",
-      "track": "scale"
+      "track": "scale",
+      "hosts": [
+        "Sudhir"
+      ]
     },
     {
       "id": "d2s36",
@@ -456,7 +571,10 @@
       "type": "WORKSHOP",
       "speaker": "siddhant-sinha",
       "session": "the-full-agentic-qa-loop-for-web-applications",
-      "track": "workshop"
+      "track": "workshop",
+      "hosts": [
+        "Salman"
+      ]
     },
     {
       "id": "d2s5",
@@ -466,7 +584,10 @@
       "type": "SESSION",
       "speaker": "neelmani-verma",
       "session": "trust-problem-quality-frameworks-ai-generated-code",
-      "track": "ship"
+      "track": "ship",
+      "hosts": [
+        "Nikhil"
+      ]
     },
     {
       "id": "d2s6",
@@ -476,7 +597,10 @@
       "type": "SESSION",
       "speaker": "harinee-muralinath",
       "session": "why-does-ai-need-forward-deployed-engineers",
-      "track": "agentic"
+      "track": "agentic",
+      "hosts": [
+        "Sparsh"
+      ]
     },
     {
       "id": "d2s28",
@@ -486,7 +610,10 @@
       "type": "SESSION",
       "speaker": "vanessa-johnson",
       "session": "auto-generate-a11y-playwright-tests-graphql",
-      "track": "quality"
+      "track": "quality",
+      "hosts": [
+        "Himanshu Gulati"
+      ]
     },
     {
       "id": "d2s30",
@@ -499,7 +626,10 @@
         "sai-krishna"
       ],
       "session": "debug-with-appium-mcp",
-      "track": "workshop"
+      "track": "workshop",
+      "hosts": [
+        "Shahzeb"
+      ]
     },
     {
       "id": "d2s7",
@@ -509,7 +639,10 @@
       "type": "SESSION",
       "speaker": "jill-hosmer-jolley",
       "session": "human-quality-layer-agentic-ai-adoption",
-      "track": "trust"
+      "track": "trust",
+      "hosts": [
+        "Wendy"
+      ]
     },
     {
       "id": "d2s25",
@@ -519,7 +652,10 @@
       "type": "SESSION",
       "speaker": "gaurav-khurana",
       "session": "testers-guide-to-agentic-quality",
-      "track": "quality"
+      "track": "quality",
+      "hosts": [
+        "Kavita"
+      ]
     },
     {
       "id": "d2s31",
@@ -534,7 +670,10 @@
         "krystyna-sylyvonchyk"
       ],
       "session": "money-moves-at-machine-speed-trust-risk-and-quality-in-agentic-finance",
-      "track": "scale"
+      "track": "scale",
+      "hosts": [
+        "Brian Corkery"
+      ]
     },
     {
       "id": "d2s18",
@@ -544,7 +683,10 @@
       "type": "SESSION",
       "speaker": "stephan-mousset",
       "session": "from-load-testing-to-reliability-engineering",
-      "track": "ship"
+      "track": "ship",
+      "hosts": [
+        "Saif"
+      ]
     },
     {
       "id": "d2s19",
@@ -554,7 +696,10 @@
       "type": "SESSION",
       "speaker": "walter-zimerman",
       "session": "scaling-trust-not-automation",
-      "track": "build"
+      "track": "build",
+      "hosts": [
+        "Devansh"
+      ]
     },
     {
       "id": "d2s8",
@@ -564,7 +709,10 @@
       "type": "SESSION",
       "speaker": "gregory-goldshteyn",
       "session": "eval-first-qa-agents-streaming-fox",
-      "track": "agentic"
+      "track": "agentic",
+      "hosts": [
+        "MJ"
+      ]
     },
     {
       "id": "d2s29",
@@ -577,7 +725,10 @@
         "navin-chandra"
       ],
       "session": "engineering-remotexpc-wireless-ios-automation-appium",
-      "track": "workshop"
+      "track": "workshop",
+      "hosts": [
+        "Prince"
+      ]
     },
     {
       "id": "d2s9",
@@ -587,7 +738,10 @@
       "type": "SESSION",
       "speaker": "pooja-oza",
       "session": "agentic-ai-changed-what-we-test",
-      "track": "quality"
+      "track": "quality",
+      "hosts": [
+        "Misbah"
+      ]
     },
     {
       "id": "d2s10",
@@ -597,7 +751,10 @@
       "type": "SESSION",
       "speaker": "ojus-save",
       "session": "cloud-assumes-you-know-what-a-request-will-cost",
-      "track": "ship"
+      "track": "ship",
+      "hosts": [
+        "Sparsh"
+      ]
     },
     {
       "id": "d2s26",
@@ -607,7 +764,10 @@
       "type": "SESSION",
       "speaker": "prashant-sharma",
       "session": "building-once-running-everywhere-portable-ai",
-      "track": "agentic"
+      "track": "agentic",
+      "hosts": [
+        "Kavya"
+      ]
     },
     {
       "id": "d2s23",
@@ -617,7 +777,10 @@
       "type": "SESSION",
       "speaker": "adeel-mansoor",
       "session": "new-skill-stack-sdets-agentic-era",
-      "track": "trust"
+      "track": "trust",
+      "hosts": [
+        "Vaishali"
+      ]
     },
     {
       "id": "d2s11",
@@ -627,7 +790,10 @@
       "type": "SESSION",
       "speaker": "lisa-dieker",
       "session": "ai-agents-disability-self-determination-project-raise",
-      "track": "build"
+      "track": "build",
+      "hosts": [
+        "Harshit"
+      ]
     },
     {
       "id": "d2s32",
@@ -642,7 +808,10 @@
         "rahul-nethi"
       ],
       "session": "who-tests-the-machines-software-quality-in-the-age-of-ai-written-code",
-      "track": "scale"
+      "track": "scale",
+      "hosts": [
+        "Wendy"
+      ]
     },
     {
       "id": "d2s20",
@@ -652,7 +821,10 @@
       "type": "FIRESIDE CHAT",
       "speaker": "vibhor-rastogi",
       "session": "the-economics-of-ai-agents",
-      "track": "agentic"
+      "track": "agentic",
+      "hosts": [
+        "Mudit"
+      ]
     },
     {
       "id": "d2s21",
@@ -672,7 +844,10 @@
       "type": "SESSION",
       "speaker": "rashi-agrawal",
       "session": "when-you-run-out-of-requirements-all-in-on-agents",
-      "track": "ship"
+      "track": "ship",
+      "hosts": [
+        "Swapnil"
+      ]
     },
     {
       "id": "d2s37",
@@ -699,7 +874,10 @@
         "tenny-agustin"
       ],
       "session": "mission-critical-priorities-in-quality-engineering",
-      "track": "agentic"
+      "track": "agentic",
+      "hosts": [
+        "Todd"
+      ]
     },
     {
       "id": "d2s35",
@@ -714,7 +892,11 @@
         "mark-kroh"
       ],
       "session": "agentic-engineering-and-quality-in-healthcare",
-      "track": "quality"
+      "track": "quality",
+      "hosts": [
+        "Kevin Crosby",
+        "Mudit"
+      ]
     },
     {
       "id": "d2s38",
@@ -723,7 +905,10 @@
       "duration": "45 MINS",
       "type": "SESSION",
       "speaker": "hammad-ahmed",
-      "session": "scaling-quality-in-a-decision-intelligence-platform"
+      "session": "scaling-quality-in-a-decision-intelligence-platform",
+      "hosts": [
+        "Swapnil"
+      ]
     },
     {
       "id": "d2s39",
@@ -736,13 +921,19 @@
         "mauricio-sanchez",
         "humberto-henriquez"
       ],
-      "session": "driving-the-agentic-shift-in-banking"
+      "session": "driving-the-agentic-shift-in-banking",
+      "hosts": [
+        "Javier"
+      ]
     },
     {
       "id": "d2s14",
       "title": "Closing Note",
       "time": "01:45 - 02:00 PM (PT)",
-      "duration": "15 MINS"
+      "duration": "15 MINS",
+      "hosts": [
+        "Sparsh"
+      ]
     }
   ],
   "day3": [
@@ -772,7 +963,10 @@
       "type": "SESSION",
       "speaker": "maryia-tuleika",
       "session": "ai-applications-security-puzzle",
-      "track": "agentic"
+      "track": "agentic",
+      "hosts": [
+        "Gayatri"
+      ]
     },
     {
       "id": "d3s8",
@@ -782,7 +976,10 @@
       "type": "SESSION",
       "speaker": "sachin-sharma",
       "session": "the-last-manual-handoff",
-      "track": "quality"
+      "track": "quality",
+      "hosts": [
+        "Saiby"
+      ]
     },
     {
       "id": "d3s23",
@@ -798,7 +995,10 @@
         "ninad-p-shirodkar"
       ],
       "session": "reinventing-the-qe-practice-at-global-scale-in-agentic-era",
-      "track": "scale"
+      "track": "scale",
+      "hosts": [
+        "Sudhir"
+      ]
     },
     {
       "id": "d3s25",
@@ -808,7 +1008,10 @@
       "type": "WORKSHOP",
       "speaker": "siddhant-sinha",
       "session": "the-full-agentic-qa-loop-for-mobile-applications",
-      "track": "workshop"
+      "track": "workshop",
+      "hosts": [
+        "Devansh"
+      ]
     },
     {
       "id": "d3s15",
@@ -818,7 +1021,10 @@
       "type": "SESSION",
       "speaker": "mathias-strziga",
       "session": "copilot-wrote-it-surviving-ai-code-tsunami",
-      "track": "build"
+      "track": "build",
+      "hosts": [
+        "Swapnil"
+      ]
     },
     {
       "id": "d3s10",
@@ -828,7 +1034,10 @@
       "type": "SESSION",
       "speaker": "anubhav-singhmaar",
       "session": "evidence-based-qa-proving-quality-with-agentic-test-runs",
-      "track": "trust"
+      "track": "trust",
+      "hosts": [
+        "Harshit"
+      ]
     },
     {
       "id": "d3s16",
@@ -838,7 +1047,10 @@
       "type": "SESSION",
       "speaker": "tanvi-mittal",
       "session": "ml-driven-test-intelligence-at-scale",
-      "track": "ship"
+      "track": "ship",
+      "hosts": [
+        "Chandini"
+      ]
     },
     {
       "id": "d3s20",
@@ -848,7 +1060,10 @@
       "type": "WORKSHOP",
       "speaker": "athresh-guruprakash",
       "session": "legacy-vs-autonomous-qa-arena",
-      "track": "workshop"
+      "track": "workshop",
+      "hosts": [
+        "Salman"
+      ]
     },
     {
       "id": "d3s11",
@@ -858,7 +1073,10 @@
       "type": "SESSION",
       "speaker": "spyros-katopodis",
       "session": "billion-dollar-healthcare-ai-qa-playbook",
-      "track": "quality"
+      "track": "quality",
+      "hosts": [
+        "Nikhil"
+      ]
     },
     {
       "id": "d3s2",
@@ -868,7 +1086,10 @@
       "type": "SESSION",
       "speaker": "rahul-parwal",
       "session": "productize-yourself-ai-proof-yourself",
-      "track": "scale"
+      "track": "scale",
+      "hosts": [
+        "Pooja"
+      ]
     },
     {
       "id": "d3s22",
@@ -878,7 +1099,10 @@
       "type": "SESSION",
       "speaker": "safeena-banu",
       "session": "ai-architecture-thinking-from-idea-to-impact",
-      "track": "agentic"
+      "track": "agentic",
+      "hosts": [
+        "Sparsh"
+      ]
     },
     {
       "id": "d3s5",
@@ -888,7 +1112,10 @@
       "type": "KEYNOTE",
       "speaker": "dona-sarkar",
       "session": "will-the-real-autonomous-agent-please-stand-up",
-      "track": "trust"
+      "track": "trust",
+      "hosts": [
+        "Kavya"
+      ]
     },
     {
       "id": "d3s12",
@@ -898,7 +1125,10 @@
       "type": "SESSION",
       "speaker": "manideep-singireddy",
       "session": "redefining-test-data-strategy-in-the-era-of-generative-ai",
-      "track": "quality"
+      "track": "quality",
+      "hosts": [
+        "Vaishali"
+      ]
     },
     {
       "id": "d3s21",
@@ -908,7 +1138,10 @@
       "type": "SESSION",
       "speaker": "haritha-sreedharan-nair",
       "session": "build-your-own-benchmark-why-agents-need-custom-evals",
-      "track": "agentic"
+      "track": "agentic",
+      "hosts": [
+        "Harshit"
+      ]
     },
     {
       "id": "d3s26",
@@ -928,7 +1161,10 @@
       "type": "SESSION",
       "speaker": "laveena-ramchandani",
       "session": "rethinking-testing-leadership-age-of-ai",
-      "track": "scale"
+      "track": "scale",
+      "hosts": [
+        "Payam"
+      ]
     },
     {
       "id": "d3s7",
@@ -938,7 +1174,10 @@
       "type": "SESSION",
       "speaker": "jyotheeswara-gottam",
       "session": "autonomous-quality-engineering-ai-systems",
-      "track": "build"
+      "track": "build",
+      "hosts": [
+        "Poornima"
+      ]
     },
     {
       "id": "d3s24",
@@ -954,7 +1193,10 @@
         "krishna-c-gangu"
       ],
       "session": "always-open-engineering-trust-and-quality-in-ai-driven-commerce",
-      "track": "trust"
+      "track": "trust",
+      "hosts": [
+        "Mohit Juneja"
+      ]
     },
     {
       "id": "d3s17",
@@ -964,7 +1206,10 @@
       "type": "SESSION",
       "speaker": "angela-cutulenco",
       "session": "discovery-found-everything-agent-context-integrity",
-      "track": "agentic"
+      "track": "agentic",
+      "hosts": [
+        "Kavya"
+      ]
     },
     {
       "id": "d3s18",
@@ -974,7 +1219,10 @@
       "type": "SESSION",
       "speaker": "thejes-sree-satheesh-kumar",
       "session": "testing-the-untestable-owasp-ai-llm-risks",
-      "track": "quality"
+      "track": "quality",
+      "hosts": [
+        "Akarshi"
+      ]
     },
     {
       "id": "d3s14",
@@ -984,7 +1232,10 @@
       "type": "SESSION",
       "speaker": "chinmaya-kothari",
       "session": "when-software-starts-thinking-the-now-of-quality-engineering",
-      "track": "trust"
+      "track": "trust",
+      "hosts": [
+        "Pulkit"
+      ]
     },
     {
       "id": "d3s19",
@@ -997,7 +1248,10 @@
         "navneet-goyal"
       ],
       "session": "ai-powered-impact-based-testing",
-      "track": "ship"
+      "track": "ship",
+      "hosts": [
+        "Kavita"
+      ]
     },
     {
       "id": "d3s9",

@@ -137,6 +137,11 @@ const AgendaRow = ({
               LIVE
             </span>
           )}
+          {row.hosts?.length > 0 && (
+            <span className={styles.hostTag}>
+              HOST · {row.hosts.join(" / ")}
+            </span>
+          )}
         </div>
 
         {!isOpen && <AvatarStack speakers={speakers} />}

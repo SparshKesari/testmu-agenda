@@ -182,7 +182,9 @@ const Card = ({
   const accent = TYPE_FILL[row.type] || "#6c6c58";
   const tierClass = TIER_CLASS[tier] ? styles[TIER_CLASS[tier]] : "";
   const time = timeLabel || row.time;
-  const meta = `${time}${row.duration ? ` · ${row.duration}` : ""}`;
+  const meta = `${time}${row.duration ? ` · ${row.duration}` : ""}${
+    row.hosts?.length ? ` · HOST ${row.hosts.join(" / ")}` : ""
+  }`;
   /* Untyped agenda rows (Welcome/Closing Notes) use their title as the
      tag ("WELCOME NOTE") and skip the separate title text so it doesn't
      repeat; TypeIcon falls back to the muted fill. */
