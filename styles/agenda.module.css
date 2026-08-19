@@ -59,14 +59,9 @@
   letter-spacing: -0.96px;
 }
 
-/* Day tabs pin below the sticky site header (80px desktop, 64px mobile)
-   while the agenda scrolls. */
 .dayTabs {
   display: flex;
   gap: 8px;
-  position: sticky;
-  top: 80px;
-  z-index: 60;
   background: #1e1a14;
   margin: 0 -20px 24px;
   padding: 12px 20px;
@@ -342,7 +337,6 @@
   }
 
   .dayTabs {
-    top: 64px;
     margin-bottom: 16px;
     padding: 10px 20px;
   }

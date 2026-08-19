@@ -308,13 +308,17 @@ const TrackGrid = ({
               className="border-t-2 bg-[#26211a] px-3.5 py-3"
               style={{ borderTopColor: t.accent }}
             >
+              {t.manager && (
+                <p className="text-[10px] tracking-[0.14em] uppercase text-[#fffef2]/50 mb-1">
+                  Stage Manager · {t.manager}
+                </p>
+              )}
               <p
                 className="[font-family:'Space_Grotesk',sans-serif] text-[14px] font-bold"
                 style={{ color: t.accent }}
               >
                 {t.name}
               </p>
-              <p className="text-[11px] text-[#fffef2]/70 mt-0.5">{t.blurb}</p>
             </div>
           ))}
         </div>
