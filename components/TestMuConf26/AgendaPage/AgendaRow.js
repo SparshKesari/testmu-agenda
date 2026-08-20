@@ -138,7 +138,7 @@ const AgendaRow = ({
             </span>
           )}
           {row.hosts?.length > 0 && (
-            <span className={styles.hostTag}>
+            <span className={`${styles.hostTag} ${styles.hostTagAccent}`}>
               HOST · {row.hosts.join(" / ")}
             </span>
           )}

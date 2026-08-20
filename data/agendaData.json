@@ -421,16 +421,17 @@
     {
       "id": "d2s1",
       "title": "Welcome to TestMu Conference 2026 Day 2",
-      "time": "05:00 - 05:15 AM (PT)",
-      "duration": "15 MINS",
+      "time": "05:00 - 05:05 AM (PT)",
+      "duration": "5 MINS",
       "type": "WELCOME NOTE",
-      "track": "trust"
+      "track": "trust",
+      "speaker": "kavya"
     },
     {
       "id": "d2s2",
       "title": "Is the developer lifecycle dead?",
-      "time": "05:15 - 05:45 AM (PT)",
-      "duration": "30 MINS",
+      "time": "05:05 - 05:45 AM (PT)",
+      "duration": "40 MINS",
       "type": "KEYNOTE",
       "speaker": "thomas-dohmke",
       "session": "is-the-developer-lifecycle-dead",
@@ -916,7 +917,8 @@
       "session": "scaling-quality-in-a-decision-intelligence-platform",
       "hosts": [
         "Swapnil"
-      ]
+      ],
+      "track": "scale"
     },
     {
       "id": "d2s39",
@@ -932,7 +934,8 @@
       "session": "driving-the-agentic-shift-in-banking",
       "hosts": [
         "Javier"
-      ]
+      ],
+      "track": "ship"
     },
     {
       "id": "d2s14",

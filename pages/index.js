@@ -69,7 +69,7 @@ export async function getStaticProps() {
 
 const AgendaLanding = ({ agenda, sessions, speakers }) => {
   const { email, persona } = usePersona();
-  const [activeDay, setActiveDay] = useState("day1");
+  const [activeDay, setActiveDay] = useState("day2");
   const [query, setQuery] = useState("");
   const [selectedType, setSelectedType] = useState("All");
   const [filterOpen, setFilterOpen] = useState(false);
