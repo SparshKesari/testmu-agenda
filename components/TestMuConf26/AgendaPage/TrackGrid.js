@@ -2,23 +2,12 @@ import { useEffect, useRef, useState } from "react";
 
 import { TRACKS } from "../../../lib/tracks";
 import { usePersona } from "../../../lib/PersonaContext";
+import { DAY_ISO, slotMinutes, useNowPT } from "./timezone";
 
 /* Spreadsheet-style agenda: time slots as rows, tracks as columns —
    mirroring the planning sheet's track split. Plenary items (welcome
    notes, keynotes, closing notes — rows with no track) span the full
    width; tracked sessions sit in their track's column. */
-
-const parseStartMinutes = (timeStr) => {
-  const m = /^(\d{1,2}):(\d{2})\s*(AM|PM)?\s*-\s*\d{1,2}:\d{2}\s*(AM|PM)/.exec(
-    (timeStr || "").trim(),
-  );
-  if (!m) return 0;
-  let h = Number(m[1]);
-  const meridiem = m[3] || m[4];
-  if (meridiem === "PM" && h !== 12) h += 12;
-  if (meridiem === "AM" && h === 12) h = 0;
-  return h * 60 + Number(m[2]);
-};
 
 /* Keynotes and welcome notes carry track "trust" (they run on the Trust
    stage), so they normally render in that column; closing notes have no
@@ -83,6 +72,7 @@ const SessionCell = ({
   onToggleReminder,
   trackName,
   timeLabel,
+  ownTime,
 }) => {
   const href = sessionHref(row, sessions);
   return (
@@ -109,6 +99,17 @@ const SessionCell = ({
           </span>
         )}
       </p>
+      {/* A session merged into a host slot row (e.g. a 90-min workshop)
+          runs past the row's window, so it states its own time. */}
+      {ownTime && (
+        <p
+          className="text-[10px] tracking-[0.14em] uppercase mb-1.5 [font-variant-numeric:tabular-nums]"
+          style={{ color: accent }}
+          aria-hidden="true"
+        >
+          {ownTime}
+        </p>
+      )}
       <p className="text-[13px] leading-snug text-[#fffef2]">{row.title}</p>
       {rowSpeakers.length > 0 && (
         <p className="text-[11px] text-[#fffef2]/70 mt-1.5">
@@ -116,8 +117,11 @@ const SessionCell = ({
         </p>
       )}
       {row.hosts?.length > 0 && (
-        <p className="text-[10px] tracking-[0.14em] uppercase text-[#fffef2]/50 mt-1.5">
-          Host · {row.hosts.join(" / ")}
+        <p className="text-[10px] tracking-[0.14em] uppercase mt-1.5">
+          <span className="text-[#fffef2]/50">Host · </span>
+          <span className="text-[#ffd57a] font-semibold">
+            {row.hosts.join(" / ")}
+          </span>
         </p>
       )}
 
@@ -198,8 +202,11 @@ const PlenaryBand = ({ row, rowSpeakers, live, timeLabel }) => {
         )}
       </p>
       {row.hosts?.length > 0 && (
-        <p className="text-[10px] tracking-[0.14em] uppercase text-[#fffef2]/50 mt-1">
-          Host · {row.hosts.join(" / ")}
+        <p className="text-[10px] tracking-[0.14em] uppercase mt-1">
+          <span className="text-[#fffef2]/50">Host · </span>
+          <span className="text-[#ffd57a] font-semibold">
+            {row.hosts.join(" / ")}
+          </span>
         </p>
       )}
     </article>
@@ -268,7 +275,38 @@ const TrackGrid = ({
     }
     slots.get(key).push(row);
   });
-  slotOrder.sort((a, b) => parseStartMinutes(a) - parseStartMinutes(b));
+
+  /* A slot whose start falls inside another slot's window (a long
+     workshop like 08:15-09:45 among 45-min slots) merges into that host
+     row instead of spawning a near-empty timeline row of its own; the
+     merged card states its own time. Shorter host wins on equal starts. */
+  const spans = slotOrder
+    .map((key) => ({ key, span: slotMinutes(key) }))
+    .sort(
+      (a, b) =>
+        (a.span?.start ?? 0) - (b.span?.start ?? 0) ||
+        (a.span?.end ?? 0) - (b.span?.end ?? 0),
+    );
+  const hostKeys = [];
+  spans.forEach((g) => {
+    const host =
+      g.span &&
+      hostKeys.find(
+        (h) => h.span && g.span.start >= h.span.start && g.span.start < h.span.end,
+      );
+    if (host) {
+      slots.get(host.key).push(...slots.get(g.key));
+      slots.delete(g.key);
+    } else {
+      hostKeys.push(g);
+    }
+  });
+  const mergedOrder = hostKeys.map((g) => g.key);
+
+  /* Now-marker on the PT axis, for the moving line inside the live row. */
+  const nowPT = useNowPT();
+  const nowMin =
+    nowPT && DAY_ISO[dayId] === nowPT.dateISO ? nowPT.minutes : null;
 
   /* Compact columns so several stages fit per screen: text wraps inside
      a bounded column instead of the grid growing to max-content. The
@@ -352,27 +390,53 @@ const TrackGrid = ({
       >
         <div style={{ minWidth: `${gridMinWidth}px` }}>
         {/* One row per time slot */}
-        {slotOrder.map((slotKey) => {
+        {mergedOrder.map((slotKey) => {
           const slotRows = slots.get(slotKey);
           const plenary = slotRows.filter(isPlenary);
           const tracked = slotRows.filter((r) => !isPlenary(r) && r.track);
           const loose = slotRows.filter((r) => !isPlenary(r) && !r.track);
           const timeLabel = formatTime ? formatTime(slotKey) : slotKey;
           const live = isLive ? isLive(slotKey) : false;
+          /* A session merged from another slot shows its own time and
+             tracks its own live window. */
+          const cellTime = (row) =>
+            row.time && row.time !== slotKey
+              ? formatTime
+                ? formatTime(row.time)
+                : row.time
+              : null;
+          const cellLive = (row) =>
+            isLive ? isLive(row.time || slotKey) : false;
+          /* How far the current time has progressed through this slot's
+             window, for the moving now-line; null while not live. */
+          const span = slotMinutes(slotKey);
+          const progress =
+            nowMin !== null &&
+            span &&
+            nowMin >= span.start &&
+            nowMin < span.end
+              ? (nowMin - span.start) / (span.end - span.start)
+              : null;
 
           return (
             /* Each slot starts with a full-width guide line; the time
                label sits directly on it, calendar-style. While the slot
-               is live, its guide line turns red as the "now" marker. */
+               is live, a red now-line travels down the row in proportion
+               to the time elapsed in the slot. */
             <div
               key={`${dayId}-${slotKey}`}
-              className={`grid gap-2 items-stretch pt-2.5 pb-3.5 ${
-                live
-                  ? "border-t-2 border-[#ff5c4d]"
-                  : "border-t border-[#fffef2]/15"
-              }`}
+              className="relative grid gap-2 items-stretch pt-2.5 pb-3.5 border-t border-[#fffef2]/15"
               style={{ gridTemplateColumns: colTemplate }}
             >
+              {progress !== null && (
+                <div
+                  className="absolute left-0 right-0 h-[2px] bg-[#ff5c4d] shadow-[0_0_6px_rgba(255,92,77,0.45)] pointer-events-none z-[5]"
+                  style={{ top: `${progress * 100}%` }}
+                  aria-hidden="true"
+                >
+                  <span className="absolute -left-1 top-1/2 -translate-y-1/2 w-2 h-2 rounded-full bg-[#ff5c4d]" />
+                </div>
+              )}
               <div className="px-2 text-[12px] leading-snug text-[#fffef2]/75 [font-variant-numeric:tabular-nums]">
                 {timeLabel}
                 {live && (
@@ -413,10 +477,11 @@ const TrackGrid = ({
                         sessions={sessions}
                         rowSpeakers={getSpeakers(row, row.session ? sessions[row.session] : null)}
                         accent="#6c6c58"
-                        live={live}
+                        live={cellLive(row)}
                         reminded={reminders.includes(row.id)}
                         onToggleReminder={toggleReminder}
-                        timeLabel={timeLabel}
+                        timeLabel={cellTime(row) || timeLabel}
+                        ownTime={cellTime(row)}
                       />
                     ))}
                   </div>
@@ -447,11 +512,12 @@ const TrackGrid = ({
                               sessions={sessions}
                               rowSpeakers={getSpeakers(row, row.session ? sessions[row.session] : null)}
                               accent={t.accent}
-                              live={live}
+                              live={cellLive(row)}
                               reminded={reminders.includes(row.id)}
                               onToggleReminder={toggleReminder}
                               trackName={t.name}
-                              timeLabel={timeLabel}
+                              timeLabel={cellTime(row) || timeLabel}
+                              ownTime={cellTime(row)}
                             />
                           ))}
                         </div>

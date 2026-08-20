@@ -154,6 +154,12 @@
   flex-shrink: 0;
 }
 
+.hostTagAccent {
+  border-color: rgba(255, 213, 122, 0.55);
+  color: #ffd57a;
+  font-weight: 700;
+}
+
 .liveBadge {
   display: inline-flex;
   align-items: center;

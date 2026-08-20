@@ -17,6 +17,9 @@ const PX_PER_MIN = 4;
    title, and meta vertically, with the title wrapping onto as many
    lines as the card height allows (computed in titleLinesFor). */
 const tierFor = (durationMin) => {
+  /* Ultra-short slots (e.g. a 5-min welcome note = 20px) get a single
+     compressed line — anything taller than that would clip. */
+  if (durationMin < 12) return "nano";
   if (durationMin < 25) return "micro";
   if (durationMin < 60) return "medium";
   return "full";
@@ -159,6 +162,7 @@ const groupByTime = (rows) => {
 };
 
 const TIER_CLASS = {
+  nano: "cardNano",
   micro: "cardMicro",
   medium: "cardMedium",
   full: "",
@@ -182,9 +186,21 @@ const Card = ({
   const accent = TYPE_FILL[row.type] || "#6c6c58";
   const tierClass = TIER_CLASS[tier] ? styles[TIER_CLASS[tier]] : "";
   const time = timeLabel || row.time;
-  const meta = `${time}${row.duration ? ` · ${row.duration}` : ""}${
-    row.hosts?.length ? ` · HOST ${row.hosts.join(" / ")}` : ""
-  }${row.recorded ? " · ◉ RECORDED" : ""}`;
+  const meta = (
+    <p className={styles.cardMeta}>
+      {time}
+      {row.duration ? ` · ${row.duration}` : ""}
+      {row.hosts?.length > 0 && (
+        <>
+          {" · "}
+          <span className={styles.hostHighlight}>
+            HOST {row.hosts.join(" / ")}
+          </span>
+        </>
+      )}
+      {row.recorded ? " · ◉ RECORDED" : ""}
+    </p>
+  );
   /* Untyped agenda rows (Welcome/Closing Notes) use their title as the
      tag ("WELCOME NOTE") and skip the separate title text so it doesn't
      repeat; TypeIcon falls back to the muted fill. */
@@ -205,8 +221,10 @@ const Card = ({
   );
 
   /* Micro slots lay every element out horizontally so the type tag,
-     title, avatars, and time all stay visible at reduced heights. */
-  const inline = tier === "micro";
+     title, avatars, and time all stay visible at reduced heights.
+     Nano drops the meta row and avatars — one line is all that fits. */
+  const nano = tier === "nano";
+  const inline = tier === "micro" || nano;
 
   return (
     <Tag
@@ -220,16 +238,18 @@ const Card = ({
           <div className={styles.inlineRow}>
             {pill}
             {!untyped && <p className={styles.inlineTitle}>{row.title}</p>}
-            <AvatarStack speakers={rowSpeakers} small />
+            {!nano && <AvatarStack speakers={rowSpeakers} small />}
           </div>
-          <div className={styles.metaRow}>
-            <p className={styles.cardMeta}>{meta}</p>
-            {href && (
-              <span className={styles.arrow} aria-hidden="true">
-                →
-              </span>
-            )}
-          </div>
+          {!nano && (
+            <div className={styles.metaRow}>
+              {meta}
+              {href && (
+                <span className={styles.arrow} aria-hidden="true">
+                  →
+                </span>
+              )}
+            </div>
+          )}
         </>
       ) : (
         <>
@@ -244,7 +264,7 @@ const Card = ({
             {row.title}
           </p>
           <div className={styles.metaRow}>
-            <p className={styles.cardMeta}>{meta}</p>
+            {meta}
             {href && (
               <span className={styles.arrow} aria-hidden="true">
                 →

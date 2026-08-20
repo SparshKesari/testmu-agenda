@@ -278,6 +278,11 @@
   font-size: 10px;
 }
 
+.hostHighlight {
+  color: #ffd57a;
+  font-weight: 700;
+}
+
 /* ---- Mobile: stacked time-slot groups ---- */
 
 .mobileList {
@@ -322,4 +327,26 @@
   .mobileList {
     display: block;
   }
+}
+
+/* Nano (<12 min): one compressed line inside a ~16px-tall card. */
+.cardNano {
+  gap: 0;
+  padding: 1px 10px;
+  justify-content: center;
+}
+
+.cardNano .inlineRow {
+  gap: 6px;
+}
+
+.cardNano .typePill {
+  padding: 0 6px;
+  line-height: 12px;
+  font-size: 8px;
+}
+
+.cardNano .inlineTitle {
+  font-size: 10px;
+  line-height: 12px;
 }

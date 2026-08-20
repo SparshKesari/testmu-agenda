@@ -1711,6 +1711,17 @@
     "last": "Agustin",
     "role": "Engineering Operations Lead",
     "company": "Best Egg",
-    "linkedin": "https://www.linkedin.com/in/tennyagustin/"
+    "linkedin": "https://www.linkedin.com/in/tennyagustin/",
+    "img": "main/images/TennyAgustin26Speaker.png",
+    "companyLogo": "logos/bestegg.svg"
+  },
+  "kavya": {
+    "first": "Kavya",
+    "last": "",
+    "role": "Director of Product Marketing",
+    "company": "TestMu AI",
+    "linkedin": "https://www.linkedin.com/in/kavyanair/",
+    "companyLogo": "logos/testmuai.svg",
+    "img": "main/images/Kavya26Speaker.png"
   }
 }
