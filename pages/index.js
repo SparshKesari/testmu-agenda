@@ -274,7 +274,10 @@ const AgendaLanding = ({ agenda, sessions, speakers }) => {
 
         <div className={styles.container}>
           <section className={styles.page}>
-            <div className={styles.container}>
+            {/* One .container for the whole page — this used to nest a
+                second one, which doubled the 20px side padding and the
+                40px/96px vertical padding. */}
+            <div>
               <h1 className={styles.title}>Agenda</h1>
 
               <div

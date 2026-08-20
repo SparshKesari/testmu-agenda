@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { TRACKS } from "../../../lib/tracks";
 import { usePersona } from "../../../lib/PersonaContext";
@@ -281,24 +281,38 @@ const TrackGrid = ({
 
   const dayLabel = `Day ${(dayId || "").replace("day", "")}`;
 
+  /* The pinned header is a separate element from the scrolling rows, so
+     its horizontal offset has to be mirrored by hand. Written straight
+     to the DOM node rather than through state — this fires on every
+     scroll frame and must not re-render the grid. */
+  const bodyRef = useRef(null);
+  const headRef = useRef(null);
+  const syncHeader = (e) => {
+    if (headRef.current) headRef.current.scrollLeft = e.currentTarget.scrollLeft;
+  };
+
   return (
-    /* The grid scrolls both ways inside its own viewport-capped box so
-       the sticky column headers pin to the top while the rows scroll
-       beneath them; making the scroll region focusable lets keyboard
-       users pan it with arrow keys. */
-    <div
-      className={`overflow-auto pb-2 max-h-[calc(100vh-16px)] ${FOCUS_RING}`}
-      role="region"
-      aria-label={`${dayLabel} schedule by stage — scrollable`}
-      tabIndex={0}
-    >
-      <div style={{ minWidth: `${gridMinWidth}px` }}>
-        {/* Column headers — sticky, with an opaque background so rows
-            scrolling underneath don't show through the column gaps. */}
-        <div
-          className="grid gap-2 pb-2 sticky top-0 z-10 bg-[#1e1a14]"
-          style={{ gridTemplateColumns: colTemplate }}
-        >
+    /* Sideways scrolling only: the page stays the single vertical
+       scroller. This used to be one box capped at 100vh with
+       overflow-auto, which gave the grid its own second vertical
+       scrollbar inside an already-scrolling page. */
+    <div className="relative">
+      {/* The Time/stage header row lives OUTSIDE the horizontal scroller
+          on purpose: `position: sticky` resolves against the nearest
+          scroll container, so inside the scroller it could never pin to
+          the page. Out here it pins below the site header (80px, 64px
+          under 992px) while the page scrolls. Its own overflow is hidden
+          and its scrollLeft is mirrored from the body below, so the
+          columns stay lined up when you pan sideways. */}
+      <div
+        ref={headRef}
+        className="sticky top-[80px] desktop:top-[64px] z-20 overflow-hidden bg-[#1e1a14]"
+      >
+        <div style={{ minWidth: `${gridMinWidth}px` }}>
+          <div
+            className="grid gap-2 pb-2"
+            style={{ gridTemplateColumns: colTemplate }}
+          >
           <div className="px-2 py-3 text-[10px] tracking-[0.2em] uppercase text-[#fffef2]/70 self-end">
             Time
           </div>
@@ -321,8 +335,22 @@ const TrackGrid = ({
               </p>
             </div>
           ))}
+          </div>
         </div>
+      </div>
 
+      {/* The rows: the only thing that scrolls sideways. Making the
+          scroll region focusable lets keyboard users pan it with arrow
+          keys; onScroll keeps the pinned header in step. */}
+      <div
+        ref={bodyRef}
+        onScroll={syncHeader}
+        className={`overflow-x-auto pb-2 ${FOCUS_RING}`}
+        role="region"
+        aria-label={`${dayLabel} schedule by stage — scrolls sideways`}
+        tabIndex={0}
+      >
+        <div style={{ minWidth: `${gridMinWidth}px` }}>
         {/* One row per time slot */}
         {slotOrder.map((slotKey) => {
           const slotRows = slots.get(slotKey);
@@ -438,6 +466,7 @@ const TrackGrid = ({
 
         {/* Closing guide line under the last slot. */}
         <div className="border-t border-[#fffef2]/15" aria-hidden="true" />
+        </div>
       </div>
     </div>
   );

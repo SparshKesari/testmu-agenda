@@ -414,7 +414,8 @@
       "duration": "15 MINS",
       "hosts": [
         "Kavya"
-      ]
+      ],
+      "track": "trust"
     }
   ],
   "day2": [
@@ -445,7 +446,7 @@
       "type": "SESSION",
       "speaker": "lazar-jovanovic",
       "session": "going-past-the-vibes-how-to-build-real-apps",
-      "track": "build",
+      "track": "scale",
       "hosts": [
         "Kavya"
       ]
@@ -473,7 +474,7 @@
       "session": "advanced-web-testing-playwright-ai",
       "track": "workshop",
       "hosts": [
-        "Payam"
+        "Harshit"
       ]
     },
     {
@@ -488,7 +489,7 @@
         "justin-yuan"
       ],
       "session": "ai-in-mobile-qa-what-actually-works-today",
-      "track": "quality",
+      "track": "build",
       "hosts": [
         "Mudit"
       ]
@@ -517,7 +518,7 @@
         "anamika-mukhopadhyay"
       ],
       "session": "securing-agentic-ai",
-      "track": "ship",
+      "track": "quality",
       "hosts": [
         "Pulkit"
       ]
@@ -530,7 +531,7 @@
       "type": "SESSION",
       "speaker": "sumit-shatwara",
       "session": "agentic-engineering-from-writing-code-to-reviewing-it",
-      "track": "build",
+      "track": "trust",
       "hosts": [
         "Kavya"
       ]
@@ -543,7 +544,7 @@
       "type": "SESSION",
       "speaker": "pramod-yadav",
       "session": "revisit-old-problems-with-new-eyes",
-      "track": "trust",
+      "track": "ship",
       "hosts": [
         "Devansh"
       ]
@@ -588,7 +589,7 @@
       "type": "SESSION",
       "speaker": "neelmani-verma",
       "session": "trust-problem-quality-frameworks-ai-generated-code",
-      "track": "ship",
+      "track": "agentic",
       "hosts": [
         "Nikhil"
       ]
@@ -601,7 +602,7 @@
       "type": "SESSION",
       "speaker": "harinee-muralinath",
       "session": "why-does-ai-need-forward-deployed-engineers",
-      "track": "agentic",
+      "track": "build",
       "hosts": [
         "Sparsh"
       ]
@@ -656,7 +657,7 @@
       "type": "SESSION",
       "speaker": "gaurav-khurana",
       "session": "testers-guide-to-agentic-quality",
-      "track": "quality",
+      "track": "ship",
       "hosts": [
         "Kavita"
       ]
@@ -687,7 +688,7 @@
       "type": "SESSION",
       "speaker": "stephan-mousset",
       "session": "from-load-testing-to-reliability-engineering",
-      "track": "ship",
+      "track": "quality",
       "hosts": [
         "Saif"
       ]
@@ -702,7 +703,7 @@
       "session": "scaling-trust-not-automation",
       "track": "build",
       "hosts": [
-        "Devansh"
+        "Naima"
       ],
       "recorded": true
     },
@@ -743,7 +744,7 @@
       "type": "SESSION",
       "speaker": "pooja-oza",
       "session": "agentic-ai-changed-what-we-test",
-      "track": "quality",
+      "track": "trust",
       "hosts": [
         "Misbah"
       ]
@@ -770,7 +771,7 @@
       "type": "SESSION",
       "speaker": "prashant-sharma",
       "session": "building-once-running-everywhere-portable-ai",
-      "track": "agentic",
+      "track": "scale",
       "hosts": [
         "Kavya"
       ]
@@ -783,7 +784,7 @@
       "type": "SESSION",
       "speaker": "adeel-mansoor",
       "session": "new-skill-stack-sdets-agentic-era",
-      "track": "trust",
+      "track": "quality",
       "hosts": [
         "Vaishali"
       ]
@@ -814,7 +815,7 @@
         "rahul-nethi"
       ],
       "session": "who-tests-the-machines-software-quality-in-the-age-of-ai-written-code",
-      "track": "scale",
+      "track": "agentic",
       "hosts": [
         "Wendy"
       ]
@@ -827,7 +828,7 @@
       "type": "FIRESIDE CHAT",
       "speaker": "vibhor-rastogi",
       "session": "the-economics-of-ai-agents",
-      "track": "agentic",
+      "track": "ship",
       "hosts": [
         "Mudit"
       ]
@@ -840,7 +841,7 @@
       "type": "SESSION",
       "speaker": "mallika-fernandes",
       "session": "agentic-ai-and-the-next-decade-of-quality-engineering",
-      "track": "quality",
+      "track": "workshop",
       "recorded": true
     },
     {
@@ -851,7 +852,7 @@
       "type": "SESSION",
       "speaker": "rashi-agrawal",
       "session": "when-you-run-out-of-requirements-all-in-on-agents",
-      "track": "ship",
+      "track": "trust",
       "hosts": [
         "Swapnil"
       ]
@@ -864,7 +865,7 @@
       "type": "KEYNOTE",
       "speaker": "andrew-duncan",
       "session": "the-next-era-of-ai-from-can-we-build-it-to-can-we-trust-it",
-      "track": "trust",
+      "track": "scale",
       "recorded": true
     },
     {
@@ -914,6 +915,7 @@
       "type": "SESSION",
       "speaker": "hammad-ahmed",
       "session": "scaling-quality-in-a-decision-intelligence-platform",
+      "track": "trust",
       "hosts": [
         "Swapnil"
       ]
@@ -930,6 +932,7 @@
         "humberto-henriquez"
       ],
       "session": "driving-the-agentic-shift-in-banking",
+      "track": "ship",
       "hosts": [
         "Javier"
       ]
@@ -939,6 +942,7 @@
       "title": "Closing Note",
       "time": "01:45 - 02:00 PM (PT)",
       "duration": "15 MINS",
+      "track": "build",
       "hosts": [
         "Sparsh"
       ]
@@ -1030,7 +1034,7 @@
       "type": "SESSION",
       "speaker": "mathias-strziga",
       "session": "copilot-wrote-it-surviving-ai-code-tsunami",
-      "track": "build",
+      "track": "trust",
       "hosts": [
         "Swapnil"
       ]
@@ -1043,7 +1047,7 @@
       "type": "SESSION",
       "speaker": "anubhav-singhmaar",
       "session": "evidence-based-qa-proving-quality-with-agentic-test-runs",
-      "track": "trust",
+      "track": "build",
       "hosts": [
         "Harshit"
       ]
@@ -1082,7 +1086,7 @@
       "type": "SESSION",
       "speaker": "spyros-katopodis",
       "session": "billion-dollar-healthcare-ai-qa-playbook",
-      "track": "quality",
+      "track": "agentic",
       "hosts": [
         "Nikhil"
       ]
@@ -1108,7 +1112,7 @@
       "type": "SESSION",
       "speaker": "safeena-banu",
       "session": "ai-architecture-thinking-from-idea-to-impact",
-      "track": "agentic",
+      "track": "quality",
       "hosts": [
         "Sparsh"
       ]
@@ -1228,7 +1232,7 @@
       "type": "SESSION",
       "speaker": "thejes-sree-satheesh-kumar",
       "session": "testing-the-untestable-owasp-ai-llm-risks",
-      "track": "quality",
+      "track": "workshop",
       "hosts": [
         "Akarshi"
       ]
@@ -1241,7 +1245,7 @@
       "type": "SESSION",
       "speaker": "chinmaya-kothari",
       "session": "when-software-starts-thinking-the-now-of-quality-engineering",
-      "track": "trust",
+      "track": "quality",
       "hosts": [
         "Pulkit"
       ]
@@ -1266,7 +1270,8 @@
       "id": "d3s9",
       "title": "Closing Note",
       "time": "11:00 - 11:30 AM (PT)",
-      "duration": "30 MINS"
+      "duration": "30 MINS",
+      "track": "trust"
     }
   ]
 }
