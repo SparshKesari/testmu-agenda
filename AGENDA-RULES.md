@@ -38,8 +38,11 @@ No session may change its start time, end time, or duration. The schedule is fro
 ### Rule 4 — Hosts are fixed
 No session may change its host. Who hosts what is settled.
 
-### Rule 5 — Workshops run on the Developer Track (formerly "Workshop Stage")
-A session of type WORKSHOP always sits on the Developer Track. Note the schedule deliberately
+### Rule 5 — Workshops run on the Developer Track (formerly "Workshop Stage") — *relaxed*
+Originally every WORKSHOP sat on the Developer Track. Since amended by user decisions: the
+Legacy QA Arena workshop runs on the Engineer Track, the Mobile QA-Loop workshop on Ship, and
+the regular session *Beyond the Hype* on the Developer Track. The track is a preference, not
+a constraint. Note the schedule deliberately
 leaves a 15-minute changeover before Debug with Appium MCP (08:00 end → 08:15 start), so that
 adjacency is not a violation; the 07:15 and 09:45 workshop handoffs have no such gap.
 
@@ -120,7 +123,7 @@ workshops pinned to the Developer Track (Rule 5):
 |---|---|---|---|
 | Day 1 | 2 | **0** | — |
 | Day 2 | 6 | **2** | Workshop 07:15, Workshop 09:45 |
-| Day 3 | 1 | **1** | Workshop 06:30 |
+| Day 3 | 1 | **0** | — (eighth track added) |
 
 (Original counts use the corrected Rule-1 exemption: keynote adjacencies count.)
 
@@ -134,9 +137,13 @@ Findings from the search:
    releases its Ship pin and the pair is eliminated. Day 2 sits at the two workshop handoffs.
 3. **Every remaining pair sits where the original schedule already had one.** The optimum
    introduces no new back-to-back location; it removes the other two (Agentic 10:15, Ship 10:15).
-4. On Day 3, Devansh (Ship manager) hosts the Mobile QA-Loop **workshop** — Rules 2 and 5
-   collide for that one session. Rule 5 wins: it stays on the Developer Track. This is the single
-   accepted Rule-2 exception.
+4. ~~On Day 3, Devansh's Mobile QA-Loop workshop stayed on the Developer Track as a Rule-2
+   exception.~~ **Resolved**: the workshop now runs on **Ship — Devansh's own stage** — and
+   *Beyond the Hype* took its place on the Developer Track. Rule 2 is satisfied directly.
+5. **Day 3 later reached 0** by adding an eighth stage — the **Engineer Track** — and moving
+   Athresh Guruprakash's *Legacy vs. Autonomous QA Arena* workshop onto it (a user-ordered
+   Rule-5 exception). Exactly the escape hatch this document predicted: the floor only moves
+   with another stage.
 
 ## Status
 

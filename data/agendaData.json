@@ -1022,7 +1022,7 @@
       "type": "WORKSHOP",
       "speaker": "siddhant-sinha",
       "session": "the-full-agentic-qa-loop-for-mobile-applications",
-      "track": "workshop",
+      "track": "ship",
       "hosts": [
         "Devansh"
       ]
@@ -1061,7 +1061,7 @@
       "type": "SESSION",
       "speaker": "tanvi-mittal",
       "session": "ml-driven-test-intelligence-at-scale",
-      "track": "ship",
+      "track": "workshop",
       "hosts": [
         "Chandini"
       ]
@@ -1074,7 +1074,7 @@
       "type": "WORKSHOP",
       "speaker": "athresh-guruprakash",
       "session": "legacy-vs-autonomous-qa-arena",
-      "track": "workshop",
+      "track": "engineer",
       "hosts": [
         "Salman"
       ]
