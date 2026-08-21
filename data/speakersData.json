@@ -1723,5 +1723,15 @@
     "linkedin": "https://www.linkedin.com/in/kavyanair/",
     "companyLogo": "logos/testmuai.svg",
     "img": "main/images/Kavya26Speaker.png"
+  },
+  "shravan-mahajan": {
+    "first": "Shravan",
+    "last": "Mahajan",
+    "role": "",
+    "company": "",
+    "img": "",
+    "tint": "#f3ffa6",
+    "companyLogo": "",
+    "bio": ""
   }
 }

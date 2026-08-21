@@ -299,7 +299,7 @@
     "time": "TBD",
     "duration": "",
     "speakers": [
-      "siddhant-sinha"
+      "shravan-mahajan"
     ],
     "abstract": [
       "Most \"AI testing\" demos stop at generating a test. Real QA is a loop: you author coverage, capture what actually happened, assure it against intent, and keep it all from rotting as the product changes. In this hands-on session we run that full loop end-to-end with kane-cli, an agentic test tool that drives a real browser and authors runnable tests from plain-language requirements.",
@@ -312,7 +312,7 @@
     ],
     "keyTakeaways": [],
     "meta": {
-      "description": "The Full Agentic QA Loop for Mobile Applications — Author, Evidence, Assure, Maintain — workshop by Siddhant Sinha at TestMu Conf 2026.",
+      "description": "The Full Agentic QA Loop for Mobile Applications — Author, Evidence, Assure, Maintain — workshop by Shravan Mahajan at TestMu Conf 2026.",
       "ogImagePlanned": "meta/AgenticQaLoopMobileMeta.png",
       "titleShort": "Agentic QA Loop for Mobile Applications"
     }
