@@ -1165,7 +1165,10 @@
       "type": "SESSION",
       "speaker": "meenakshi-singh",
       "session": "from-pilots-to-practice-transforming-sales-with-ai",
-      "track": "ship"
+      "track": "ship",
+      "hosts": [
+        "Himanshu Gulati"
+      ]
     },
     {
       "id": "d3s6",

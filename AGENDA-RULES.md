@@ -38,8 +38,8 @@ No session may change its start time, end time, or duration. The schedule is fro
 ### Rule 4 — Hosts are fixed
 No session may change its host. Who hosts what is settled.
 
-### Rule 5 — Workshops run on the Workshop Stage
-A session of type WORKSHOP always sits on the Workshop Stage. Note the schedule deliberately
+### Rule 5 — Workshops run on the Developer Track (formerly "Workshop Stage")
+A session of type WORKSHOP always sits on the Developer Track. Note the schedule deliberately
 leaves a 15-minute changeover before Debug with Appium MCP (08:00 end → 08:15 start), so that
 adjacency is not a violation; the 07:15 and 09:45 workshop handoffs have no such gap.
 
@@ -100,7 +100,7 @@ This is a property of the schedule itself, not of any assignment, and it predate
 **None of the eight is a recorded session** — all are live, on both days. (There are 9 recorded
 sessions across the conference, but none lands on a pinch instant, so they cannot relieve it.)
 
-### The collision is the Workshop Stage, both days
+### The collision is the Developer Track, both days
 
 Two of the eight are workshops, on both days:
 
@@ -114,7 +114,7 @@ The other six sessions at each pinch fit the other six stages exactly.
 ## Exact optimum (exhaustive search, all assignments)
 
 Minimum counted back-to-back pairs per day, with times and hosts frozen, plenary pinned, and
-workshops pinned to the Workshop Stage (Rule 5):
+workshops pinned to the Developer Track (Rule 5):
 
 | Day | Original | Best possible under Rules 2–6 | Remaining pairs |
 |---|---|---|---|
@@ -135,14 +135,14 @@ Findings from the search:
 3. **Every remaining pair sits where the original schedule already had one.** The optimum
    introduces no new back-to-back location; it removes the other two (Agentic 10:15, Ship 10:15).
 4. On Day 3, Devansh (Ship manager) hosts the Mobile QA-Loop **workshop** — Rules 2 and 5
-   collide for that one session. Rule 5 wins: it stays on the Workshop Stage. This is the single
+   collide for that one session. Rule 5 wins: it stays on the Developer Track. This is the single
    accepted Rule-2 exception.
 
 ## Status
 
 - **Day 2: applied.** 6 → 2 counted pairs (the proven minimum — only the two workshop
   handoffs); managers 6 → 0 off-stage;
-  Trust (Swapnil's stage) has zero back-to-back; workshops all on the Workshop Stage; the
+  Trust (Swapnil's stage) has zero back-to-back; workshops all on the Developer Track; the
   both recorded keynotes moved off Trust per Rule 6 (*Is the developer lifecycle dead?* →
   Agentic, *The next era of AI* → Scale); *Every Agent Drives a Browser* stays on Trust, whose
   slot is clean once the keynote left — Trust has zero adjacent sessions all day; 0 time
@@ -151,7 +151,7 @@ Findings from the search:
   re-verification of this one is running.
 - **Day 3: applied.** 6 track moves; 1 counted pair remains (the Workshop 06:30 handoff, which
   the original schedule already had); managers 4 → 0 off-stage outside the documented d3s25
-  exception (Devansh's Mobile QA-Loop workshop stays on the Workshop Stage per Rule 5).
+  exception (Devansh's Mobile QA-Loop workshop stays on the Developer Track per Rule 5).
 - **Day 1: solved, not yet applied.** Reaches 0 pairs with 13 moves.
 
 ## Why Rule 2 cannot be fully met either, if Rule 4 holds
@@ -180,7 +180,7 @@ Rule 1) **or** changing hosts (which breaks Rule 4).
 
 1. **Do plenary items count against Rule 1?** A welcome note running straight into the keynote
    on Trust is inherently back-to-back. If exempt, the number to attack is 8, not 14.
-2. **Is the Workshop Stage back-to-back acceptable?** It is the structural floor — one pair on
+2. **Is the Developer Track back-to-back acceptable?** It is the structural floor — one pair on
    Day 2 and one on Day 3, and it cannot be removed by reassignment. Accepting it makes the rest
    of Rule 1 solvable.
 3. **Rule 2 vs Rule 4** — which yields when they conflict.
